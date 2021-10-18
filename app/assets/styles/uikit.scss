@@ -1,0 +1,73 @@
+@import 'utils/reset';
+@import 'utils/libs';
+@import 'utils/fonts';
+* {
+  font-size:10px;
+  background: #fff;
+}
+body{
+  color:#000;
+  h2{
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  .writeMoreButton{
+    display: flex;
+    a{
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-decoration: none !important;
+      color:#E1400B !important;
+    }
+    svg{
+      display: inline-block;
+      margin:-1px 10px 0 10px;
+    }
+  }
+  .categoryButton{
+    display: inline-block;
+    a{
+      background: #000;
+      border:1px solid #000;
+      color:#fff;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size:1.2rem;
+      transition:0.5s ease;
+      text-decoration: none;
+      padding: 10px;
+      display: inline-block;
+    }
+  }
+  .categoryButton:hover{
+    transition:0.5s ease;
+    a{
+      color:#000;
+      background: #fff;
+      transition:0.5s ease;
+    }
+  }
+  .dateBlock{
+    display: flex;
+    p{
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin:9px 0;
+    }
+    svg{
+      margin:auto 10px;
+    }
+  }
+  .mainNewsHeading{
+    p{
+      font-size: 3.6rem;
+      font-weight: 700;
+    }
+  }
+  .newsHeading{
+    p{
+      font-size: 2.4rem;
+      font-weight: 700;
+    }
+  }
+}
