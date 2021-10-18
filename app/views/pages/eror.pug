@@ -1,0 +1,16 @@
+extends ../layouts/master
+
+block title
+  link(rel="stylesheet", href="assets/css/styles.min.css")
+
+
+  container
+    .errorMessage
+      h1 Ошибочка вышла!
+      p Перезагрузите страницу или
+        a( href="#") вернитесь назад
+
+
+
+block scripts
+  script(src="assets/scripts/main.min.js")

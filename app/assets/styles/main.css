@@ -12580,75 +12580,40 @@ textarea.form-control-lg {
 }
 * {
   font-size: 10px;
-  background: #fff;
+  color: #000;
 }
 
-.menu .menuHeader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 40px 0 0 0;
+:root {
+  font-size: 10px;
 }
-.menu .menuHeader .menuRate, .menu .menuHeader .menuRateDollar, .menu .menuHeader .menuRateEuro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+
+.errorMessage {
+  margin: 100px 0 0 0;
+  text-align: center;
 }
-.menu .menuHeader .menuRateDollar p, .menu .menuHeader .menuRateEuro p {
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin: auto 30px 13px 5px;
+.errorMessage h1, .errorMessage .h1 {
+  font-size: 3.6rem;
+  font-weight: 600;
 }
-.menu .menuHeader .menuRateDollar svg, .menu .menuHeader .menuRateEuro svg {
-  margin: auto 0;
+.errorMessage p {
+  margin: 25px 0 0 0;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
-.menu .menuHeader .menuLogo p {
-  font-size: 2.4rem;
-  font-weight: 900;
-}
-.menu .menuHeader .menuLogo p span {
-  color: #E1400B;
-}
-.menu .menuHeader .menuDate p {
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-.menu .menuHeader .menuDate p span {
-  font-weight: 500;
-}
-.menu .menuList ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 20px 0;
-  border-top: 1px solid #D2D2D2;
-  border-bottom: 1px solid #D2D2D2;
-}
-.menu .menuList ul svg {
-  margin: auto 0;
-}
-.menu .menuList ul a {
+.errorMessage a {
   text-decoration: none;
   color: #000;
+  margin: 0 0 0 5px;
   display: inline-block;
   position: relative;
-  cursor: pointer;
-  font-size: 1.8rem;
-  font-weight: 500;
 }
-.menu .menuList ul a:hover {
+.errorMessage a:hover {
   color: #000;
 }
-.menu .menuList ul a:after {
+.errorMessage a:after {
   position: absolute;
   content: "";
-  width: 0;
+  width: 100%;
   height: 1px;
   bottom: 0;
   left: 0;
@@ -12657,114 +12622,15 @@ textarea.form-control-lg {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-.menu .menuList ul a:hover:after {
-  width: 100%;
-}
-
-body {
-  color: #000;
-}
-body h2, body .h2 {
-  font-size: 3rem;
-  font-weight: 400;
-}
-body .writeMoreButton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-body .writeMoreButton a {
-  font-size: 1.4rem;
-  font-weight: 700;
-  text-decoration: none !important;
-  color: #E1400B !important;
-}
-body .writeMoreButton svg {
-  display: inline-block;
-  margin: -1px 10px 0 10px;
-}
-body .categoryButton {
-  display: inline-block;
-}
-body .categoryButton a {
-  background: #000;
-  border: 1px solid #000;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 1.2rem;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  text-decoration: none;
-  padding: 10px;
-  display: inline-block;
-}
-body .categoryButton:hover {
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-body .categoryButton:hover a {
-  color: #000;
-  background: #fff;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-body .dateBlock {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-body .dateBlock p {
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin: 9px 0;
-}
-body .dateBlock svg {
-  margin: auto 10px;
-}
-body .mainNewsHeading p {
-  font-size: 3.6rem;
-  font-weight: 700;
-}
-body .newsHeading p {
-  font-size: 2.4rem;
-  font-weight: 700;
-}
-body .coverageInformation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-body .coverageInformation .views {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-body .coverageInformation .views svg {
-  margin: auto 0;
-}
-body .coverageInformation .views p {
-  margin: auto 10px;
-}
-body .coverageInformation .appraisals {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-body .coverageInformation .appraisals svg {
-  margin: auto 0;
-}
-body .coverageInformation .appraisals p {
-  margin: auto 10px;
-}
-body .plainText p {
-  font-size: 1.8rem;
-  font-weight: 400;
+.errorMessage a:hover:after {
+  width: 0;
 }
 
 @media (max-width: 320px) {
-  .mainNewsHeading p {
+  .errorMessage h1, .errorMessage .h1 {
     font-size: 2.4rem;
-    font-weight: 700;
+  }
+  .errorMessage p {
+    font-size: 1.8rem;
   }
 }
