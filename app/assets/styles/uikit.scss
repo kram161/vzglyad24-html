@@ -231,6 +231,42 @@ body{
       }
     }
   }
+  .footerInf{
+    display: flex;
+    justify-content: space-between;
+    background: #E0E0E0;
+    padding:16px 0 40px 0;
+    .footerInfCopyright{
+      background: #E0E0E0;
+      p{
+        font-weight: 400;
+        font-size: 1.4rem;
+        margin: auto 0;
+        background: #E0E0E0;
+      }
+    }
+    .footerInfAboutUs{
+      display: flex;
+      justify-content: space-between;
+      background: #E0E0E0;
+      p,a{
+        font-size: 1.4rem;
+        margin: auto 15px;
+        font-weight: 300;
+        background: #E0E0E0;
+      }
+      svg{
+        background: #E0E0E0;
+      }
+      a{
+        text-decoration: none;
+        color:#000;
+      }
+      a:hover{
+        color:#000;
+      }
+    }
+  }
 }
 @media (max-width:320px) {
   .mainNewsHeading{

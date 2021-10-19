@@ -12822,6 +12822,50 @@ body .plainText p {
   color: #E1400B;
   background: #E0E0E0;
 }
+.footer .footerInf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #E0E0E0;
+  padding: 16px 0 40px 0;
+}
+.footer .footerInf .footerInfCopyright {
+  background: #E0E0E0;
+}
+.footer .footerInf .footerInfCopyright p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: auto 0;
+  background: #E0E0E0;
+}
+.footer .footerInf .footerInfAboutUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #E0E0E0;
+}
+.footer .footerInf .footerInfAboutUs p, .footer .footerInf .footerInfAboutUs a {
+  font-size: 1.4rem;
+  margin: auto 15px;
+  font-weight: 300;
+  background: #E0E0E0;
+}
+.footer .footerInf .footerInfAboutUs svg {
+  background: #E0E0E0;
+}
+.footer .footerInf .footerInfAboutUs a {
+  text-decoration: none;
+  color: #000;
+}
+.footer .footerInf .footerInfAboutUs a:hover {
+  color: #000;
+}
 
 @media (max-width: 320px) {
   .mainNewsHeading p {
