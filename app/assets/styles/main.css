@@ -12633,7 +12633,9 @@ textarea.form-control-lg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 40px 0 0 0;
+  margin: 40px 0 40px 0;
+  padding: 0 0 40px 0;
+  border-bottom: 1px solid #D2D2D2;
 }
 .mainInfo .mainInfoMainNews {
   max-width: 480px;
@@ -12675,9 +12677,9 @@ textarea.form-control-lg {
 }
 .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit {
   max-width: 580px;
-  border-bottom: 1px solid #D2D2D2;
   padding: 0 0 27px 0;
   margin: 27px 0 0 0;
+  border-bottom: 1px solid #D2D2D2;
 }
 .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoMainNewsInformation {
   display: -webkit-box;
@@ -12686,6 +12688,7 @@ textarea.form-control-lg {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin: 0 0 5px 0;
 }
 .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoMainNewsInformation .dateBlock {
   margin: 0 0 0 32px;
@@ -12698,6 +12701,87 @@ textarea.form-control-lg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit:last-child {
+  padding: 0;
+  border-bottom: none;
+}
+
+.newsPageLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #D2D2D2;
+}
+.newsPageLine .newsPageLineCard {
+  border-right: 1px solid #D2D2D2;
+}
+.newsPageLine .newsPageLineCard:last-child {
+  border-right: none;
+}
+.newsPageLine .newsCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 40px 40px 0;
+  padding: 0 0 40px 0;
+  height: 540px;
+  position: relative;
+  overflow: hidden;
+}
+.newsPageLine .newsCard .writeMoreButton {
+  position: absolute;
+  bottom: 30px;
+}
+.newsPageLine .newsCard .coverageInformation {
+  position: absolute;
+  bottom: 0px;
+}
+.newsPageLine .newsCard .coverageInformation .appraisals {
+  margin: 0 0 0 25px;
+}
+.newsPageLine .newsCard .newsCardInfo {
+  max-height: 500px;
+  overflow: hidden;
+}
+.newsPageLine .newsPageLineSlimCardWithImage {
+  max-width: 210px;
+}
+.newsPageLine .newsPageLineSlimCardWithImage img {
+  width: 210px;
+  height: 150px;
+  margin: 15px 0 20px 0;
+}
+.newsPageLine .newsPageLineWideCard {
+  max-width: 310px;
+}
+.newsPageLine .newsPageLineWideCard .latestNewsHeading {
+  margin: 15px 0 39px 0;
+}
+.newsPageLine .newsPageLineSlimeCard {
+  max-width: 210px;
+}
+.newsPageLine .newsPageLineSlimeCard .latestNewsHeading {
+  margin: 15px 0 15px 0;
+}
+.newsPageLine .newsPageLineWideCardWithImage {
+  max-width: 310px;
+}
+.newsPageLine .newsPageLineWideCardWithImage img {
+  width: 310px;
+  height: 215px;
+  margin: 15px 0 20px 0;
+}
+
+.newsPageLine:not(:first-child) .newsCard {
+  margin: 40px 40px 40px 0;
 }
 
 @media (max-width: 320px) {

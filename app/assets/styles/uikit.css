@@ -12581,6 +12581,7 @@ textarea.form-control-lg {
 * {
   font-size: 10px;
   background: #fff;
+  font-family: montserrat, sans-serif;
 }
 
 .menu .menuHeader {
@@ -12605,16 +12606,23 @@ textarea.form-control-lg {
 .menu .menuHeader .menuRateDollar svg, .menu .menuHeader .menuRateEuro svg {
   margin: auto 0;
 }
-.menu .menuHeader .menuLogo p {
+.menu .menuHeader .menuLogo a {
+  text-decoration: none;
+}
+.menu .menuHeader .menuLogo a p {
   font-size: 2.4rem;
   font-weight: 900;
 }
-.menu .menuHeader .menuLogo p span {
+.menu .menuHeader .menuLogo a p span {
   color: #E1400B;
+}
+.menu .menuHeader .menuDate {
+  margin: auto 0;
 }
 .menu .menuHeader .menuDate p {
   font-size: 1.4rem;
   font-weight: 700;
+  margin: auto 0;
 }
 .menu .menuHeader .menuDate p span {
   font-weight: 500;
@@ -12735,6 +12743,7 @@ body .mainNewsHeading a {
   line-height: 3.8rem;
   color: #000;
   text-decoration: none;
+  font-family: Constantia, sans-serif;
 }
 body .mainNewsHeading a:hover {
   color: #000;
@@ -12742,16 +12751,18 @@ body .mainNewsHeading a:hover {
 body .latestNewsHeading a {
   font-size: 2.4rem;
   font-weight: 700;
-  line-height: 2.4rem;
+  line-height: 2.9rem;
   color: #000;
   text-decoration: none;
+  font-family: Constantia, sans-serif;
 }
 body .latestNewsHeading a:hover {
   color: #000;
 }
-body .newsHeading p {
+body .newsHeading h2, body .newsHeading .h2 {
   font-size: 3rem;
   font-weight: 400;
+  font-family: Constantia, sans-serif;
 }
 body .coverageInformation {
   display: -webkit-box;
@@ -12784,6 +12795,32 @@ body .plainText p {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.8rem;
+}
+
+#Footer {
+  background: #E0E0E0;
+  margin: 100px 0 0 0;
+}
+
+.footer {
+  background: #E0E0E0;
+}
+.footer .footerLogo {
+  border-bottom: 1px solid #C9C9C9;
+  padding: 40px 0 0 0;
+  background: #E0E0E0;
+}
+.footer .footerLogo a {
+  text-decoration: none;
+}
+.footer .footerLogo a p {
+  background: #E0E0E0;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+.footer .footerLogo a p span {
+  color: #E1400B;
+  background: #E0E0E0;
 }
 
 @media (max-width: 320px) {
