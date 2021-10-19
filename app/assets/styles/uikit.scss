@@ -6,6 +6,32 @@
   background: #fff;
   font-family: montserrat, sans-serif;
 }
+.hiddenMenu{
+  display: none;
+  right: -100%;
+  position: absolute;
+  z-index: 5;
+  transition: 0.5s;
+  .hiddenMenuList{
+    ul{
+      li{
+        a{
+          color:#fff;
+          text-decoration: none;
+        }
+        a:hover{
+          color:#fff;
+        }
+      }
+    }
+  }
+}
+.hiddenMenuActive{
+  display: block !important;
+  right: 0 !important;
+  transition: 0.5s;
+  background: #000;
+}
 .menu{
   position: relative;
   .menuHeader{
@@ -40,7 +66,7 @@
     }
     .menuDate{
       margin:auto 0;
-      display: none;
+      display: block;
       p{
         font-size:1.4rem;
         font-weight: 700;
@@ -51,9 +77,10 @@
       }
     }
     .menuBurger{
-      display: block;
+      display: none;
       position: relative;
       margin:auto 0;
+      cursor: pointer;
       .menuBurgerUnit{
         position: relative;
         width: 20px;
@@ -116,6 +143,7 @@
   }
 }
 body{
+  position: relative;
   color:#000;
 
   .writeMoreButton{
@@ -319,6 +347,9 @@ body{
   }
 }
 @media (max-width:768px){
+  .menuBurger {
+    display: block !important;
+  }
   .menuDate,.menuList{
     display: none !important;
   }

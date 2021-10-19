@@ -12584,6 +12584,30 @@ textarea.form-control-lg {
   font-family: montserrat, sans-serif;
 }
 
+.hiddenMenu {
+  display: none;
+  right: -100%;
+  position: absolute;
+  z-index: 5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.hiddenMenu .hiddenMenuList ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.hiddenMenu .hiddenMenuList ul li a:hover {
+  color: #fff;
+}
+
+.hiddenMenuActive {
+  display: block !important;
+  right: 0 !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #000;
+}
+
 .menu {
   position: relative;
 }
@@ -12624,7 +12648,7 @@ textarea.form-control-lg {
 }
 .menu .menuHeader .menuDate {
   margin: auto 0;
-  display: none;
+  display: block;
 }
 .menu .menuHeader .menuDate p {
   font-size: 1.4rem;
@@ -12635,9 +12659,10 @@ textarea.form-control-lg {
   font-weight: 500;
 }
 .menu .menuHeader .menuBurger {
-  display: block;
+  display: none;
   position: relative;
   margin: auto 0;
+  cursor: pointer;
 }
 .menu .menuHeader .menuBurger .menuBurgerUnit {
   position: relative;
@@ -12704,6 +12729,7 @@ textarea.form-control-lg {
 }
 
 body {
+  position: relative;
   color: #000;
 }
 body .writeMoreButton {
@@ -12918,6 +12944,10 @@ body .plainText p {
   }
 }
 @media (max-width: 768px) {
+  .menuBurger {
+    display: block !important;
+  }
+
   .menuDate, .menuList {
     display: none !important;
   }
