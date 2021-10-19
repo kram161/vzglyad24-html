@@ -7,17 +7,20 @@
   font-family: montserrat, sans-serif;
 }
 .menu{
+  position: relative;
   .menuHeader{
     display: flex;
     justify-content: space-between;
     margin:40px 0 0 0;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #D2D2D2;
     .menuRate,.menuRateDollar,.menuRateEuro{
       display: flex;
     }
     .menuRateDollar p,.menuRateEuro p{
       font-size: 1.4rem;
       font-weight: 500;
-      margin:auto 30px 13px 5px;
+      margin:auto 30px auto 5px;
     }
     .menuRateDollar svg,.menuRateEuro svg{
       margin:auto 0;
@@ -26,6 +29,7 @@
       a{
         text-decoration: none;
         p{
+          margin:0;
           font-size:2.4rem;
           font-weight: 900;
           span{
@@ -36,6 +40,7 @@
     }
     .menuDate{
       margin:auto 0;
+      display: none;
       p{
         font-size:1.4rem;
         font-weight: 700;
@@ -45,13 +50,38 @@
         }
       }
     }
+    .menuBurger{
+      display: block;
+      position: relative;
+      margin:auto 0;
+      .menuBurgerUnit{
+        position: relative;
+        width: 20px;
+        height: 3px;
+        background: #000;
+        content: '';
+      }
+      .menuBurgerUnit:after, .menuBurgerUnit:before{
+        background: #000;
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        content: '';
+      }
+      .menuBurgerUnit:after{
+        bottom: 6px;
+      }
+      .menuBurgerUnit:before{
+        top: 6px;
+      }
+    }
   }
   .menuList{
+    display: block;
     ul{
       display: flex;
       justify-content: space-between;
       padding: 20px 0;
-      border-top: 1px solid #D2D2D2;
       border-bottom: 1px solid #D2D2D2;
       svg{
         margin:auto 0;
@@ -250,9 +280,19 @@ body{
       display: flex;
       justify-content: space-between;
       background: #E0E0E0;
-      p,a{
+      .footerInfAboutUsContact{
+        background: #E0E0E0;
+        margin:6px auto;
+      }
+      p{
         font-size: 1.4rem;
-        margin: auto 15px;
+        font-weight: 300;
+        background: #E0E0E0;
+        margin: auto 10px auto 0;
+      }
+      a,span{
+        font-size: 1.4rem;
+        margin: auto 0 auto 10px;
         font-weight: 300;
         background: #E0E0E0;
       }
@@ -274,6 +314,69 @@ body{
     .writeMoreButton{
       svg{
         margin:-1px 10px 0 10px;
+      }
+    }
+  }
+}
+@media (max-width:768px){
+  .menuDate,.menuList{
+    display: none !important;
+  }
+  .menuRateEuro p{
+    margin:auto 0 auto 5px !important;
+  }
+  .menuRateDollar p{
+    margin:auto 15px auto 5px !important;
+  }
+  .menuLogo{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top:-10px;
+  }
+  .footerInfAboutUs {
+    svg{
+      margin:auto 0;
+    }
+    .footerInfAboutUsContact{
+      display: flex;
+      flex-direction: column;
+    }
+    p:first-child {
+      display: none;
+    }
+  }
+}
+@media (max-width:466px){
+  .menuRate{
+    display: none !important;
+  }
+  .menuLogo{
+    position: relative;
+    transform: none;
+    left: 0;
+    top:0;
+  }
+  .footerLogo {
+    border-bottom: none !important;
+    p{
+      margin:0 !important;
+    }
+  }
+  .footerInf {
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0 0 40px 0 !important;
+    .footerInfCopyright{
+      width: 45%;
+    }
+    .footerInfAboutUs{
+      justify-content: flex-start !important;
+      margin: 10px 0 0 0;
+      border-top:1px solid #C9C9C9;
+      padding: 10px 0 0 0;
+      .footerInfAboutUsContact{
+        margin:0 !important;
       }
     }
   }

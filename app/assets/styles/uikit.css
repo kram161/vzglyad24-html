@@ -12584,6 +12584,9 @@ textarea.form-control-lg {
   font-family: montserrat, sans-serif;
 }
 
+.menu {
+  position: relative;
+}
 .menu .menuHeader {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12592,6 +12595,8 @@ textarea.form-control-lg {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 40px 0 0 0;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #D2D2D2;
 }
 .menu .menuHeader .menuRate, .menu .menuHeader .menuRateDollar, .menu .menuHeader .menuRateEuro {
   display: -webkit-box;
@@ -12601,7 +12606,7 @@ textarea.form-control-lg {
 .menu .menuHeader .menuRateDollar p, .menu .menuHeader .menuRateEuro p {
   font-size: 1.4rem;
   font-weight: 500;
-  margin: auto 30px 13px 5px;
+  margin: auto 30px auto 5px;
 }
 .menu .menuHeader .menuRateDollar svg, .menu .menuHeader .menuRateEuro svg {
   margin: auto 0;
@@ -12610,6 +12615,7 @@ textarea.form-control-lg {
   text-decoration: none;
 }
 .menu .menuHeader .menuLogo a p {
+  margin: 0;
   font-size: 2.4rem;
   font-weight: 900;
 }
@@ -12618,6 +12624,7 @@ textarea.form-control-lg {
 }
 .menu .menuHeader .menuDate {
   margin: auto 0;
+  display: none;
 }
 .menu .menuHeader .menuDate p {
   font-size: 1.4rem;
@@ -12627,6 +12634,34 @@ textarea.form-control-lg {
 .menu .menuHeader .menuDate p span {
   font-weight: 500;
 }
+.menu .menuHeader .menuBurger {
+  display: block;
+  position: relative;
+  margin: auto 0;
+}
+.menu .menuHeader .menuBurger .menuBurgerUnit {
+  position: relative;
+  width: 20px;
+  height: 3px;
+  background: #000;
+  content: "";
+}
+.menu .menuHeader .menuBurger .menuBurgerUnit:after, .menu .menuHeader .menuBurger .menuBurgerUnit:before {
+  background: #000;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  content: "";
+}
+.menu .menuHeader .menuBurger .menuBurgerUnit:after {
+  bottom: 6px;
+}
+.menu .menuHeader .menuBurger .menuBurgerUnit:before {
+  top: 6px;
+}
+.menu .menuList {
+  display: block;
+}
 .menu .menuList ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12635,7 +12670,6 @@ textarea.form-control-lg {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px 0;
-  border-top: 1px solid #D2D2D2;
   border-bottom: 1px solid #D2D2D2;
 }
 .menu .menuList ul svg {
@@ -12851,9 +12885,19 @@ body .plainText p {
           justify-content: space-between;
   background: #E0E0E0;
 }
-.footer .footerInf .footerInfAboutUs p, .footer .footerInf .footerInfAboutUs a {
+.footer .footerInf .footerInfAboutUs .footerInfAboutUsContact {
+  background: #E0E0E0;
+  margin: 6px auto;
+}
+.footer .footerInf .footerInfAboutUs p {
   font-size: 1.4rem;
-  margin: auto 15px;
+  font-weight: 300;
+  background: #E0E0E0;
+  margin: auto 10px auto 0;
+}
+.footer .footerInf .footerInfAboutUs a, .footer .footerInf .footerInfAboutUs span {
+  font-size: 1.4rem;
+  margin: auto 0 auto 10px;
   font-weight: 300;
   background: #E0E0E0;
 }
@@ -12871,6 +12915,88 @@ body .plainText p {
 @media (max-width: 1024px) {
   body .writeMoreButton svg {
     margin: -1px 10px 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  .menuDate, .menuList {
+    display: none !important;
+  }
+
+  .menuRateEuro p {
+    margin: auto 0 auto 5px !important;
+  }
+
+  .menuRateDollar p {
+    margin: auto 15px auto 5px !important;
+  }
+
+  .menuLogo {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    top: -10px;
+  }
+
+  .footerInfAboutUs svg {
+    margin: auto 0;
+  }
+  .footerInfAboutUs .footerInfAboutUsContact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footerInfAboutUs p:first-child {
+    display: none;
+  }
+}
+@media (max-width: 466px) {
+  .menuRate {
+    display: none !important;
+  }
+
+  .menuLogo {
+    position: relative;
+    -webkit-transform: none;
+            transform: none;
+    left: 0;
+    top: 0;
+  }
+
+  .footerLogo {
+    border-bottom: none !important;
+  }
+  .footerLogo p {
+    margin: 0 !important;
+  }
+
+  .footerInf {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 0 40px 0 !important;
+  }
+  .footerInf .footerInfCopyright {
+    width: 45%;
+  }
+  .footerInf .footerInfAboutUs {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    margin: 10px 0 0 0;
+    border-top: 1px solid #C9C9C9;
+    padding: 10px 0 0 0;
+  }
+  .footerInf .footerInfAboutUs .footerInfAboutUsContact {
+    margin: 0 !important;
   }
 }
 @media (max-width: 320px) {
