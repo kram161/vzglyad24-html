@@ -12640,6 +12640,7 @@ textarea.form-control-lg {
 .mainInfo .mainInfoMainNews {
   max-width: 480px;
   display: inline-block;
+  position: relative;
 }
 .mainInfo .mainInfoMainNews img {
   height: 240px;
@@ -12670,6 +12671,9 @@ textarea.form-control-lg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 .mainInfo .mainInfoLatestNews {
   border-left: 1px solid #D2D2D2;
@@ -12742,13 +12746,13 @@ textarea.form-control-lg {
 }
 .newsPageLine .newsCard .coverageInformation {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
 }
 .newsPageLine .newsCard .coverageInformation .appraisals {
   margin: 0 0 0 25px;
 }
 .newsPageLine .newsCard .newsCardInfo {
-  max-height: 500px;
+  max-height: 490px;
   overflow: hidden;
 }
 .newsPageLine .newsPageLineSlimCardWithImage {
@@ -12784,6 +12788,53 @@ textarea.form-control-lg {
   margin: 40px 40px 40px 0;
 }
 
+@media (max-width: 1024px) {
+  .errorMessage h1, .errorMessage .h1 {
+    font-size: 2.4rem;
+  }
+  .errorMessage p {
+    font-size: 1.8rem;
+  }
+
+  .newsPageLineCard:nth-child(n+4) {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .mainInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainInfo .mainInfoMainNews {
+    max-width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #D2D2D2;
+    padding: 0 0 20px 0;
+  }
+  .mainInfo .mainInfoMainNews img {
+    width: 100%;
+    height: 40vw;
+  }
+  .mainInfo .mainInfoLatestNews {
+    padding: 0;
+    border: none;
+  }
+  .mainInfo .mainInfoLatestNews .newsHeading {
+    margin: 40px 0 0 0;
+  }
+  .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit {
+    max-width: 100%;
+    padding: 0 0 20px 0;
+    margin: 30px 0 0 0;
+    border-bottom: 1px solid #d2d2d2;
+  }
+
+  .newsPageLineCard:nth-child(n+3) {
+    display: none;
+  }
+}
 @media (max-width: 320px) {
   .errorMessage h1, .errorMessage .h1 {
     font-size: 2.4rem;

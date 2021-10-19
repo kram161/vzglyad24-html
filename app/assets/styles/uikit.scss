@@ -238,6 +238,7 @@ body{
     padding:16px 0 40px 0;
     .footerInfCopyright{
       background: #E0E0E0;
+      margin: auto 0;
       p{
         font-weight: 400;
         font-size: 1.4rem;
@@ -264,6 +265,15 @@ body{
       }
       a:hover{
         color:#000;
+      }
+    }
+  }
+}
+@media (max-width:1024px) {
+  body{
+    .writeMoreButton{
+      svg{
+        margin:-1px 10px 0 10px;
       }
     }
   }

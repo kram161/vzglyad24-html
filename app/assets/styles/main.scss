@@ -54,6 +54,7 @@
   .mainInfoMainNews{
     max-width: 480px;
     display: inline-block;
+    position: relative;
     img{
       height:240px;
       width: 440px;
@@ -75,6 +76,9 @@
     .mainInfoMainNewsNavigation{
       display: flex;
       justify-content: space-between;
+      position: absolute;
+      width: 100%;
+      bottom:0;
     }
   }
   .mainInfoLatestNews{
@@ -129,13 +133,13 @@
     }
     .coverageInformation{
       position: absolute;
-      bottom: 0px;
+      bottom: 0;
       .appraisals{
         margin:0 0 0 25px;
       }
     }
     .newsCardInfo{
-      max-height: 500px;
+      max-height: 490px;
       overflow: hidden;
     }
   }
@@ -171,6 +175,50 @@
 .newsPageLine:not(:first-child){
   .newsCard{
     margin: 40px 40px 40px 0;
+  }
+}
+@media (max-width:1024px){
+  .errorMessage{
+    h1{
+      font-size: 2.4rem;
+    }
+    p{
+      font-size: 1.8rem;
+    }
+  }
+  .newsPageLineCard:nth-child(n+4){
+    display: none;
+  }
+}
+@media (max-width:768px){
+  .mainInfo{
+    flex-direction: column;
+    .mainInfoMainNews{
+      max-width: 100%;
+      margin: 0 auto;
+      border-bottom: 1px solid #D2D2D2;
+      padding: 0 0 20px 0;
+      img{
+        width: 100%;
+        height: 40vw;
+      }
+    }
+    .mainInfoLatestNews{
+      padding: 0;
+      border:none;
+      .newsHeading{
+        margin:40px 0 0 0;
+      }
+      .mainInfoLatestNewsUnit {
+        max-width: 100%;
+        padding: 0 0 20px 0;
+        margin: 30px 0 0 0;
+        border-bottom: 1px solid #d2d2d2;
+      }
+    }
+  }
+  .newsPageLineCard:nth-child(n+3){
+    display: none;
   }
 }
 @media (max-width:320px){

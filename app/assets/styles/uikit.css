@@ -12834,6 +12834,7 @@ body .plainText p {
 }
 .footer .footerInf .footerInfCopyright {
   background: #E0E0E0;
+  margin: auto 0;
 }
 .footer .footerInf .footerInfCopyright p {
   font-weight: 400;
@@ -12867,6 +12868,11 @@ body .plainText p {
   color: #000;
 }
 
+@media (max-width: 1024px) {
+  body .writeMoreButton svg {
+    margin: -1px 10px 0 10px;
+  }
+}
 @media (max-width: 320px) {
   .mainNewsHeading p {
     font-size: 2.4rem;
