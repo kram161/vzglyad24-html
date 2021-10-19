@@ -12587,6 +12587,26 @@ textarea.form-control-lg {
   font-size: 10px;
 }
 
+.categoryWay {
+  margin: 40px 0 25px 0;
+}
+.categoryWay h1 a, .categoryWay .h1 a {
+  font-size: 3.6rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000;
+}
+.categoryWay h1 a:hover, .categoryWay .h1 a:hover {
+  color: #000;
+}
+.categoryWay h1 span, .categoryWay .h1 span {
+  font-weight: 700;
+}
+
+.categoryInfo {
+  margin: 0 0 40px 0 !important;
+}
+
 .errorMessage {
   margin: 100px 0 0 0;
   text-align: center;
@@ -12801,6 +12821,10 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 768px) {
+  .categoryWay h1 a, .categoryWay .h1 a {
+    font-size: 3rem;
+  }
+
   .mainInfo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -12840,6 +12864,10 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 466px) {
+  .categoryWay h1 a, .categoryWay .h1 a {
+    font-size: 2rem;
+  }
+
   .newsPageLineCard:nth-child(n+2) {
     display: none;
   }

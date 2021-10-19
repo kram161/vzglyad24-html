@@ -141,6 +141,16 @@
       }
     }
   }
+  .menuListActive{
+    ul{
+      a:after {
+        width: 100%;
+      }
+      a:hover:after {
+        width: 0;
+      }
+    }
+  }
 }
 body{
   position: relative;

@@ -12727,6 +12727,12 @@ textarea.form-control-lg {
 .menu .menuList ul a:hover:after {
   width: 100%;
 }
+.menu .menuListActive ul a:after {
+  width: 100%;
+}
+.menu .menuListActive ul a:hover:after {
+  width: 0;
+}
 
 body {
   position: relative;
