@@ -81,12 +81,10 @@
 }
 body{
   color:#000;
-  h2{
-    font-size: 3rem;
-    font-weight: 400;
-  }
+
   .writeMoreButton{
     display: flex;
+    position: relative;
     a{
       font-size: 1.4rem;
       font-weight: 700;
@@ -94,8 +92,18 @@ body{
       color:#E1400B !important;
     }
     svg{
+      position: relative;
       display: inline-block;
       margin:-1px 10px 0 10px;
+      left:0;
+      transition:0.5s ease;
+    }
+  }
+  .writeMoreButton:hover{
+    svg{
+      position: relative;
+      left:8px;
+      transition:0.5s ease;
     }
   }
   .categoryButton{
@@ -133,15 +141,33 @@ body{
     }
   }
   .mainNewsHeading{
-    p{
+    a{
       font-size: 3.6rem;
       font-weight: 700;
+      line-height: 3.8rem;
+      color:#000;
+      text-decoration: none;
+    }
+    a:hover{
+      color:#000;
+    }
+  }
+  .latestNewsHeading{
+    a{
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 2.4rem;
+      color:#000;
+      text-decoration: none;
+    }
+    a:hover{
+      color:#000;
     }
   }
   .newsHeading{
     p{
-      font-size: 2.4rem;
-      font-weight: 700;
+      font-size: 3rem;
+      font-weight: 400;
     }
   }
   .coverageInformation{
@@ -169,6 +195,7 @@ body{
     p{
       font-size: 1.8rem;
       font-weight: 400;
+      line-height: 1.8rem;
     }
   }
 }
