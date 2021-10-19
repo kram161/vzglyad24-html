@@ -12727,8 +12727,15 @@ textarea.form-control-lg {
 .menu .menuList ul a:hover:after {
   width: 100%;
 }
+.menu .menuListActive ul a {
+  color: #E1400B;
+}
+.menu .menuListActive ul a:hover {
+  color: #E1400B;
+}
 .menu .menuListActive ul a:after {
   width: 100%;
+  background: #E1400B;
 }
 .menu .menuListActive ul a:hover:after {
   width: 0;
