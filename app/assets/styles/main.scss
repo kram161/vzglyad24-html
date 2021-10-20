@@ -8,7 +8,7 @@
 :root {
   font-size: 10px;
 }
-.categoryWay{
+.categoryWay,.articleWay{
   margin:40px 0 25px 0;
   h1{
     a{
@@ -197,6 +197,95 @@
     margin: 40px 40px 40px 0;
   }
 }
+.articleMetrics{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #D2D2D2;
+  padding: 0 0 11px 0;
+  .timeToReading{
+    display: flex;
+    p{
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin:auto 0;
+    }
+  }
+}
+.articleBody{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 0 0;
+  .articleBodyMain{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    .articleBodyMainContent{
+      width: 70%;
+      .articleBodyMainContentBlock{
+        margin:0 0 20px 0;
+      }
+      .articleBodyMainContentBlock:last-child{
+        margin:0 0 40px 0;
+      }
+      img{
+        width: 100%;
+        height: 325px;
+      }
+      .articleBodyMiniNews{
+        display: flex;
+        padding: 20px 0;
+        border-bottom: 1px solid #D2D2D2;
+        border-top: 1px solid #D2D2D2;
+        img{
+          width: 100px;
+          height: 100px;
+        }
+        .articleBodyMiniNewsDescription{
+          display: flex;
+          flex-direction: column;
+          margin:0 0 0 25px;
+          position: relative;
+          .latestNewsHeading{
+            a{
+              line-height: 24px;
+            }
+          }
+          .writeMoreButton{
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.articleInf{
+  display: flex;
+  justify-content: space-between;
+  .articleInfRating{
+    display: flex;
+  }
+  .articleInfLinks{
+    display: flex;
+    span{
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    .articleInfLinksSN{
+      a:first-child{
+        margin:0 0 0 30px;
+      }
+      a{
+        margin:0 0 0 20px;
+        svg{
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
 @media (max-width:1024px){
   .errorMessage{
     h1{
@@ -208,6 +297,9 @@
   }
   .newsPageLineCard:nth-child(n+4){
     display: none;
+  }
+  .newsPageLineCard:nth-child(n+3){
+    border-right: none;
   }
 }
 @media (max-width:768px){
@@ -261,10 +353,12 @@
       }
     }
   }
-  .newsPageLineCard:nth-child(n+2){
-    display: none;
+  .newsPageLineCard:nth-child(n+4){
+    display: block;
   }
   .newsPageLine {
+    flex-direction: column;
+    border-bottom: none;
     .newsPageLineCard:nth-child(n+1) {
       border-right: none;
     }
@@ -300,14 +394,15 @@
   .newsCard {
     display: flex;
     flex-direction: column;
-    margin: 0 0 40px 0 !important;
+    margin: 0 !important;
     height: 100% !important;
     padding: 30px 0 50px 0 !important;
+    border-bottom: 1px solid #d2d2d2;
     .writeMoreButton{
-      bottom: 50px !important;
+      bottom: 30px !important;
     }
     .coverageInformation{
-      bottom: 30px !important;
+      bottom: 10px !important;
     }
   }
   .mainInfo {

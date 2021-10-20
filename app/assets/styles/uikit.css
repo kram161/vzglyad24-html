@@ -12640,54 +12640,62 @@ textarea.form-control-lg {
   bottom: 0;
   padding: 0 20px;
   width: 100%;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
 }
-.hiddenMenu .hiddenMenuFooter .menuDate {
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst {
   background: #000;
 }
-.hiddenMenu .hiddenMenuFooter .menuDate p {
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuDate {
+  background: #000;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuDate p {
   color: #fff;
   background: #000;
   font-weight: 700;
   font-size: 1.4rem;
 }
-.hiddenMenu .hiddenMenuFooter .menuDate p span {
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuDate p span {
   color: #fff;
   background: #000;
   font-weight: 500;
 }
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRate {
+  background: #000;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRate .menuRateDollar {
+  background: #000;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRate .menuRateDollar p {
+  color: #fff;
+  background: #000;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRate .menuRateDollar svg {
+  background: #000;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRate .menuRateEuro {
+  color: #fff;
+  background: #000;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRate .menuRateEuro p {
+  color: #fff;
+  background: #000;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRate .menuRateEuro svg {
+  background: #000;
+}
 .hiddenMenu .hiddenMenuFooter .hiddenMenuFooterCreator {
   background: #000;
-  margin: auto 0;
+  margin: auto 0 20px 0;
 }
 .hiddenMenu .hiddenMenuFooter .hiddenMenuFooterCreator p {
   color: rgba(255, 255, 255, 0.5);
   background: #000;
   font-weight: 400;
   font-size: 1.2rem;
-}
-.hiddenMenu .hiddenMenuFooter .menuRate {
-  background: #000;
-}
-.hiddenMenu .hiddenMenuFooter .menuRate .menuRateDollar {
-  background: #000;
-}
-.hiddenMenu .hiddenMenuFooter .menuRate .menuRateDollar p {
-  color: #fff;
-  background: #000;
-}
-.hiddenMenu .hiddenMenuFooter .menuRate .menuRateDollar svg {
-  background: #000;
-}
-.hiddenMenu .hiddenMenuFooter .menuRate .menuRateEuro {
-  color: #fff;
-  background: #000;
-}
-.hiddenMenu .hiddenMenuFooter .menuRate .menuRateEuro p {
-  color: #fff;
-  background: #000;
-}
-.hiddenMenu .hiddenMenuFooter .menuRate .menuRateEuro svg {
-  background: #000;
+  margin: 0;
 }
 
 .hiddenMenuActive {
@@ -12899,7 +12907,7 @@ body .dateBlock p {
 body .dateBlock svg {
   margin: auto 10px;
 }
-body .mainNewsHeading a {
+body .mainNewsHeading a, body .mainNewsHeading p {
   font-size: 3.6rem;
   font-weight: 700;
   line-height: 3.8rem;
@@ -12910,7 +12918,7 @@ body .mainNewsHeading a {
 body .mainNewsHeading a:hover {
   color: #000;
 }
-body .latestNewsHeading a {
+body .latestNewsHeading a, body .latestNewsHeading p {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 2.9rem;
@@ -13101,12 +13109,13 @@ body .plainText p {
             flex-direction: column;
   }
   .hiddenMenuFooter .hiddenMenuFooterCreator {
-    display: none;
+    display: block;
   }
   .hiddenMenuFooter .menuRate {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+    margin: 0 0 20px 0;
   }
   .hiddenMenuFooter .menuRate .menuRateDollar {
     display: -webkit-box;

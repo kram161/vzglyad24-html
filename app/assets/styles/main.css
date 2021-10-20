@@ -12587,19 +12587,19 @@ textarea.form-control-lg {
   font-size: 10px;
 }
 
-.categoryWay {
+.categoryWay, .articleWay {
   margin: 40px 0 25px 0;
 }
-.categoryWay h1 a, .categoryWay .h1 a {
+.categoryWay h1 a, .categoryWay .h1 a, .articleWay h1 a, .articleWay .h1 a {
   font-size: 3.6rem;
   font-weight: 400;
   text-decoration: none;
   color: #000;
 }
-.categoryWay h1 a:hover, .categoryWay .h1 a:hover {
+.categoryWay h1 a:hover, .categoryWay .h1 a:hover, .articleWay h1 a:hover, .articleWay .h1 a:hover {
   color: #000;
 }
-.categoryWay h1 span, .categoryWay .h1 span {
+.categoryWay h1 span, .categoryWay .h1 span, .articleWay h1 span, .articleWay .h1 span {
   font-weight: 700;
 }
 
@@ -12808,6 +12808,124 @@ textarea.form-control-lg {
   margin: 40px 40px 40px 0;
 }
 
+.articleMetrics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #D2D2D2;
+  padding: 0 0 11px 0;
+}
+.articleMetrics .timeToReading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.articleMetrics .timeToReading p {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: auto 0;
+}
+
+.articleBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px 0 0 0;
+}
+.articleBody .articleBodyMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+}
+.articleBody .articleBodyMain .articleBodyMainContent {
+  width: 70%;
+}
+.articleBody .articleBodyMain .articleBodyMainContent .articleBodyMainContentBlock {
+  margin: 0 0 20px 0;
+}
+.articleBody .articleBodyMain .articleBodyMainContent .articleBodyMainContentBlock:last-child {
+  margin: 0 0 40px 0;
+}
+.articleBody .articleBodyMain .articleBodyMainContent img {
+  width: 100%;
+  height: 325px;
+}
+.articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid #D2D2D2;
+  border-top: 1px solid #D2D2D2;
+}
+.articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews img {
+  width: 100px;
+  height: 100px;
+}
+.articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 0 25px;
+  position: relative;
+}
+.articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription .latestNewsHeading a {
+  line-height: 24px;
+}
+.articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription .writeMoreButton {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+}
+
+.articleInf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.articleInf .articleInfRating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.articleInf .articleInfLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.articleInf .articleInfLinks span {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.articleInf .articleInfLinks .articleInfLinksSN a:first-child {
+  margin: 0 0 0 30px;
+}
+.articleInf .articleInfLinks .articleInfLinksSN a {
+  margin: 0 0 0 20px;
+}
+.articleInf .articleInfLinks .articleInfLinksSN a svg {
+  width: 20px;
+  height: 20px;
+}
+
 @media (max-width: 1024px) {
   .errorMessage h1, .errorMessage .h1 {
     font-size: 2.4rem;
@@ -12818,6 +12936,10 @@ textarea.form-control-lg {
 
   .newsPageLineCard:nth-child(n+4) {
     display: none;
+  }
+
+  .newsPageLineCard:nth-child(n+3) {
+    border-right: none;
   }
 }
 @media (max-width: 768px) {
@@ -12868,10 +12990,17 @@ textarea.form-control-lg {
     font-size: 2rem;
   }
 
-  .newsPageLineCard:nth-child(n+2) {
-    display: none;
+  .newsPageLineCard:nth-child(n+4) {
+    display: block;
   }
 
+  .newsPageLine {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-bottom: none;
+  }
   .newsPageLine .newsPageLineCard:nth-child(n+1) {
     border-right: none;
   }
@@ -12916,15 +13045,16 @@ textarea.form-control-lg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0 0 40px 0 !important;
+    margin: 0 !important;
     height: 100% !important;
     padding: 30px 0 50px 0 !important;
+    border-bottom: 1px solid #d2d2d2;
   }
   .newsCard .writeMoreButton {
-    bottom: 50px !important;
+    bottom: 30px !important;
   }
   .newsCard .coverageInformation {
-    bottom: 30px !important;
+    bottom: 10px !important;
   }
 
   .mainInfo {

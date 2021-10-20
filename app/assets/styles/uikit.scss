@@ -52,53 +52,57 @@
     bottom: 0;
     padding: 0 20px;
     width: 100%;
-    .menuDate{
+    flex-direction: row !important;
+    .menuFooterFirst{
       background: #000;
-      p{
-        color:#fff;
+      .menuDate{
         background: #000;
-        font-weight: 700;
-        font-size: 1.4rem;
-        span{
+        p{
           color:#fff;
           background: #000;
-          font-weight: 500;
+          font-weight: 700;
+          font-size: 1.4rem;
+          span{
+            color:#fff;
+            background: #000;
+            font-weight: 500;
+          }
+        }
+      }
+      .menuRate{
+        background: #000;
+        .menuRateDollar{
+          background: #000;
+          p{
+            color:#fff;
+            background: #000;
+          }
+          svg{
+            background: #000;
+          }
+        }
+        .menuRateEuro{
+          color:#fff;
+          background: #000;
+          p{
+            color:#fff;
+            background: #000;
+          }
+          svg{
+            background: #000;
+          }
         }
       }
     }
     .hiddenMenuFooterCreator{
       background: #000;
-      margin: auto 0;
+      margin: auto 0 20px 0;
       p{
         color: rgba(255, 255, 255, 0.5);
         background: #000;
         font-weight: 400;
         font-size: 1.2rem;
-
-      }
-    }
-    .menuRate{
-      background: #000;
-      .menuRateDollar{
-        background: #000;
-        p{
-          color:#fff;
-          background: #000;
-        }
-        svg{
-          background: #000;
-        }
-      }
-      .menuRateEuro{
-        color:#fff;
-        background: #000;
-        p{
-          color:#fff;
-          background: #000;
-        }
-        svg{
-          background: #000;
-        }
+        margin:0;
       }
     }
   }
@@ -298,7 +302,7 @@ body{
     }
   }
   .mainNewsHeading{
-    a{
+    a,p{
       font-size: 3.6rem;
       font-weight: 700;
       line-height: 3.8rem;
@@ -311,7 +315,7 @@ body{
     }
   }
   .latestNewsHeading{
-    a{
+    a,p{
       font-size: 2.4rem;
       font-weight: 700;
       line-height: 2.9rem;
@@ -483,10 +487,11 @@ body{
     display:flex;
     flex-direction: column;
     .hiddenMenuFooterCreator{
-      display: none;
+      display: block;
     }
     .menuRate{
       display: flex !important;
+      margin:0 0 20px 0;
       .menuRateDollar{
         display: flex;
         p{
