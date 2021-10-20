@@ -12975,6 +12975,79 @@ textarea.form-control-lg {
   height: 20px;
 }
 
+.popUp {
+  max-width: 1200px;
+  min-width: 960px;
+  height: 600px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.popUp .popUpArticle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-right: 1px solid #E2E2E2;
+  max-width: 474px;
+  min-width: 380px;
+}
+.popUp .popUpArticle img {
+  width: 98%;
+  max-height: 326px;
+}
+.popUp .popUpArticle .dateBlock {
+  margin: 30px 0 25px 0;
+}
+.popUp .popUpArticle .writeMoreButton {
+  margin: 30px 0 0 0;
+}
+.popUp .popUpList .popUpListArticle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 0 20px;
+}
+.popUp .popUpList .popUpListArticle img {
+  width: 140px;
+  height: 140px;
+}
+.popUp .popUpList .popUpListArticle .popUpListArticleDescription {
+  margin: 0 0 0 20px;
+}
+.popUp .popUpList .popUpListArticle .popUpListArticleDescription .dateBlock p {
+  margin: 0;
+}
+.popUp .popUpList .popUpListArticle:nth-child(1) {
+  border-bottom: 1px solid #E2E2E2;
+  padding: 0 0 25px 0;
+}
+.popUp .popUpList .popUpListArticle:nth-child(2) {
+  padding: 25px 0 25px 0;
+  border-bottom: 1px solid #E2E2E2;
+}
+.popUp .popUpList .popUpListArticle:nth-child(3) {
+  padding: 25px 0 0 0;
+}
+.popUp .popUpIcon {
+  cursor: pointer;
+}
+.popUp .popUpIcon path {
+  width: 20px;
+  height: 20px;
+}
+
+.articleMetricsMobile {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .errorMessage h1, .errorMessage .h1 {
     font-size: 2.4rem;
