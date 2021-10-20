@@ -12837,6 +12837,7 @@ textarea.form-control-lg {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 40px 0 0 0;
+  width: 100%;
 }
 .articleBody .articleBodyMain {
   display: -webkit-box;
@@ -12846,7 +12847,6 @@ textarea.form-control-lg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 70%;
 }
 .articleBody .articleBodyMain .articleBodyMainContent {
   width: 70%;
@@ -12892,6 +12892,28 @@ textarea.form-control-lg {
   position: absolute;
   bottom: 0;
 }
+.articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit {
+  border-bottom: 1px solid #D2D2D2;
+  border-left: 1px solid #D2D2D2;
+  padding: 0 0 0 20px;
+  width: 100%;
+}
+.articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock p {
+  margin: 0 0 10px 0;
+}
+.articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit img {
+  width: 100%;
+  height: 215px;
+}
+.articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .writeMoreButton {
+  margin: 20px 0 30px;
+}
+.articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:last-child {
+  border-bottom: none;
+}
+.articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:not(:first-child) {
+  padding: 30px 0 0 20px;
+}
 
 .articleInf {
   display: -webkit-box;
@@ -12900,11 +12922,38 @@ textarea.form-control-lg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid #D2D2D2;
+  border-top: 1px solid #D2D2D2;
 }
 .articleInf .articleInfRating {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.articleInf .articleInfRating span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: auto 30px auto 0;
+}
+.articleInf .articleInfRating .articleInfRatingLike a {
+  color: #000;
+  text-decoration: none;
+  margin: auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.articleInf .articleInfRating .articleInfRatingLike a svg {
+  margin: auto 0;
+}
+.articleInf .articleInfRating .articleInfRatingLike a p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 2px 0 0 10px;
+}
+.articleInf .articleInfRating .articleInfRatingLike a:hover {
+  color: #000;
 }
 .articleInf .articleInfLinks {
   display: -webkit-box;
