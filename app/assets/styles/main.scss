@@ -376,6 +376,9 @@
         width: 100%;
         height: 40vw;
       }
+      .mainInfoMainNewsNavigation{
+        margin: 0 0 20px 0;
+      }
     }
     .mainInfoLatestNews{
       padding: 0;
@@ -399,8 +402,126 @@
       border-right: none;
     }
   }
+  .articleMetrics{
+    display: none;
+  }
+  .articleBody{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    .articleBodyMain {
+      .articleMetricsMobile{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin:0 0 40px 0;
+      }
+      .articleBodyMainContent{
+        width: 100%;
+      }
+    }
+    .articleBodySecondary{
+      .articleBodySecondaryContent{
+        .articleBodySecondaryContentUnit{
+          border-left:none;
+          padding:20px 0 0 0 !important;
+          display: flex;
+          .articleBodySecondaryContentUnitDescription{
+            margin:0 0 0 20px;
+          }
+          .dateBlock{
+            display: none;
+          }
+          img{
+            width: 100px;
+            height: 100px !important;
+          }
+          .writeMoreButton{
+            margin:20px 0 20px;
+          }
+        }
+        .articleBodySecondaryContentUnit:first-child{
+          border-top:1px solid #d2d2d2;
+        }
+        .articleBodySecondaryContentUnit:last-child{
+          border-bottom:1px solid #d2d2d2;
+        }
+        .articleBodySecondaryContentUnit:nth-child(n+3){
+          display: none;
+        }
+      }
+    }
+  }
+  .articleInf{
+    .articleInfRating,.articleInfLinks{
+      span{
+        display: none;
+      }
+    }
+
+  }
 }
 @media (max-width:466px){
+  .article{
+    .articleBody{
+      .articleBodySecondary{
+        .articleBodySecondaryContentUnit{
+          padding:20px 0 20px 0 !important;
+          a{
+            margin:auto 0;
+          }
+          .articleBodySecondaryContentUnitDescription{
+            .latestNewsHeading{
+              a{
+                font-size: 1.6rem;
+                line-height: 2.0rem;
+              }
+            }
+            .writeMoreButton{
+              margin:10px 0;
+            }
+          }
+        }
+      }
+      .articleBodyMain{
+        .articleMetricsMobile{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          margin:0 0 15px 0;
+          .timeToReading{
+            margin:0 0 10px 0;
+          }
+          padding:0 0 15px 0;
+        }
+        .articleBodyMainContent{
+          img{
+            height: 60vw;
+          }
+          .articleBodyMiniNews{
+            img{
+              height: 100px !important;
+            }
+            .articleBodyMiniNewsDescription{
+              .latestNewsHeading{
+                a{
+                  font-size: 1.6rem;
+                  line-height: 2.0rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+  .articleWay{
+    h1{
+      font-size: 3rem;
+    }
+  }
   .categoryWay{
     h1{
       a{

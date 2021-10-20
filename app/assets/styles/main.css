@@ -13012,6 +13012,9 @@ textarea.form-control-lg {
     width: 100%;
     height: 40vw;
   }
+  .mainInfo .mainInfoMainNews .mainInfoMainNewsNavigation {
+    margin: 0 0 20px 0;
+  }
   .mainInfo .mainInfoLatestNews {
     padding: 0;
     border: none;
@@ -13033,8 +13036,116 @@ textarea.form-control-lg {
   .newsPageLine .newsPageLineCard:nth-child(n+2) {
     border-right: none;
   }
+
+  .articleMetrics {
+    display: none;
+  }
+
+  .articleBody {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .articleBody .articleBodyMain .articleMetricsMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+  .articleBody .articleBodyMain .articleBodyMainContent {
+    width: 100%;
+  }
+  .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit {
+    border-left: none;
+    padding: 20px 0 0 0 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription {
+    margin: 0 0 0 20px;
+  }
+  .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock {
+    display: none;
+  }
+  .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit img {
+    width: 100px;
+    height: 100px !important;
+  }
+  .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .writeMoreButton {
+    margin: 20px 0 20px;
+  }
+  .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:first-child {
+    border-top: 1px solid #d2d2d2;
+  }
+  .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:last-child {
+    border-bottom: 1px solid #d2d2d2;
+  }
+  .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:nth-child(n+3) {
+    display: none;
+  }
+
+  .articleInf .articleInfRating span, .articleInf .articleInfLinks span {
+    display: none;
+  }
 }
 @media (max-width: 466px) {
+  .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit {
+    padding: 20px 0 20px 0 !important;
+  }
+  .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit a {
+    margin: auto 0;
+  }
+  .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .latestNewsHeading a {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .writeMoreButton {
+    margin: 10px 0;
+  }
+  .article .articleBody .articleBodyMain .articleMetricsMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0 0 15px 0;
+    padding: 0 0 15px 0;
+  }
+  .article .articleBody .articleBodyMain .articleMetricsMobile .timeToReading {
+    margin: 0 0 10px 0;
+  }
+  .article .articleBody .articleBodyMain .articleBodyMainContent img {
+    height: 60vw;
+  }
+  .article .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews img {
+    height: 100px !important;
+  }
+  .article .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription .latestNewsHeading a {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .articleWay h1, .articleWay .h1 {
+    font-size: 3rem;
+  }
+
   .categoryWay h1 a, .categoryWay .h1 a {
     font-size: 2rem;
   }

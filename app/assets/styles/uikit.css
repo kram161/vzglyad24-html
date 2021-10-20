@@ -13075,7 +13075,7 @@ body .plainText p {
     left: 50%;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
-    top: -10px;
+    top: 30px;
   }
 
   .footerInfAboutUs svg {
