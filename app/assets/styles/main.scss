@@ -230,7 +230,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 0 40px 0;
-    height: 480px;
+    height: 530px;
     position: relative;
     overflow: hidden;
     .writeMoreButton{
@@ -653,6 +653,11 @@
       }
     }
 
+  }
+}
+@media (max-width:768px){
+  .newsCard{
+    padding: 0 20px;
   }
 }
 @media (max-width:466px){

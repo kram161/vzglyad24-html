@@ -435,15 +435,8 @@ body{
   }
 }
 
-.container{
-  padding: 0 15px;
-  margin:0 auto;
-  max-width: 1210px;
-}
+
 @media (max-width:1440px) {
-  .container {
-    max-width: 1210px;
-  }
   body{
     .writeMoreButton{
       svg{
@@ -453,9 +446,6 @@ body{
   }
 }
 @media (max-width:992px){
-  .container {
-    max-width: 960px;
-  }
   .menuBurger {
     display: block !important;
   }
@@ -488,9 +478,6 @@ body{
   }
 }
 @media (max-width:466px){
-  .container {
-    max-width: 430px;
-  }
   .menu {
     .menuHeader {
       .menuDate {
@@ -558,9 +545,6 @@ body{
   }
 }
 @media (max-width:320px) {
-  .container {
-    max-width: 290px;
-  }
   .mainNewsHeading{
     p{
       font-size: 2.4rem;
