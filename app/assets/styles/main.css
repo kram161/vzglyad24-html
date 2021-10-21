@@ -12686,7 +12686,7 @@ textarea.form-control-lg {
   position: relative;
 }
 .mainInfo .mainInfoMainNews img {
-  height: 240px;
+  max-height: 240px;
   width: 440px;
 }
 .mainInfo .mainInfoMainNews .mainInfoMainNewsInformation {
@@ -12829,7 +12829,7 @@ textarea.form-control-lg {
 }
 .newsPageLine .newsPageLineSlimCardWithImage img {
   width: 100%;
-  height: 150px;
+  max-height: 150px;
   margin: 15px 0 20px 0;
 }
 .newsPageLine .newsPageLineWideCard {
@@ -12908,7 +12908,7 @@ textarea.form-control-lg {
 }
 .articleBody .articleBodyMain .articleBodyMainContent img {
   width: 100%;
-  height: 325px;
+  max-height: 325px;
 }
 .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews {
   display: -webkit-box;
@@ -12920,7 +12920,7 @@ textarea.form-control-lg {
 }
 .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews img {
   width: 100px;
-  height: 100px;
+  max-height: 100px;
 }
 .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription {
   display: -webkit-box;
@@ -12969,7 +12969,7 @@ textarea.form-control-lg {
 }
 .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit img {
   width: 100%;
-  height: 12vw;
+  max-height: 12vw;
 }
 .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .writeMoreButton {
   margin: 20px 0 30px;
@@ -13083,7 +13083,7 @@ textarea.form-control-lg {
 }
 .popUp .popUpList .popUpListArticle img {
   width: 140px;
-  height: 140px;
+  max-height: 140px;
 }
 .popUp .popUpList .popUpListArticle .popUpListArticleDescription {
   margin: 0 0 0 20px;
@@ -13130,7 +13130,7 @@ textarea.form-control-lg {
     border-right: none;
   }
 }
-@media (max-width: 960px) {
+@media (max-width: 944px) {
   .categoryWay h1 a, .categoryWay .h1 a {
     font-size: 3rem;
   }
@@ -13149,7 +13149,7 @@ textarea.form-control-lg {
   }
   .mainInfo .mainInfoMainNews img {
     width: 100%;
-    height: 40vw;
+    max-height: 40vw;
   }
   .mainInfo .mainInfoMainNews .mainInfoMainNewsNavigation {
     margin: 0 0 20px 0;
@@ -13220,7 +13220,7 @@ textarea.form-control-lg {
   }
   .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit img {
     width: 100px;
-    height: 100px !important;
+    max-height: 100px !important;
   }
   .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .writeMoreButton {
     margin: 20px 0 20px;
@@ -13271,10 +13271,10 @@ textarea.form-control-lg {
     margin: 0 0 10px 0;
   }
   .article .articleBody .articleBodyMain .articleBodyMainContent img {
-    height: 60vw;
+    max-height: 60vw;
   }
   .article .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews img {
-    height: 100px !important;
+    max-height: 100px !important;
   }
   .article .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription .latestNewsHeading a {
     font-size: 1.6rem;
@@ -13309,7 +13309,7 @@ textarea.form-control-lg {
   }
   .newsPageLineSlimCardWithImage img {
     width: 100% !important;
-    height: 40vw !important;
+    max-height: 40vw !important;
     margin: 0 !important;
   }
 
@@ -13332,7 +13332,7 @@ textarea.form-control-lg {
   }
   .newsPageLineWideCardWithImage img {
     width: 100% !important;
-    height: 40vw !important;
+    max-height: 40vw !important;
     margin: 0 !important;
   }
 
