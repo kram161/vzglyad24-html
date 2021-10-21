@@ -12861,7 +12861,7 @@ textarea.form-control-lg {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 0 40px 0;
-  height: 530px;
+  height: 560px;
   position: relative;
   overflow: hidden;
 }
@@ -12887,7 +12887,7 @@ textarea.form-control-lg {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 30px;
+  height: 20px;
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, #fff));
   background: linear-gradient(180deg, transparent, #fff 50%);
 }
@@ -13203,6 +13203,10 @@ textarea.form-control-lg {
     height: 100%;
   }
 
+  .newsPageLine .newsCard .newsCardInfo:after {
+    height: 70px;
+  }
+
   .newsPageLineWideCardWithImageImg {
     width: 280px;
     height: 220px;
@@ -13274,10 +13278,6 @@ textarea.form-control-lg {
     display: none;
   }
 
-  .newsPageLineCard:not(:first-child) {
-    padding: 0 !important;
-  }
-
   .newsPageLine .newsPageLineCard:nth-child(n+2) {
     border-right: none;
   }
@@ -13339,11 +13339,6 @@ textarea.form-control-lg {
 
   .articleInf .articleInfRating span, .articleInf .articleInfLinks span {
     display: none;
-  }
-}
-@media (max-width: 768px) {
-  .newsCard {
-    padding: 0 20px;
   }
 }
 @media (max-width: 466px) {
