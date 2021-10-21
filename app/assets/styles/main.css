@@ -12662,6 +12662,10 @@ textarea.form-control-lg {
   display: inline-block;
   position: relative;
 }
+.mainInfo .mainInfoMainNews h2, .mainInfo .mainInfoMainNews .h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
 .mainInfo .mainInfoMainNews img {
   height: 240px;
   width: 440px;
@@ -13120,6 +13124,9 @@ textarea.form-control-lg {
     margin: 0 auto;
     border-bottom: 1px solid #D2D2D2;
     padding: 0 0 20px 0;
+  }
+  .mainInfo .mainInfoMainNews h2, .mainInfo .mainInfoMainNews .h2 {
+    font-size: 3rem;
   }
   .mainInfo .mainInfoMainNews img {
     width: 100%;
