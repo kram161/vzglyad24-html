@@ -161,12 +161,25 @@
     height: 100%;
   }
 }
+
 .mainInfo{
   display:flex;
   justify-content: space-between;
   margin:40px 0 40px 0;
   padding:0 0 40px 0;
   border-bottom: 1px solid #D2D2D2;
+  .mainInfArticle{
+    .mainInfoMainNews{
+      .mainInfoMainNewsNavigation{
+        bottom: unset;
+      }
+    }
+    .mainInfoLatestNews{
+      .newsHeading{
+        display: none;
+      }
+    }
+  }
   .mainInfoMainNews{
     max-width: 480px;
     display: inline-block;
@@ -251,8 +264,9 @@
     display: flex;
     flex-direction: column;
     margin: 0 0 40px 0;
-    height: 560px;
+    height: 490px;
     position: relative;
+    text-overflow: ellipsis;
     overflow: hidden;
     .writeMoreButton{
       position: absolute;
@@ -268,6 +282,7 @@
     .newsCardInfo{
       max-height: 100%;
       overflow: hidden;
+      text-overflow: ellipsis;
       position: relative;
     }
     .newsCardInfo:after {
@@ -282,6 +297,14 @@
   }
   .articleNewsCard{
     height: 400px;
+    .newsCardInfo{
+      .latestNewsHeading{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        height: 185px;
+        margin:5px 0;
+      }
+    }
   }
   .newsPageLineSlimCardWithImage{
     max-width:210px;
@@ -310,7 +333,7 @@
 .articleNewsCard{
   .newsCardInfo{
     .latestNewsHeading{
-      margin:5px 0;
+      padding:5px 0;
     }
   }
 }
@@ -519,6 +542,19 @@
 .articleMetricsMobile{
   display: none;
 }
+.mainPageLine{
+  .newsPageLineCard{
+    .newsCard{
+      .newsCardInfo{
+        .descriptionArea{
+          height: 345px;
+          overflow:hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}
 @media (max-width:1440px){
   .errorMessage{
     h1{
@@ -538,7 +574,6 @@
 @media (max-width:992px){
   .mainInfoMainNewsImage,.articleBodyMainContentImage {
     width: 100%;
-    height: 280px;
     img {
       object-fit: contain ;
       width: 100%;
@@ -580,7 +615,6 @@
   .newsCardInfo{
     .newsPageLineSlimCardWithImageArticleImg{
       width: 280px;
-      height: 200px;
       img{
         height: 100%;
         width: auto;
@@ -603,6 +637,12 @@
   }
   .mainInfo{
     flex-direction: column;
+    .mainInfArticle {
+      .mainInfoMainNews {
+        border-bottom: 1px solid #D2D2D2;
+        padding: 0 0 50px 0;
+      }
+    }
     .mainInfoMainNews{
       max-width: 100%;
       margin: 0 auto;
@@ -708,7 +748,7 @@
       .latestNewsHeading{
         text-overflow: ellipsis;
         overflow: hidden;
-        height: 110px;
+        height: 150px;
         margin:5px 0;
       }
     }
