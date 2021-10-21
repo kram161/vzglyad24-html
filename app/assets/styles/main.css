@@ -13357,6 +13357,13 @@ textarea.form-control-lg {
   .articleInf .articleInfRating span, .articleInf .articleInfLinks span {
     display: none;
   }
+
+  .articleNewsCard .newsCardInfo .latestNewsHeading {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 110px;
+    margin: 5px 0;
+  }
 }
 @media (max-width: 466px) {
   .newsPageLine .newsPageLineCard:first-child {
