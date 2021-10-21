@@ -444,7 +444,7 @@
 .articleMetricsMobile{
   display: none;
 }
-@media (max-width:1024px){
+@media (max-width:1440px){
   .errorMessage{
     h1{
       font-size: 2.4rem;
@@ -460,7 +460,7 @@
     border-right: none;
   }
 }
-@media (max-width:768px){
+@media (max-width:960px){
   .categoryWay{
     h1{
       a{

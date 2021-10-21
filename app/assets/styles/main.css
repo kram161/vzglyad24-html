@@ -13088,7 +13088,7 @@ textarea.form-control-lg {
   display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .errorMessage h1, .errorMessage .h1 {
     font-size: 2.4rem;
   }
@@ -13104,7 +13104,7 @@ textarea.form-control-lg {
     border-right: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .categoryWay h1 a, .categoryWay .h1 a {
     font-size: 3rem;
   }
