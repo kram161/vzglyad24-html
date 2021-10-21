@@ -13048,12 +13048,12 @@ body .plainText p {
   color: #000;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   body .writeMoreButton svg {
     margin: -1px 10px 0 10px;
   }
 }
-@media (max-width: 944px) {
+@media (max-width: 992px) {
   .menuBurger {
     display: block !important;
   }
