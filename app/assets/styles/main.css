@@ -13227,6 +13227,17 @@ textarea.form-control-lg {
     height: 100%;
   }
 
+  .newsCardInfo .newsPageLineSlimCardWithImageArticleImg {
+    width: 280px;
+    height: 200px;
+  }
+  .newsCardInfo .newsPageLineSlimCardWithImageArticleImg img {
+    height: 100%;
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
   .categoryWay h1 a, .categoryWay .h1 a {
     font-size: 3rem;
   }

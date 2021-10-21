@@ -551,6 +551,17 @@
       height: 100%;
     }
   }
+  .newsCardInfo{
+    .newsPageLineSlimCardWithImageArticleImg{
+      width: 280px;
+      height: 200px;
+      img{
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+      }
+    }
+  }
   .categoryWay{
     h1{
       a{
