@@ -700,9 +700,13 @@
     .articleBodyMain {
       .articleMetricsMobile{
         display: flex;
-        justify-content: space-between;
-        padding: 0;
-        margin:0 0 40px 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin:0 0 15px 0;
+        .timeToReading{
+          margin:0 0 10px 0;
+        }
+        padding:0 0 15px 0;
       }
       .articleBodyMainContent{
         width: 100%;
