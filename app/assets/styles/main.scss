@@ -531,13 +531,6 @@
       }
     }
   }
-  .newsPageLine {
-    .newsCard {
-      .newsCardInfo:after {
-        height: 70px;
-      }
-    }
-  }
   .newsPageLineWideCardWithImageImg{
     width: 280px;
     height: 220px;
@@ -600,6 +593,12 @@
     display: none;
   }
   .newsPageLine {
+    .newsPageLineCard{
+      max-width: 50%;
+      .newsPageLineSlimCardWithImage,.newsPageLineWideCard,.newsPageLineSlimeCard,.newsPageLineWideCardWithImage{
+        max-width:100%;
+      }
+    }
     .newsPageLineCard:nth-child(n+2) {
       border-right: none;
     }
@@ -660,6 +659,7 @@
   }
 }
 @media (max-width:466px){
+
   .newsPageLine .newsPageLineCard:first-child {
     padding: 0;
   }
@@ -740,6 +740,10 @@
   .newsPageLine {
     flex-direction: column;
     border-bottom: none;
+    .newsPageLineCard{
+      max-width: 100%;
+      padding: 0 !important;
+    }
     .newsPageLineCard:nth-child(n+1) {
       border-right: none;
     }

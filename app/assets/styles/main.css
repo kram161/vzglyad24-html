@@ -13203,10 +13203,6 @@ textarea.form-control-lg {
     height: 100%;
   }
 
-  .newsPageLine .newsCard .newsCardInfo:after {
-    height: 70px;
-  }
-
   .newsPageLineWideCardWithImageImg {
     width: 280px;
     height: 220px;
@@ -13278,6 +13274,12 @@ textarea.form-control-lg {
     display: none;
   }
 
+  .newsPageLine .newsPageLineCard {
+    max-width: 50%;
+  }
+  .newsPageLine .newsPageLineCard .newsPageLineSlimCardWithImage, .newsPageLine .newsPageLineCard .newsPageLineWideCard, .newsPageLine .newsPageLineCard .newsPageLineSlimeCard, .newsPageLine .newsPageLineCard .newsPageLineWideCardWithImage {
+    max-width: 100%;
+  }
   .newsPageLine .newsPageLineCard:nth-child(n+2) {
     border-right: none;
   }
@@ -13406,6 +13408,10 @@ textarea.form-control-lg {
         -ms-flex-direction: column;
             flex-direction: column;
     border-bottom: none;
+  }
+  .newsPageLine .newsPageLineCard {
+    max-width: 100%;
+    padding: 0 !important;
   }
   .newsPageLine .newsPageLineCard:nth-child(n+1) {
     border-right: none;
