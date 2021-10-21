@@ -142,7 +142,6 @@
     display: block;
   }
   width: 310px;
-  height: 215px;
   margin:15px 0;
   img{
     object-fit: contain ;
@@ -155,11 +154,10 @@
     display: block;
   }
   width: 210px;
-  height: 150px;
   margin:15px 0;
   img{
-    object-fit: contain ;
-    width: 100%;
+    object-fit: cover ;
+    width: auto;
     height: 100%;
   }
 }
@@ -307,6 +305,13 @@
 .newsPageLine:not(:first-child){
   .newsCard{
     margin: 40px 40px 40px 0;
+  }
+}
+.articleNewsCard{
+  .newsCardInfo{
+    .latestNewsHeading{
+      margin:5px 0;
+    }
   }
 }
 .articleMetrics{
@@ -556,7 +561,6 @@
   }
   .newsPageLineWideCardWithImageImg{
     width: 280px;
-    height: 220px;
     margin:15px 0;
     img{
       object-fit: contain ;
@@ -566,7 +570,6 @@
   }
   .newsPageLineSlimCardWithImageImg{
     width: 280px;
-    height: 220px;
     margin:15px 0;
     img{
       object-fit: contain ;
