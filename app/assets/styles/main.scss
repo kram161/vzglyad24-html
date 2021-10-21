@@ -147,10 +147,10 @@
     border-right: 1px solid #D2D2D2;
   }
   .newsPageLineCard:first-child{
-    padding: 0 20px 40px 0;
+    padding: 0 20px 0 0;
   }
   .newsPageLineCard:not(:first-child){
-    padding:0 20px 40px 20px;
+    padding:0 20px 0 20px;
   }
   .newsPageLineCard:last-child{
     border-right: none;
@@ -174,8 +174,18 @@
       }
     }
     .newsCardInfo{
-      max-height: 490px;
+      max-height: 100%;
       overflow: hidden;
+      position: relative;
+    }
+    .newsCardInfo:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 40px;
+      background: linear-gradient(180deg, transparent, #fff 50%);
     }
   }
   .newsPageLineSlimCardWithImage{
@@ -260,15 +270,24 @@
           flex-direction: column;
           margin:0 0 0 25px;
           position: relative;
+          justify-content: space-between;
           .latestNewsHeading{
+            text-overflow: ellipsis;
+            overflow: hidden;
+            height: 80px;
             a{
-              line-height: 24px;
+              text-overflow: ellipsis;
+              line-height: 3.0rem;
             }
           }
-          .writeMoreButton{
-            display: inline-block;
+          .latestNewsHeading:after{
+            content: "";
             position: absolute;
+            left: 0;
             bottom: 0;
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(180deg, transparent, #fff 50%);
           }
         }
       }
@@ -281,6 +300,11 @@
         border-left:1px solid #D2D2D2;
         padding: 0 0 0 20px;
         width: 100%;
+        .articleBodySecondaryContentUnitDescription{
+          .latestNewsHeading{
+            margin:20px 0 0 0;
+          }
+        }
         .dateBlock{
           p{
             margin:0 0 10px 0;
@@ -288,7 +312,7 @@
         }
         img{
           width: 100%;
-          height: 215px;
+          height: 12vw;
         }
         .writeMoreButton{
           margin:20px 0 30px;
