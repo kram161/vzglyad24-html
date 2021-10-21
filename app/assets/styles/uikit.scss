@@ -437,30 +437,16 @@ body{
   }
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
 
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
 
-@media (min-width: 1200px) {
+
+
+
+@media (max-width:1440px) {
   .container {
     max-width: 1140px;
   }
-}
-@media (max-width:1440px) {
   body{
     .writeMoreButton{
       svg{
@@ -470,6 +456,9 @@ body{
   }
 }
 @media (max-width:990px){
+  .container {
+    max-width: 920px;
+  }
   .menuBurger {
     display: block !important;
   }
@@ -502,6 +491,9 @@ body{
   }
 }
 @media (max-width:466px){
+  .container {
+    max-width: 400px;
+  }
   .menu {
     .menuHeader {
       .menuDate {
@@ -569,6 +561,9 @@ body{
   }
 }
 @media (max-width:320px) {
+  .container {
+    max-width: 310px;
+  }
   .mainNewsHeading{
     p{
       font-size: 2.4rem;
