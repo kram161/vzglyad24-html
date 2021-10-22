@@ -551,15 +551,14 @@
   }
 }
 .container {
-  width: 100%;
-  padding: 0 200px;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 1440px;
+  padding: 0 15px;
+  margin:0 auto;
 }
 
 .notebook{
   .container {
-    padding:0 100px;
+    max-width: 1140px;
   }
   .errorMessage{
     h1{
@@ -578,7 +577,7 @@
 }
 .tablet{
   .container {
-    padding: 0 50px;
+    max-width: 960px;
   }
   .mainInfoMainNewsImage,.articleBodyMainContentImage {
     width: 80%;
@@ -768,7 +767,7 @@
 }
 .mediumPhone{
   .container {
-    padding: 0 10px;
+    max-width: 430px;
   }
   .newsPageLine .newsPageLineCard:first-child {
     padding: 0;
@@ -987,7 +986,7 @@
 }
 .smallPhone{
   .container {
-    padding: 0 20px;
+    max-width: 310px;
   }
   .errorMessage{
     h1{

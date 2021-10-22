@@ -438,14 +438,13 @@ body{
 }
 
 .container {
-  width: 100%;
-  padding: 0 200px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 1440px;
+  padding: 0 15px;
+  margin:0 auto;
 }
 .notebook{
   .container {
-    padding:0 100px;
+    max-width: 1140px;
   }
   body{
     .writeMoreButton{
@@ -457,7 +456,7 @@ body{
 }
 .tablet{
   .container {
-    padding: 0 50px;
+    max-width: 960px;
   }
   .menuBurger {
     display: block !important;
@@ -492,7 +491,7 @@ body{
 }
 .mediumPhone{
   .container {
-    padding: 0 10px;
+    max-width: 430px;
   }
   .menu {
     .menuHeader {
@@ -562,7 +561,7 @@ body{
 }
 .smallPhone{
   .container {
-    padding: 0 10px;
+    max-width: 310px;
   }
   .mainNewsHeading{
     p{
