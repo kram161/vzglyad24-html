@@ -437,12 +437,10 @@ body{
   }
 }
 
-.notebook{
-  body{
-    .writeMoreButton{
-      svg{
-        margin:-1px 10px 0 10px;
-      }
+.notebook {
+  .writeMoreButton {
+    svg {
+      margin: -1px 10px 0 10px;
     }
   }
 }
