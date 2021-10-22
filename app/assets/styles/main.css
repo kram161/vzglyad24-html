@@ -1,0 +1,1126 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus {
+  outline: 0;
+}
+
+img, audio, video {
+  max-width: 100%;
+  height: auto;
+}
+
+audio, canvas, iframe, video, img, svg {
+  vertical-align: middle;
+}
+
+iframe {
+  border: 0;
+}
+
+textarea {
+  resize: none;
+  /*remove the resize handle on the bottom right*/
+  overflow: auto;
+  vertical-align: top;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+input, textarea, select, button {
+  outline: none;
+  border: none;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+  text-align: left;
+}
+
+* {
+  font-size: 10px;
+  color: #000;
+}
+
+:root {
+  font-size: 10px;
+}
+
+.categoryWay, .articleWay {
+  margin: 40px 0 25px 0;
+}
+.categoryWay h1 a, .articleWay h1 a {
+  font-size: 3.6rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000;
+}
+.categoryWay h1 a:hover, .articleWay h1 a:hover {
+  color: #000;
+}
+.categoryWay h1 span, .articleWay h1 span {
+  font-weight: 700;
+}
+
+.categoryInfo {
+  margin: 0 0 40px 0 !important;
+}
+
+.errorMessage {
+  margin: 100px 0 0 0;
+  text-align: center;
+}
+.errorMessage h1 {
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+.errorMessage p {
+  margin: 25px 0 0 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.errorMessage a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 0 0 5px;
+  display: inline-block;
+  position: relative;
+}
+.errorMessage a:hover {
+  color: #000;
+}
+.errorMessage a:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.errorMessage a:hover:after {
+  width: 0;
+}
+
+.articleMainInf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.articleMainInf h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin: 0 0 25px 0;
+}
+.articleMainInf .mainInfArticle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.articleBodySecondaryContentUnitImg {
+  width: 310px;
+  height: 215px;
+}
+.articleBodySecondaryContentUnitImg a {
+  display: block;
+}
+.articleBodySecondaryContentUnitImg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.mainInfoMainNewsImage {
+  width: 440px;
+  height: 240px;
+}
+.mainInfoMainNewsImage a {
+  display: block;
+}
+.mainInfoMainNewsImage img {
+  margin: 0 0 20px 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.articleBodyMainContentImage {
+  width: 100%;
+}
+.articleBodyMainContentImage img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.articleBodyMainContentBlockImg {
+  width: 100px;
+  height: 100px;
+}
+.articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock {
+  width: 100px;
+  height: 100px;
+}
+.articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock a {
+  display: block;
+}
+.articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock img {
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.newsPageLineSlimCardWithImageArticleImg a {
+  display: block;
+}
+
+.newsPageLineWideCardWithImageImg {
+  width: 310px;
+  margin: 15px 0;
+}
+.newsPageLineWideCardWithImageImg a {
+  display: block;
+}
+.newsPageLineWideCardWithImageImg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.newsPageLineSlimCardWithImageImg {
+  width: 210px;
+  margin: 15px 0;
+}
+.newsPageLineSlimCardWithImageImg a {
+  display: block;
+}
+.newsPageLineSlimCardWithImageImg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
+  height: 100%;
+}
+
+.mainInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px 0 40px 0;
+  padding: 0 0 40px 0;
+  border-bottom: 1px solid #D2D2D2;
+}
+.mainInfo .mainInfArticle .mainInfoMainNews .mainInfoMainNewsNavigation {
+  bottom: unset;
+}
+.mainInfo .mainInfArticle .mainInfoLatestNews .newsHeading {
+  display: none;
+}
+.mainInfo .mainInfoMainNews {
+  max-width: 480px;
+  display: inline-block;
+  position: relative;
+}
+.mainInfo .mainInfoMainNews .mainInfoMainNewsInformation {
+  margin: 30px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.mainInfo .mainInfoMainNews .mainInfoMainNewsInformation .categoryButton {
+  margin: 0 31px 0 0;
+}
+.mainInfo .mainInfoMainNews .mainInfoMainNewsDescription {
+  margin: 21px 0 40px 0;
+}
+.mainInfo .mainInfoMainNews .mainInfoMainNewsDescription .plainText {
+  margin: 15px 0 0 0;
+}
+.mainInfo .mainInfoMainNews .mainInfoMainNewsNavigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.mainInfo .mainInfoLatestNews {
+  border-left: 1px solid #D2D2D2;
+  padding: 0 0 0 20px;
+}
+.mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit {
+  max-width: 580px;
+  padding: 0 0 27px 0;
+  margin: 27px 0 0 0;
+  border-bottom: 1px solid #D2D2D2;
+}
+.mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoMainNewsInformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 0 5px 0;
+}
+.mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoMainNewsInformation .categoryButton {
+  margin: 0 32px 0 0;
+}
+.mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoMainNewsNavigation {
+  margin: 10px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit:last-child {
+  padding: 0;
+  border-bottom: none;
+}
+
+.newsPage:not(:first-child) .newsPageLine .newsPageLineCard:first-child {
+  padding: 40px 20px 0 0;
+}
+.newsPage:not(:first-child) .newsPageLine .newsPageLineCard:not(:first-child) {
+  padding: 40px 20px 0 20px;
+}
+
+.newsPageLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-bottom: 1px solid #D2D2D2;
+}
+.newsPageLine .newsPageLineCard {
+  border-right: 1px solid #D2D2D2;
+}
+.newsPageLine .newsPageLineCard:first-child {
+  padding: 0 20px 0 0;
+}
+.newsPageLine .newsPageLineCard:not(:first-child) {
+  padding: 0 20px 0 20px;
+}
+.newsPageLine .newsPageLineCard:last-child {
+  border-right: none;
+}
+.newsPageLine .newsCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 40px 0;
+  height: 490px;
+  position: relative;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.newsPageLine .newsCard .writeMoreButton {
+  position: absolute;
+  bottom: 30px;
+}
+.newsPageLine .newsCard .coverageInformation {
+  position: absolute;
+  bottom: 0;
+}
+.newsPageLine .newsCard .coverageInformation .appraisals {
+  margin: 0 0 0 25px;
+}
+.newsPageLine .newsCard .newsCardInfo {
+  max-height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+.newsPageLine .newsCard .newsCardInfo:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, #fff));
+  background: linear-gradient(180deg, transparent, #fff 50%);
+}
+.newsPageLine .articleNewsCard {
+  height: 400px;
+}
+.newsPageLine .articleNewsCard .newsCardInfo .latestNewsHeading {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 185px;
+  margin: 5px 0;
+}
+.newsPageLine .newsPageLineSlimCardWithImage {
+  max-width: 210px;
+}
+.newsPageLine .newsPageLineWideCard {
+  max-width: 310px;
+}
+.newsPageLine .newsPageLineWideCard .latestNewsHeading {
+  margin: 15px 0 39px 0;
+}
+.newsPageLine .newsPageLineSlimeCard {
+  max-width: 210px;
+}
+.newsPageLine .newsPageLineSlimeCard .latestNewsHeading {
+  margin: 15px 0 15px 0;
+}
+.newsPageLine .newsPageLineWideCardWithImage {
+  max-width: 310px;
+}
+
+.newsPageLine:not(:first-child) .newsCard {
+  margin: 40px 40px 40px 0;
+}
+
+.articleNewsCard .newsCardInfo .latestNewsHeading {
+  padding: 5px 0;
+}
+
+.articleMetrics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #D2D2D2;
+  padding: 0 0 11px 0;
+}
+.articleMetrics .timeToReading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.articleMetrics .timeToReading p {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: auto 0;
+}
+
+.articleBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px 0 0 0;
+  width: 100%;
+}
+.articleBody .articleBodyMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.articleBody .articleBodyMain .articleBodyMainContent {
+  width: 70%;
+}
+.articleBody .articleBodyMain .articleBodyMainContent .articleBodyMainContentBlock {
+  margin: 0 0 20px 0;
+}
+.articleBody .articleBodyMain .articleBodyMainContent .articleBodyMainContentBlock:last-child {
+  margin: 0 0 40px 0;
+}
+.articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid #D2D2D2;
+  border-top: 1px solid #D2D2D2;
+}
+.articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 0 25px;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription .latestNewsHeading {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 80px;
+}
+.articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription .latestNewsHeading a {
+  text-overflow: ellipsis;
+  line-height: 3rem;
+}
+.articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription .latestNewsHeading:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, #fff));
+  background: linear-gradient(180deg, transparent, #fff 50%);
+}
+.articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit {
+  border-bottom: 1px solid #D2D2D2;
+  border-left: 1px solid #D2D2D2;
+  padding: 0 0 0 20px;
+  width: 100%;
+}
+.articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock p {
+  margin: 0 0 10px 0;
+}
+.articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .writeMoreButton {
+  margin: 20px 0 30px;
+}
+.articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:last-child {
+  border-bottom: none;
+}
+.articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:not(:first-child) {
+  padding: 30px 0 0 20px;
+}
+
+.articleInf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid #D2D2D2;
+  border-top: 1px solid #D2D2D2;
+}
+.articleInf .articleInfRating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.articleInf .articleInfRating span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: auto 30px auto 0;
+}
+.articleInf .articleInfRating .articleInfRatingLike a {
+  color: #000;
+  text-decoration: none;
+  margin: auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.articleInf .articleInfRating .articleInfRatingLike a svg {
+  margin: auto 0;
+}
+.articleInf .articleInfRating .articleInfRatingLike a p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 2px 0 0 10px;
+}
+.articleInf .articleInfRating .articleInfRatingLike a:hover {
+  color: #000;
+}
+.articleInf .articleInfLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.articleInf .articleInfLinks span {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.articleInf .articleInfLinks .articleInfLinksSN a:first-child {
+  margin: 0 0 0 30px;
+}
+.articleInf .articleInfLinks .articleInfLinksSN a {
+  margin: 0 0 0 20px;
+}
+.articleInf .articleInfLinks .articleInfLinksSN a svg {
+  width: 20px;
+  height: 20px;
+}
+
+.popUp {
+  max-width: 1200px;
+  min-width: 960px;
+  height: 600px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.popUp .popUpArticle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-right: 1px solid #E2E2E2;
+  max-width: 474px;
+  min-width: 380px;
+}
+.popUp .popUpArticle img {
+  width: 98%;
+  max-height: 326px;
+}
+.popUp .popUpArticle .dateBlock {
+  margin: 30px 0 25px 0;
+}
+.popUp .popUpArticle .writeMoreButton {
+  margin: 30px 0 0 0;
+}
+.popUp .popUpList .popUpListArticle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 0 20px;
+}
+.popUp .popUpList .popUpListArticle img {
+  width: 140px;
+  max-height: 140px;
+}
+.popUp .popUpList .popUpListArticle .popUpListArticleDescription {
+  margin: 0 0 0 20px;
+}
+.popUp .popUpList .popUpListArticle .popUpListArticleDescription .dateBlock p {
+  margin: 0;
+}
+.popUp .popUpList .popUpListArticle:nth-child(1) {
+  border-bottom: 1px solid #E2E2E2;
+  padding: 0 0 25px 0;
+}
+.popUp .popUpList .popUpListArticle:nth-child(2) {
+  padding: 25px 0 25px 0;
+  border-bottom: 1px solid #E2E2E2;
+}
+.popUp .popUpList .popUpListArticle:nth-child(3) {
+  padding: 25px 0 0 0;
+}
+.popUp .popUpIcon {
+  cursor: pointer;
+}
+.popUp .popUpIcon path {
+  width: 20px;
+  height: 20px;
+}
+
+.articleMetricsMobile {
+  display: none;
+}
+
+.mainPageLine .newsPageLineCard .newsCard .newsCardInfo .descriptionArea {
+  height: 350px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.notebook .container {
+  max-width: 1140px !important;
+}
+.notebook .errorMessage h1 {
+  font-size: 2.4rem;
+}
+.notebook .errorMessage p {
+  font-size: 1.8rem;
+}
+.notebook .newsPageLineCard:nth-child(n+4) {
+  display: none;
+}
+.notebook .newsPageLineCard:nth-child(n+3) {
+  border-right: none;
+}
+
+.tablet .container {
+  max-width: 960px !important;
+}
+.tablet .mainInfoMainNewsImage, .tablet .articleBodyMainContentImage {
+  width: 80%;
+}
+.tablet .mainInfoMainNewsImage img, .tablet .articleBodyMainContentImage img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.tablet .articleBodySecondaryContentUnitImg {
+  position: relative;
+  height: 100px;
+  width: 100px;
+}
+.tablet .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock {
+  width: 100px;
+  height: 100px;
+}
+.tablet .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
+  height: 100%;
+}
+.tablet .newsPageLineWideCardWithImageImg {
+  width: 280px;
+  margin: 15px 0;
+}
+.tablet .newsPageLineWideCardWithImageImg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.tablet .newsPageLineSlimCardWithImageImg {
+  width: 280px;
+  margin: 15px 0;
+}
+.tablet .newsPageLineSlimCardWithImageImg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.tablet .newsCardInfo .newsPageLineSlimCardWithImageArticleImg {
+  width: 280px;
+}
+.tablet .newsCardInfo .newsPageLineSlimCardWithImageArticleImg img {
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tablet .categoryWay h1 a {
+  font-size: 3rem;
+}
+.tablet .articleMainInf .mainInfArticle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.tablet .mainInfo {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.tablet .mainInfo .mainInfArticle .mainInfoMainNews {
+  border-bottom: 1px solid #D2D2D2;
+  padding: 0 0 50px 0;
+}
+.tablet .mainInfo .mainInfoMainNews {
+  max-width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #D2D2D2;
+  padding: 0 0 20px 0;
+}
+.tablet .mainInfo .mainInfoMainNews .mainInfoMainNewsNavigation {
+  margin: 0 0 20px 0;
+}
+.tablet .mainInfo .mainInfoLatestNews {
+  padding: 0;
+  border: none;
+}
+.tablet .mainInfo .mainInfoLatestNews .newsHeading {
+  margin: 40px 0 0 0;
+}
+.tablet .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit {
+  max-width: 100%;
+  padding: 0 0 20px 0;
+  margin: 30px 0 0 0;
+  border-bottom: 1px solid #d2d2d2;
+}
+.tablet .newsPageLine .newsPageLineCard {
+  max-width: 50%;
+}
+.tablet .newsPageLine .newsPageLineCard .newsCard .newsCardInfo .plainText {
+  height: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tablet .newsPageLine .newsPageLineCard .newsPageLineSlimCardWithImage, .tablet .newsPageLine .newsPageLineCard .newsPageLineWideCard, .tablet .newsPageLine .newsPageLineCard .newsPageLineSlimeCard, .tablet .newsPageLine .newsPageLineCard .newsPageLineWideCardWithImage {
+  max-width: 100%;
+}
+.tablet .newsPageLine .newsPageLineCard:nth-child(n+3) {
+  display: none;
+}
+.tablet .newsPageLine .newsPageLineCard:nth-child(n+2) {
+  border-right: none;
+}
+.tablet .articleMetrics {
+  display: none;
+}
+.tablet .articleBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+.tablet .articleBody .articleBodyMain .articleMetricsMobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 0 15px 0;
+  padding: 0 0 15px 0;
+}
+.tablet .articleBody .articleBodyMain .articleMetricsMobile .timeToReading {
+  margin: 0 0 10px 0;
+}
+.tablet .articleBody .articleBodyMain .articleBodyMainContent {
+  width: 100%;
+}
+.tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit {
+  border-left: none;
+  padding: 20px 0 0 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription {
+  margin: 0 0 0 20px;
+}
+.tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock {
+  display: none;
+}
+.tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .writeMoreButton {
+  margin: 20px 0 20px;
+}
+.tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:first-child {
+  border-top: 1px solid #d2d2d2;
+}
+.tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:last-child {
+  border-bottom: 1px solid #d2d2d2;
+}
+.tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:nth-child(n+3) {
+  display: none;
+}
+.tablet .articleInf .articleInfRating span, .tablet .articleInf .articleInfLinks span {
+  display: none;
+}
+.tablet .articleNewsCard .newsCardInfo .latestNewsHeading {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 150px;
+  margin: 5px 0;
+}
+
+.mediumPhone .container {
+  max-width: 430px !important;
+}
+.mediumPhone .newsPageLine .newsPageLineCard:first-child {
+  padding: 0;
+}
+.mediumPhone .newsPage:not(:first-child) .newsPageLine .newsPageLineCard:first-child {
+  padding: 0;
+}
+.mediumPhone .newsPage:not(:first-child) .newsPageLine .newsPageLineCard:not(:first-child) {
+  padding: 0 0 0 20px;
+}
+.mediumPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit {
+  padding: 20px 0 20px 0 !important;
+}
+.mediumPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit a {
+  margin: auto 0;
+}
+.mediumPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .latestNewsHeading a {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+.mediumPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .writeMoreButton {
+  margin: 10px 0;
+}
+.mediumPhone .article .articleBody .articleBodyMain .articleMetricsMobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 0 15px 0;
+  padding: 0 0 15px 0;
+}
+.mediumPhone .article .articleBody .articleBodyMain .articleMetricsMobile .timeToReading {
+  margin: 0 0 10px 0;
+}
+.mediumPhone .article .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription .latestNewsHeading a {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+.mediumPhone .articleWay h1 {
+  font-size: 3rem;
+}
+.mediumPhone .categoryWay h1 a {
+  font-size: 2rem;
+}
+.mediumPhone .newsPageLineCard:nth-child(n+4) {
+  display: block;
+}
+.mediumPhone .newsPageLine {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: none;
+}
+.mediumPhone .newsPageLine .newsPageLineCard {
+  max-width: 100%;
+  padding: 0 !important;
+}
+.mediumPhone .newsPageLine .newsPageLineCard:nth-child(n+1) {
+  border-right: none;
+}
+.mediumPhone .newsPageLine .newsPageLineCard .newsCard .newsCardInfo .plainText {
+  height: 100%;
+}
+.mediumPhone .newsPageLineSlimCardWithImage {
+  max-width: 100% !important;
+}
+.mediumPhone .newsPageLineWideCard {
+  max-width: 100% !important;
+}
+.mediumPhone .newsPageLineWideCard .latestNewsHeading {
+  margin: 15px 0 39px 0;
+}
+.mediumPhone .newsPageLineSlimeCard {
+  max-width: 100% !important;
+}
+.mediumPhone .newsPageLineSlimeCard .latestNewsHeading {
+  margin: 15px 0 15px 0;
+}
+.mediumPhone .newsPageLineWideCardWithImage {
+  max-width: 100% !important;
+}
+.mediumPhone .newsCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 !important;
+  height: 100% !important;
+  padding: 30px 0 50px 0 !important;
+  border-bottom: 1px solid #d2d2d2;
+}
+.mediumPhone .newsCard .writeMoreButton {
+  bottom: 30px !important;
+}
+.mediumPhone .newsCard .coverageInformation {
+  bottom: 10px !important;
+}
+.mediumPhone .mainInfo {
+  margin: 40px 0 0 0 !important;
+  padding: 0 0 30px 0 !important;
+}
+.mediumPhone .mainInfoMainNewsImage, .mediumPhone .articleBodyMainContentImage {
+  width: 100%;
+}
+.mediumPhone .mainInfoMainNewsImage a, .mediumPhone .articleBodyMainContentImage a {
+  display: block;
+}
+.mediumPhone .mainInfoMainNewsImage img, .mediumPhone .articleBodyMainContentImage img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.mediumPhone .articleBodySecondaryContentUnitImg {
+  width: 80px;
+}
+.mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock {
+  width: 80px;
+}
+.mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a {
+  display: block;
+}
+.mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
+  height: 100%;
+}
+.mediumPhone .articleBodyMainContentBlockImg {
+  width: 80px;
+}
+.mediumPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock {
+  width: 80px;
+}
+.mediumPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock a {
+  display: block;
+}
+.mediumPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.mediumPhone .newsPageLineWideCardWithImageImg {
+  width: 310px;
+  margin: 15px 0;
+}
+.mediumPhone .newsPageLineWideCardWithImageImg a {
+  display: block;
+}
+.mediumPhone .newsPageLineWideCardWithImageImg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.mediumPhone .newsPageLineSlimCardWithImageImg {
+  width: 310px;
+  margin: 15px 0;
+}
+.mediumPhone .newsPageLineSlimCardWithImageImg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.mediumPhone .mainInfoMainNewsInformation {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.mediumPhone .mainInfoMainNewsInformation .dateBlock {
+  margin: 0 !important;
+}
+.mediumPhone .mainPageLine .newsPageLineCard .newsCard .newsCardInfo .descriptionArea {
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.smallPhone .container {
+  max-width: 310px !important;
+}
+.smallPhone .errorMessage h1 {
+  font-size: 2.4rem;
+}
+.smallPhone .errorMessage p {
+  font-size: 1.8rem;
+}

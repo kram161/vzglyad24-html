@@ -5,7 +5,7 @@ const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
-const uncss = require('postcss-uncss');
+//const uncss = require('postcss-uncss');
 const concat = require('gulp-concat');
 
 const bs = require('browser-sync');
@@ -24,9 +24,9 @@ module.exports = function scss2css() {
 				'Safari >= 6',
 			],
 		}),
-		uncss({
-			html: './build/**/*.html',
-		}),
+		/*uncss({
+			html: './build/!**!/!*.html',
+		}),*/
 	];
 
 	return src('app/assets/styles/**/*.scss')
