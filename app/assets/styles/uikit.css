@@ -1,0 +1,691 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus {
+  outline: 0;
+}
+
+img, audio, video {
+  max-width: 100%;
+  height: auto;
+}
+
+audio, canvas, iframe, video, img, svg {
+  vertical-align: middle;
+}
+
+iframe {
+  border: 0;
+}
+
+textarea {
+  resize: none;
+  /*remove the resize handle on the bottom right*/
+  overflow: auto;
+  vertical-align: top;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+input, textarea, select, button {
+  outline: none;
+  border: none;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+  text-align: left;
+}
+
+* {
+  font-size: 10px;
+  background: #fff;
+  font-family: montserrat, sans-serif;
+}
+
+.hiddenMenu {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  overflow: hidden;
+}
+.hiddenMenu .hiddenMenuList {
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 26px 20px 0 20px;
+}
+.hiddenMenu .hiddenMenuList svg {
+  background: #000;
+}
+.hiddenMenu .hiddenMenuList ul {
+  background: #000;
+  padding: 0;
+}
+.hiddenMenu .hiddenMenuList ul li {
+  background: #000;
+}
+.hiddenMenu .hiddenMenuList ul li a {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 5px 0;
+}
+.hiddenMenu .hiddenMenuList ul li a:hover {
+  background: #000;
+  color: #fff;
+}
+.hiddenMenu .hiddenMenuFooter {
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  padding: 0 20px;
+  width: 100%;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst {
+  background: #000;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuDate {
+  background: #000;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuDate p {
+  color: #fff;
+  background: #000;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuDate p span {
+  color: #fff;
+  background: #000;
+  font-weight: 500;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRate {
+  background: #000;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRate .menuRateDollar {
+  background: #000;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRate .menuRateDollar p {
+  color: #fff;
+  background: #000;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRate .menuRateDollar svg {
+  background: #000;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRate .menuRateEuro {
+  color: #fff;
+  background: #000;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRate .menuRateEuro p {
+  color: #fff;
+  background: #000;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRate .menuRateEuro svg {
+  background: #000;
+}
+.hiddenMenu .hiddenMenuFooter .hiddenMenuFooterCreator {
+  background: #000;
+  margin: auto 0 20px 0;
+}
+.hiddenMenu .hiddenMenuFooter .hiddenMenuFooterCreator p {
+  color: rgba(255, 255, 255, 0.5);
+  background: #000;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.hiddenMenuActive {
+  display: block !important;
+  right: 0 !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #000;
+}
+
+.menu {
+  position: relative;
+}
+.menu .menuHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0 20px 0;
+  border-bottom: 1px solid #D2D2D2;
+}
+.menu .menuHeader .menuRate, .menu .menuHeader .menuRateDollar, .menu .menuHeader .menuRateEuro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.menu .menuHeader .menuRateDollar p, .menu .menuHeader .menuRateEuro p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: auto 30px auto 5px;
+}
+.menu .menuHeader .menuRateDollar svg, .menu .menuHeader .menuRateEuro svg {
+  margin: auto 0;
+}
+.menu .menuHeader .menuLogo a {
+  text-decoration: none;
+}
+.menu .menuHeader .menuLogo a p {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+.menu .menuHeader .menuLogo a p span {
+  color: #E1400B;
+}
+.menu .menuHeader .menuDate {
+  margin: auto 0;
+  display: block;
+}
+.menu .menuHeader .menuDate p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: auto 0;
+}
+.menu .menuHeader .menuDate p span {
+  font-weight: 500;
+}
+.menu .menuHeader .menuBurger {
+  display: none;
+  position: relative;
+  margin: auto 0;
+  cursor: pointer;
+}
+.menu .menuHeader .menuBurger .menuBurgerUnit {
+  position: relative;
+  width: 20px;
+  height: 3px;
+  background: #000;
+  content: "";
+}
+.menu .menuHeader .menuBurger .menuBurgerUnit:after, .menu .menuHeader .menuBurger .menuBurgerUnit:before {
+  background: #000;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  content: "";
+}
+.menu .menuHeader .menuBurger .menuBurgerUnit:after {
+  bottom: 6px;
+}
+.menu .menuHeader .menuBurger .menuBurgerUnit:before {
+  top: 6px;
+}
+.menu .menuList {
+  display: block;
+}
+.menu .menuList ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid #D2D2D2;
+}
+.menu .menuList ul svg {
+  margin: auto 0;
+}
+.menu .menuList ul a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.menu .menuList ul a:hover {
+  color: #000;
+}
+.menu .menuList ul a:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.menu .menuList ul a:hover:after {
+  width: 100%;
+}
+.menu .menuListActive ul a {
+  color: #E1400B;
+}
+.menu .menuListActive ul a:hover {
+  color: #E1400B;
+}
+.menu .menuListActive ul a:after {
+  width: 100%;
+  background: #E1400B;
+}
+.menu .menuListActive ul a:hover:after {
+  width: 0;
+}
+
+body {
+  position: relative;
+  color: #000;
+}
+body .writeMoreButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+body .writeMoreButton a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none !important;
+  color: #E1400B !important;
+  display: block;
+}
+body .writeMoreButton svg {
+  position: relative;
+  display: inline-block;
+  margin: -1px 10px 0 10px;
+  left: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+body .writeMoreButton:hover svg {
+  position: relative;
+  left: 8px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+body .categoryButton {
+  display: inline-block;
+}
+body .categoryButton a {
+  background: #000;
+  border: 1px solid #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+body .categoryButton:hover {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+body .categoryButton:hover a {
+  color: #000;
+  background: #fff;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+body .dateBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .dateBlock p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 9px 0;
+}
+body .dateBlock svg {
+  margin: auto 10px;
+}
+body .mainNewsHeading a, body .mainNewsHeading p {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+  color: #000;
+  text-decoration: none;
+  font-family: Constantia, sans-serif;
+  display: block;
+}
+body .mainNewsHeading a:hover {
+  color: #000;
+}
+body .latestNewsHeading a, body .latestNewsHeading p {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  color: #000;
+  text-decoration: none;
+  font-family: Constantia, sans-serif;
+}
+body .latestNewsHeading a:hover {
+  color: #000;
+}
+body .newsHeading h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: Constantia, sans-serif;
+}
+body .coverageInformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .coverageInformation .views {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .coverageInformation .views svg {
+  margin: auto 0;
+}
+body .coverageInformation .views p {
+  margin: auto 10px;
+}
+body .coverageInformation .appraisals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .coverageInformation .appraisals svg {
+  margin: auto 0;
+}
+body .coverageInformation .appraisals p {
+  margin: auto 10px;
+}
+body .plainText p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+#Footer {
+  background: #E0E0E0;
+  margin: 100px 0 0 0;
+}
+
+.footer {
+  background: #E0E0E0;
+}
+.footer .footerLogo {
+  border-bottom: 1px solid #C9C9C9;
+  padding: 40px 0 0 0;
+  background: #E0E0E0;
+}
+.footer .footerLogo a {
+  text-decoration: none;
+}
+.footer .footerLogo a p {
+  background: #E0E0E0;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+.footer .footerLogo a p span {
+  color: #E1400B;
+  background: #E0E0E0;
+}
+.footer .footerInf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #E0E0E0;
+  padding: 16px 0 40px 0;
+}
+.footer .footerInf .footerInfCopyright {
+  background: #E0E0E0;
+  margin: auto 0;
+}
+.footer .footerInf .footerInfCopyright p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: auto 0;
+  background: #E0E0E0;
+}
+.footer .footerInf .footerInfAboutUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #E0E0E0;
+}
+.footer .footerInf .footerInfAboutUs .footerInfAboutUsContact {
+  background: #E0E0E0;
+  margin: 6px auto;
+}
+.footer .footerInf .footerInfAboutUs p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  background: #E0E0E0;
+  margin: auto 10px auto 0;
+}
+.footer .footerInf .footerInfAboutUs a, .footer .footerInf .footerInfAboutUs span {
+  font-size: 1.4rem;
+  margin: auto 0 auto 10px;
+  font-weight: 300;
+  background: #E0E0E0;
+}
+.footer .footerInf .footerInfAboutUs svg {
+  background: #E0E0E0;
+}
+.footer .footerInf .footerInfAboutUs a {
+  text-decoration: none;
+  color: #000;
+}
+.footer .footerInf .footerInfAboutUs a:hover {
+  color: #000;
+}
+
+.smallPhone .writeMoreButton svg, .mediumPhone .writeMoreButton svg, .tablet .writeMoreButton svg, .notebook .writeMoreButton svg {
+  margin: -1px 10px 0 10px;
+}
+
+.smallPhone .menuBurger, .mediumPhone .menuBurger, .tablet .menuBurger {
+  display: block !important;
+}
+.smallPhone .menuRate, .mediumPhone .menuRate, .tablet .menuRate, .smallPhone .menuList, .mediumPhone .menuList, .tablet .menuList {
+  display: none !important;
+}
+.smallPhone .menuRateEuro p, .mediumPhone .menuRateEuro p, .tablet .menuRateEuro p {
+  margin: auto 0 auto 5px !important;
+}
+.smallPhone .menuRateDollar p, .mediumPhone .menuRateDollar p, .tablet .menuRateDollar p {
+  margin: auto 15px auto 5px !important;
+}
+.smallPhone .menuLogo, .mediumPhone .menuLogo, .tablet .menuLogo {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  top: 30px;
+}
+.smallPhone .footerInfAboutUs svg, .mediumPhone .footerInfAboutUs svg, .tablet .footerInfAboutUs svg {
+  margin: auto 0;
+}
+.smallPhone .footerInfAboutUs .footerInfAboutUsContact, .mediumPhone .footerInfAboutUs .footerInfAboutUsContact, .tablet .footerInfAboutUs .footerInfAboutUsContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.smallPhone .footerInfAboutUs p:first-child, .mediumPhone .footerInfAboutUs p:first-child, .tablet .footerInfAboutUs p:first-child {
+  display: none;
+}
+
+.smallPhone .menu .menuHeader .menuDate, .mediumPhone .menu .menuHeader .menuDate {
+  display: none;
+}
+.smallPhone .hiddenMenuFooter, .mediumPhone .hiddenMenuFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.smallPhone .hiddenMenuFooter .hiddenMenuFooterCreator, .mediumPhone .hiddenMenuFooter .hiddenMenuFooterCreator {
+  display: block;
+}
+.smallPhone .hiddenMenuFooter .menuRate, .mediumPhone .hiddenMenuFooter .menuRate {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  margin: 0 0 20px 0;
+}
+.smallPhone .hiddenMenuFooter .menuRate .menuRateDollar, .mediumPhone .hiddenMenuFooter .menuRate .menuRateDollar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.smallPhone .hiddenMenuFooter .menuRate .menuRateDollar p, .mediumPhone .hiddenMenuFooter .menuRate .menuRateDollar p {
+  margin: auto 3px !important;
+}
+.smallPhone .hiddenMenuFooter .menuRate .menuRateDollar svg, .mediumPhone .hiddenMenuFooter .menuRate .menuRateDollar svg {
+  margin: auto 3px auto 0 !important;
+}
+.smallPhone .hiddenMenuFooter .menuRate .menuRateEuro, .mediumPhone .hiddenMenuFooter .menuRate .menuRateEuro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.smallPhone .hiddenMenuFooter .menuRate .menuRateEuro p, .mediumPhone .hiddenMenuFooter .menuRate .menuRateEuro p, .smallPhone .hiddenMenuFooter .menuRate .menuRateEuro svg, .mediumPhone .hiddenMenuFooter .menuRate .menuRateEuro svg {
+  margin: auto 3px !important;
+}
+.smallPhone .menuRate, .mediumPhone .menuRate {
+  display: none !important;
+}
+.smallPhone .menuLogo, .mediumPhone .menuLogo {
+  position: relative;
+  -webkit-transform: none;
+          transform: none;
+  left: 0;
+  top: 0;
+}
+.smallPhone .footerLogo, .mediumPhone .footerLogo {
+  border-bottom: none !important;
+}
+.smallPhone .footerLogo p, .mediumPhone .footerLogo p {
+  margin: 0 !important;
+}
+.smallPhone .footerInf, .mediumPhone .footerInf {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 0 40px 0 !important;
+}
+.smallPhone .footerInf .footerInfCopyright, .mediumPhone .footerInf .footerInfCopyright {
+  width: 45%;
+}
+.smallPhone .footerInf .footerInfAboutUs, .mediumPhone .footerInf .footerInfAboutUs {
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  margin: 10px 0 0 0;
+  border-top: 1px solid #C9C9C9;
+  padding: 10px 0 0 0;
+}
+.smallPhone .footerInf .footerInfAboutUs .footerInfAboutUsContact, .mediumPhone .footerInf .footerInfAboutUs .footerInfAboutUsContact {
+  margin: 0 !important;
+}
+
+.smallPhone .mainNewsHeading p {
+  font-size: 2.4rem;
+  font-weight: 700;
+}

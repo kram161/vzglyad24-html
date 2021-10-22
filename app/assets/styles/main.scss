@@ -555,7 +555,7 @@
   padding: 0 15px;
   margin:0 auto;
 }
-.notebook{
+%notebook{
   .container {
     max-width: 1140px !important;
   }
@@ -574,8 +574,7 @@
     border-right: none;
   }
 }
-
-.tablet{
+%tablet{
   .container {
     max-width: 960px !important;
   }
@@ -765,7 +764,7 @@
     }
   }
 }
-.mediumPhone{
+%mediumPhone{
   .container {
     max-width: 430px !important;
   }
@@ -984,7 +983,7 @@
     }
   }
 }
-.smallPhone{
+%smallPhone{
   .container {
     max-width: 310px !important;
   }
@@ -996,6 +995,25 @@
       font-size: 1.8rem;
     }
   }
+}
+
+.notebook{
+  @extend %notebook;
+}
+.tablet{
+  @extend %notebook;
+  @extend %tablet;
+}
+.mediumPhone{
+  @extend %notebook;
+  @extend %tablet;
+  @extend %mediumPhone;
+}
+.smallPhone{
+  @extend %notebook;
+  @extend %tablet;
+  @extend %mediumPhone;
+  @extend %smallPhone;
 }
 
 

@@ -437,14 +437,14 @@ body{
   }
 }
 
-.notebook {
+%notebook{
   .writeMoreButton {
     svg {
       margin: -1px 10px 0 10px;
     }
   }
 }
-.tablet{
+%tablet{
   .menuBurger {
     display: block !important;
   }
@@ -476,8 +476,8 @@ body{
     }
   }
 }
-.mediumPhone{
-  .menu {
+%mediumPhone{
+  .menu{
     .menuHeader {
       .menuDate {
         display: none;
@@ -543,11 +543,30 @@ body{
     }
   }
 }
-.smallPhone{
+%smallPhone{
   .mainNewsHeading{
     p{
       font-size: 2.4rem;
       font-weight: 700;
     }
   }
+}
+
+.notebook{
+  @extend %notebook;
+}
+.tablet{
+  @extend %notebook;
+  @extend %tablet;
+}
+.mediumPhone{
+  @extend %notebook;
+  @extend %tablet;
+  @extend %mediumPhone;
+}
+.smallPhone{
+  @extend %notebook;
+  @extend %tablet;
+  @extend %mediumPhone;
+  @extend %smallPhone;
 }

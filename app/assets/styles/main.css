@@ -719,82 +719,82 @@ td, th {
   margin: 0 auto;
 }
 
-.notebook .container {
+.smallPhone .container, .mediumPhone .container, .tablet .container, .notebook .container {
   max-width: 1140px !important;
 }
-.notebook .errorMessage h1 {
+.smallPhone .errorMessage h1, .mediumPhone .errorMessage h1, .tablet .errorMessage h1, .notebook .errorMessage h1 {
   font-size: 2.4rem;
 }
-.notebook .errorMessage p {
+.smallPhone .errorMessage p, .mediumPhone .errorMessage p, .tablet .errorMessage p, .notebook .errorMessage p {
   font-size: 1.8rem;
 }
-.notebook .newsPageLineCard:nth-child(n+4) {
+.smallPhone .newsPageLineCard:nth-child(n+4), .mediumPhone .newsPageLineCard:nth-child(n+4), .tablet .newsPageLineCard:nth-child(n+4), .notebook .newsPageLineCard:nth-child(n+4) {
   display: none;
 }
-.notebook .newsPageLineCard:nth-child(n+3) {
+.smallPhone .newsPageLineCard:nth-child(n+3), .mediumPhone .newsPageLineCard:nth-child(n+3), .tablet .newsPageLineCard:nth-child(n+3), .notebook .newsPageLineCard:nth-child(n+3) {
   border-right: none;
 }
 
-.tablet .container {
+.smallPhone .container, .mediumPhone .container, .tablet .container {
   max-width: 960px !important;
 }
-.tablet .mainInfoMainNewsImage, .tablet .articleBodyMainContentImage {
+.smallPhone .mainInfoMainNewsImage, .mediumPhone .mainInfoMainNewsImage, .tablet .mainInfoMainNewsImage, .smallPhone .articleBodyMainContentImage, .mediumPhone .articleBodyMainContentImage, .tablet .articleBodyMainContentImage {
   width: 80%;
 }
-.tablet .mainInfoMainNewsImage img, .tablet .articleBodyMainContentImage img {
+.smallPhone .mainInfoMainNewsImage img, .mediumPhone .mainInfoMainNewsImage img, .tablet .mainInfoMainNewsImage img, .smallPhone .articleBodyMainContentImage img, .mediumPhone .articleBodyMainContentImage img, .tablet .articleBodyMainContentImage img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
   height: 100%;
 }
-.tablet .articleBodySecondaryContentUnitImg {
+.smallPhone .articleBodySecondaryContentUnitImg, .mediumPhone .articleBodySecondaryContentUnitImg, .tablet .articleBodySecondaryContentUnitImg {
   position: relative;
   height: 100px;
   width: 100px;
 }
-.tablet .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock {
+.smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock, .tablet .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock {
   width: 100px;
   height: 100px;
 }
-.tablet .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img {
+.smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img, .tablet .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img {
   -o-object-fit: cover;
      object-fit: cover;
   width: auto;
   height: 100%;
 }
-.tablet .newsPageLineWideCardWithImageImg {
+.smallPhone .newsPageLineWideCardWithImageImg, .mediumPhone .newsPageLineWideCardWithImageImg, .tablet .newsPageLineWideCardWithImageImg {
   width: 280px;
   margin: 15px 0;
 }
-.tablet .newsPageLineWideCardWithImageImg img {
+.smallPhone .newsPageLineWideCardWithImageImg img, .mediumPhone .newsPageLineWideCardWithImageImg img, .tablet .newsPageLineWideCardWithImageImg img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
   height: 100%;
 }
-.tablet .newsPageLineSlimCardWithImageImg {
+.smallPhone .newsPageLineSlimCardWithImageImg, .mediumPhone .newsPageLineSlimCardWithImageImg, .tablet .newsPageLineSlimCardWithImageImg {
   width: 280px;
   margin: 15px 0;
 }
-.tablet .newsPageLineSlimCardWithImageImg img {
+.smallPhone .newsPageLineSlimCardWithImageImg img, .mediumPhone .newsPageLineSlimCardWithImageImg img, .tablet .newsPageLineSlimCardWithImageImg img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
   height: 100%;
 }
-.tablet .newsCardInfo .newsPageLineSlimCardWithImageArticleImg {
+.smallPhone .newsCardInfo .newsPageLineSlimCardWithImageArticleImg, .mediumPhone .newsCardInfo .newsPageLineSlimCardWithImageArticleImg, .tablet .newsCardInfo .newsPageLineSlimCardWithImageArticleImg {
   width: 280px;
 }
-.tablet .newsCardInfo .newsPageLineSlimCardWithImageArticleImg img {
+.smallPhone .newsCardInfo .newsPageLineSlimCardWithImageArticleImg img, .mediumPhone .newsCardInfo .newsPageLineSlimCardWithImageArticleImg img, .tablet .newsCardInfo .newsPageLineSlimCardWithImageArticleImg img {
   height: 100%;
   width: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.tablet .categoryWay h1 a {
+.smallPhone .categoryWay h1 a, .mediumPhone .categoryWay h1 a, .tablet .categoryWay h1 a {
   font-size: 3rem;
 }
-.tablet .articleMainInf .mainInfArticle {
+.smallPhone .articleMainInf .mainInfArticle, .mediumPhone .articleMainInf .mainInfArticle, .tablet .articleMainInf .mainInfArticle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -803,59 +803,59 @@ td, th {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.tablet .mainInfo {
+.smallPhone .mainInfo, .mediumPhone .mainInfo, .tablet .mainInfo {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.tablet .mainInfo .mainInfArticle .mainInfoMainNews {
+.smallPhone .mainInfo .mainInfArticle .mainInfoMainNews, .mediumPhone .mainInfo .mainInfArticle .mainInfoMainNews, .tablet .mainInfo .mainInfArticle .mainInfoMainNews {
   border-bottom: 1px solid #D2D2D2;
   padding: 0 0 50px 0;
 }
-.tablet .mainInfo .mainInfoMainNews {
+.smallPhone .mainInfo .mainInfoMainNews, .mediumPhone .mainInfo .mainInfoMainNews, .tablet .mainInfo .mainInfoMainNews {
   max-width: 100%;
   margin: 0 auto;
   border-bottom: 1px solid #D2D2D2;
   padding: 0 0 20px 0;
 }
-.tablet .mainInfo .mainInfoMainNews .mainInfoMainNewsNavigation {
+.smallPhone .mainInfo .mainInfoMainNews .mainInfoMainNewsNavigation, .mediumPhone .mainInfo .mainInfoMainNews .mainInfoMainNewsNavigation, .tablet .mainInfo .mainInfoMainNews .mainInfoMainNewsNavigation {
   margin: 0 0 20px 0;
 }
-.tablet .mainInfo .mainInfoLatestNews {
+.smallPhone .mainInfo .mainInfoLatestNews, .mediumPhone .mainInfo .mainInfoLatestNews, .tablet .mainInfo .mainInfoLatestNews {
   padding: 0;
   border: none;
 }
-.tablet .mainInfo .mainInfoLatestNews .newsHeading {
+.smallPhone .mainInfo .mainInfoLatestNews .newsHeading, .mediumPhone .mainInfo .mainInfoLatestNews .newsHeading, .tablet .mainInfo .mainInfoLatestNews .newsHeading {
   margin: 40px 0 0 0;
 }
-.tablet .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit {
+.smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit, .tablet .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit {
   max-width: 100%;
   padding: 0 0 20px 0;
   margin: 30px 0 0 0;
   border-bottom: 1px solid #d2d2d2;
 }
-.tablet .newsPageLine .newsPageLineCard {
+.smallPhone .newsPageLine .newsPageLineCard, .mediumPhone .newsPageLine .newsPageLineCard, .tablet .newsPageLine .newsPageLineCard {
   max-width: 50%;
 }
-.tablet .newsPageLine .newsPageLineCard .newsCard .newsCardInfo .plainText {
+.smallPhone .newsPageLine .newsPageLineCard .newsCard .newsCardInfo .plainText, .mediumPhone .newsPageLine .newsPageLineCard .newsCard .newsCardInfo .plainText, .tablet .newsPageLine .newsPageLineCard .newsCard .newsCardInfo .plainText {
   height: 260px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.tablet .newsPageLine .newsPageLineCard .newsPageLineSlimCardWithImage, .tablet .newsPageLine .newsPageLineCard .newsPageLineWideCard, .tablet .newsPageLine .newsPageLineCard .newsPageLineSlimeCard, .tablet .newsPageLine .newsPageLineCard .newsPageLineWideCardWithImage {
+.smallPhone .newsPageLine .newsPageLineCard .newsPageLineSlimCardWithImage, .mediumPhone .newsPageLine .newsPageLineCard .newsPageLineSlimCardWithImage, .tablet .newsPageLine .newsPageLineCard .newsPageLineSlimCardWithImage, .smallPhone .newsPageLine .newsPageLineCard .newsPageLineWideCard, .mediumPhone .newsPageLine .newsPageLineCard .newsPageLineWideCard, .tablet .newsPageLine .newsPageLineCard .newsPageLineWideCard, .smallPhone .newsPageLine .newsPageLineCard .newsPageLineSlimeCard, .mediumPhone .newsPageLine .newsPageLineCard .newsPageLineSlimeCard, .tablet .newsPageLine .newsPageLineCard .newsPageLineSlimeCard, .smallPhone .newsPageLine .newsPageLineCard .newsPageLineWideCardWithImage, .mediumPhone .newsPageLine .newsPageLineCard .newsPageLineWideCardWithImage, .tablet .newsPageLine .newsPageLineCard .newsPageLineWideCardWithImage {
   max-width: 100%;
 }
-.tablet .newsPageLine .newsPageLineCard:nth-child(n+3) {
+.smallPhone .newsPageLine .newsPageLineCard:nth-child(n+3), .mediumPhone .newsPageLine .newsPageLineCard:nth-child(n+3), .tablet .newsPageLine .newsPageLineCard:nth-child(n+3) {
   display: none;
 }
-.tablet .newsPageLine .newsPageLineCard:nth-child(n+2) {
+.smallPhone .newsPageLine .newsPageLineCard:nth-child(n+2), .mediumPhone .newsPageLine .newsPageLineCard:nth-child(n+2), .tablet .newsPageLine .newsPageLineCard:nth-child(n+2) {
   border-right: none;
 }
-.tablet .articleMetrics {
+.smallPhone .articleMetrics, .mediumPhone .articleMetrics, .tablet .articleMetrics {
   display: none;
 }
-.tablet .articleBody {
+.smallPhone .articleBody, .mediumPhone .articleBody, .tablet .articleBody {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -867,7 +867,7 @@ td, th {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
-.tablet .articleBody .articleBodyMain .articleMetricsMobile {
+.smallPhone .articleBody .articleBodyMain .articleMetricsMobile, .mediumPhone .articleBody .articleBodyMain .articleMetricsMobile, .tablet .articleBody .articleBodyMain .articleMetricsMobile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -881,73 +881,73 @@ td, th {
   margin: 0 0 15px 0;
   padding: 0 0 15px 0;
 }
-.tablet .articleBody .articleBodyMain .articleMetricsMobile .timeToReading {
+.smallPhone .articleBody .articleBodyMain .articleMetricsMobile .timeToReading, .mediumPhone .articleBody .articleBodyMain .articleMetricsMobile .timeToReading, .tablet .articleBody .articleBodyMain .articleMetricsMobile .timeToReading {
   margin: 0 0 10px 0;
 }
-.tablet .articleBody .articleBodyMain .articleBodyMainContent {
+.smallPhone .articleBody .articleBodyMain .articleBodyMainContent, .mediumPhone .articleBody .articleBodyMain .articleBodyMainContent, .tablet .articleBody .articleBodyMain .articleBodyMainContent {
   width: 100%;
 }
-.tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit {
+.smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit {
   border-left: none;
   padding: 20px 0 0 0 !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription {
+.smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription {
   margin: 0 0 0 20px;
 }
-.tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock {
+.smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock {
   display: none;
 }
-.tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .writeMoreButton {
+.smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .writeMoreButton, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .writeMoreButton, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .writeMoreButton {
   margin: 20px 0 20px;
 }
-.tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:first-child {
+.smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:first-child, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:first-child, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:first-child {
   border-top: 1px solid #d2d2d2;
 }
-.tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:last-child {
+.smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:last-child, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:last-child, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:last-child {
   border-bottom: 1px solid #d2d2d2;
 }
-.tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:nth-child(n+3) {
+.smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:nth-child(n+3), .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:nth-child(n+3), .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:nth-child(n+3) {
   display: none;
 }
-.tablet .articleInf .articleInfRating span, .tablet .articleInf .articleInfLinks span {
+.smallPhone .articleInf .articleInfRating span, .mediumPhone .articleInf .articleInfRating span, .tablet .articleInf .articleInfRating span, .smallPhone .articleInf .articleInfLinks span, .mediumPhone .articleInf .articleInfLinks span, .tablet .articleInf .articleInfLinks span {
   display: none;
 }
-.tablet .articleNewsCard .newsCardInfo .latestNewsHeading {
+.smallPhone .articleNewsCard .newsCardInfo .latestNewsHeading, .mediumPhone .articleNewsCard .newsCardInfo .latestNewsHeading, .tablet .articleNewsCard .newsCardInfo .latestNewsHeading {
   text-overflow: ellipsis;
   overflow: hidden;
   height: 150px;
   margin: 5px 0;
 }
 
-.mediumPhone .container {
+.smallPhone .container, .mediumPhone .container {
   max-width: 430px !important;
 }
-.mediumPhone .newsPageLine .newsPageLineCard:first-child {
+.smallPhone .newsPageLine .newsPageLineCard:first-child, .mediumPhone .newsPageLine .newsPageLineCard:first-child {
   padding: 0;
 }
-.mediumPhone .newsPage:not(:first-child) .newsPageLine .newsPageLineCard:first-child {
+.smallPhone .newsPage:not(:first-child) .newsPageLine .newsPageLineCard:first-child, .mediumPhone .newsPage:not(:first-child) .newsPageLine .newsPageLineCard:first-child {
   padding: 0;
 }
-.mediumPhone .newsPage:not(:first-child) .newsPageLine .newsPageLineCard:not(:first-child) {
+.smallPhone .newsPage:not(:first-child) .newsPageLine .newsPageLineCard:not(:first-child), .mediumPhone .newsPage:not(:first-child) .newsPageLine .newsPageLineCard:not(:first-child) {
   padding: 0 0 0 20px;
 }
-.mediumPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit {
+.smallPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit, .mediumPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit {
   padding: 20px 0 20px 0 !important;
 }
-.mediumPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit a {
+.smallPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit a, .mediumPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit a {
   margin: auto 0;
 }
-.mediumPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .latestNewsHeading a {
+.smallPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .latestNewsHeading a, .mediumPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .latestNewsHeading a {
   font-size: 1.6rem;
   line-height: 2rem;
 }
-.mediumPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .writeMoreButton {
+.smallPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .writeMoreButton, .mediumPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .writeMoreButton {
   margin: 10px 0;
 }
-.mediumPhone .article .articleBody .articleBodyMain .articleMetricsMobile {
+.smallPhone .article .articleBody .articleBodyMain .articleMetricsMobile, .mediumPhone .article .articleBody .articleBodyMain .articleMetricsMobile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -961,58 +961,58 @@ td, th {
   margin: 0 0 15px 0;
   padding: 0 0 15px 0;
 }
-.mediumPhone .article .articleBody .articleBodyMain .articleMetricsMobile .timeToReading {
+.smallPhone .article .articleBody .articleBodyMain .articleMetricsMobile .timeToReading, .mediumPhone .article .articleBody .articleBodyMain .articleMetricsMobile .timeToReading {
   margin: 0 0 10px 0;
 }
-.mediumPhone .article .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription .latestNewsHeading a {
+.smallPhone .article .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription .latestNewsHeading a, .mediumPhone .article .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription .latestNewsHeading a {
   font-size: 1.6rem;
   line-height: 2rem;
 }
-.mediumPhone .articleWay h1 {
+.smallPhone .articleWay h1, .mediumPhone .articleWay h1 {
   font-size: 3rem;
 }
-.mediumPhone .categoryWay h1 a {
+.smallPhone .categoryWay h1 a, .mediumPhone .categoryWay h1 a {
   font-size: 2rem;
 }
-.mediumPhone .newsPageLineCard:nth-child(n+4) {
+.smallPhone .newsPageLineCard:nth-child(n+4), .mediumPhone .newsPageLineCard:nth-child(n+4) {
   display: block;
 }
-.mediumPhone .newsPageLine {
+.smallPhone .newsPageLine, .mediumPhone .newsPageLine {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   border-bottom: none;
 }
-.mediumPhone .newsPageLine .newsPageLineCard {
+.smallPhone .newsPageLine .newsPageLineCard, .mediumPhone .newsPageLine .newsPageLineCard {
   max-width: 100%;
   padding: 0 !important;
 }
-.mediumPhone .newsPageLine .newsPageLineCard:nth-child(n+1) {
+.smallPhone .newsPageLine .newsPageLineCard:nth-child(n+1), .mediumPhone .newsPageLine .newsPageLineCard:nth-child(n+1) {
   border-right: none;
 }
-.mediumPhone .newsPageLine .newsPageLineCard .newsCard .newsCardInfo .plainText {
+.smallPhone .newsPageLine .newsPageLineCard .newsCard .newsCardInfo .plainText, .mediumPhone .newsPageLine .newsPageLineCard .newsCard .newsCardInfo .plainText {
   height: 100%;
 }
-.mediumPhone .newsPageLineSlimCardWithImage {
+.smallPhone .newsPageLineSlimCardWithImage, .mediumPhone .newsPageLineSlimCardWithImage {
   max-width: 100% !important;
 }
-.mediumPhone .newsPageLineWideCard {
+.smallPhone .newsPageLineWideCard, .mediumPhone .newsPageLineWideCard {
   max-width: 100% !important;
 }
-.mediumPhone .newsPageLineWideCard .latestNewsHeading {
+.smallPhone .newsPageLineWideCard .latestNewsHeading, .mediumPhone .newsPageLineWideCard .latestNewsHeading {
   margin: 15px 0 39px 0;
 }
-.mediumPhone .newsPageLineSlimeCard {
+.smallPhone .newsPageLineSlimeCard, .mediumPhone .newsPageLineSlimeCard {
   max-width: 100% !important;
 }
-.mediumPhone .newsPageLineSlimeCard .latestNewsHeading {
+.smallPhone .newsPageLineSlimeCard .latestNewsHeading, .mediumPhone .newsPageLineSlimeCard .latestNewsHeading {
   margin: 15px 0 15px 0;
 }
-.mediumPhone .newsPageLineWideCardWithImage {
+.smallPhone .newsPageLineWideCardWithImage, .mediumPhone .newsPageLineWideCardWithImage {
   max-width: 100% !important;
 }
-.mediumPhone .newsCard {
+.smallPhone .newsCard, .mediumPhone .newsCard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1025,91 +1025,91 @@ td, th {
   padding: 30px 0 50px 0 !important;
   border-bottom: 1px solid #d2d2d2;
 }
-.mediumPhone .newsCard .writeMoreButton {
+.smallPhone .newsCard .writeMoreButton, .mediumPhone .newsCard .writeMoreButton {
   bottom: 30px !important;
 }
-.mediumPhone .newsCard .coverageInformation {
+.smallPhone .newsCard .coverageInformation, .mediumPhone .newsCard .coverageInformation {
   bottom: 10px !important;
 }
-.mediumPhone .mainInfo {
+.smallPhone .mainInfo, .mediumPhone .mainInfo {
   margin: 40px 0 0 0 !important;
   padding: 0 0 30px 0 !important;
 }
-.mediumPhone .mainInfoMainNewsImage, .mediumPhone .articleBodyMainContentImage {
+.smallPhone .mainInfoMainNewsImage, .mediumPhone .mainInfoMainNewsImage, .smallPhone .articleBodyMainContentImage, .mediumPhone .articleBodyMainContentImage {
   width: 100%;
 }
-.mediumPhone .mainInfoMainNewsImage a, .mediumPhone .articleBodyMainContentImage a {
+.smallPhone .mainInfoMainNewsImage a, .mediumPhone .mainInfoMainNewsImage a, .smallPhone .articleBodyMainContentImage a, .mediumPhone .articleBodyMainContentImage a {
   display: block;
 }
-.mediumPhone .mainInfoMainNewsImage img, .mediumPhone .articleBodyMainContentImage img {
+.smallPhone .mainInfoMainNewsImage img, .mediumPhone .mainInfoMainNewsImage img, .smallPhone .articleBodyMainContentImage img, .mediumPhone .articleBodyMainContentImage img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.mediumPhone .articleBodySecondaryContentUnitImg {
+.smallPhone .articleBodySecondaryContentUnitImg, .mediumPhone .articleBodySecondaryContentUnitImg {
   width: 80px;
 }
-.mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock {
+.smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock {
   width: 80px;
 }
-.mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a {
+.smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a {
   display: block;
 }
-.mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img {
+.smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img {
   -o-object-fit: cover;
      object-fit: cover;
   width: auto;
   height: 100%;
 }
-.mediumPhone .articleBodyMainContentBlockImg {
+.smallPhone .articleBodyMainContentBlockImg, .mediumPhone .articleBodyMainContentBlockImg {
   width: 80px;
 }
-.mediumPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock {
+.smallPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock, .mediumPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock {
   width: 80px;
 }
-.mediumPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock a {
+.smallPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock a, .mediumPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock a {
   display: block;
 }
-.mediumPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock img {
+.smallPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock img, .mediumPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.mediumPhone .newsPageLineWideCardWithImageImg {
+.smallPhone .newsPageLineWideCardWithImageImg, .mediumPhone .newsPageLineWideCardWithImageImg {
   width: 310px;
   margin: 15px 0;
 }
-.mediumPhone .newsPageLineWideCardWithImageImg a {
+.smallPhone .newsPageLineWideCardWithImageImg a, .mediumPhone .newsPageLineWideCardWithImageImg a {
   display: block;
 }
-.mediumPhone .newsPageLineWideCardWithImageImg img {
+.smallPhone .newsPageLineWideCardWithImageImg img, .mediumPhone .newsPageLineWideCardWithImageImg img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
   height: 100%;
 }
-.mediumPhone .newsPageLineSlimCardWithImageImg {
+.smallPhone .newsPageLineSlimCardWithImageImg, .mediumPhone .newsPageLineSlimCardWithImageImg {
   width: 310px;
   margin: 15px 0;
 }
-.mediumPhone .newsPageLineSlimCardWithImageImg img {
+.smallPhone .newsPageLineSlimCardWithImageImg img, .mediumPhone .newsPageLineSlimCardWithImageImg img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
   height: 100%;
 }
-.mediumPhone .mainInfoMainNewsInformation {
+.smallPhone .mainInfoMainNewsInformation, .mediumPhone .mainInfoMainNewsInformation {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.mediumPhone .mainInfoMainNewsInformation .dateBlock {
+.smallPhone .mainInfoMainNewsInformation .dateBlock, .mediumPhone .mainInfoMainNewsInformation .dateBlock {
   margin: 0 !important;
 }
-.mediumPhone .mainPageLine .newsPageLineCard .newsCard .newsCardInfo .descriptionArea {
+.smallPhone .mainPageLine .newsPageLineCard .newsCard .newsCardInfo .descriptionArea, .mediumPhone .mainPageLine .newsPageLineCard .newsCard .newsCardInfo .descriptionArea {
   height: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
