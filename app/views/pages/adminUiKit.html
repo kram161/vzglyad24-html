@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#0E0E0E">
+    <meta name="theme-color" content="#0E0E0E">
+    <meta name="description" content="Index page">
+    <meta name="keywords" content="index, page">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="website">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="manifest" href="manifest.json" crossorigin>
+    <meta name="msapplication-config" content="browserconfig.xml">
+  </head>
+  <body>
+    <div id="app">
+      <div class="adminMenu">
+        <div class="adminMenuList">
+          <ul>
+            <li><a href="#">список новостей</a></li>
+            <li><a href="#">список тизеров</a></li>
+            <li><a href="#">список рекламных кампаний</a></li>
+            <li><a href="#">список категорий тизеров</a></li>
+            <li><a href="#">статистика новостей</a></li>
+            <li><a href="#">статистика тизеров</a></li>
+          </ul>
+        </div>
+        <div class="adminMenuUser">
+          <div class="adminMenuUserProfile"><a href="#">Login734952</a></div>
+          <div class="adminMenuUserExit"><a href="#">Выйти</a></div>
+        </div>
+      </div>
+      <div class="adminUiKitBody">
+        <div class="buttons">
+          <button class="adminButton adminButtonGreen">Создать новость</button>
+        </div>
+        <div class="buttons">
+          <button class="adminButton adminButtonGrey">удалённый список</button>
+        </div>
+        <div class="inputs">
+          <div class="inputsTextWide">
+            <p>Заголовок</p>
+            <input type="text" placeholder="Пример текста в широком текстовом блоке">
+          </div>
+          <div class="inputsTextThin">
+            <p>Заголовок</p>
+            <input type="text" placeholder="Пример текста в узком текстовом блоке">
+          </div>
+          <div class="inputsSelect">
+            <p>Заголовок</p>
+            <select>
+              <option value="0">Главное</option>
+              <option value="1">Шоу-бизнес</option>
+            </select>
+          </div>
+          <div class="inputsRadio">
+            <p>Заголовок</p>
+            <label for="turnOn">Вкл</label>
+            <input type="radio" id="turnOn" name="radioInput">
+            <label for="turnOff">Выкл</label>
+            <input type="radio" id="turnOff" name="radioInput">
+          </div>
+          <div class="inputFile">
+            <p>Добавить фотографию</p>
+            <input id="files" type="file" name="newsName">
+            <label for="files"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 0H12V30H18V0Z" fill="#BDBDBD"/><path d="M0 12L0 18L30 18V12L0 12Z" fill="#BDBDBD"/></svg></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

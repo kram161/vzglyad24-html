@@ -1,0 +1,56 @@
+extends ../layouts/master
+
+block title
+    link(rel="stylesheet", href="assets/css/styles.min.css")
+
+block content
+    include ../includes/modules/adminMenu
+
+    .adminUiKitBody
+        .buttons
+            button.adminButton.adminButtonGreen Создать новость
+        .buttons
+            button.adminButton.adminButtonGrey удалённый список
+
+        .inputs
+            .inputsTextWide
+                p Заголовок
+                input(
+                    type='text'
+                    placeholder='Пример текста в широком текстовом блоке'
+                )
+            .inputsTextThin
+                p Заголовок
+                input(
+                    type='text'
+                    placeholder='Пример текста в узком текстовом блоке'
+                )
+            .inputsSelect
+                p Заголовок
+                select
+                    option(value='0') Главное
+                    option(value='1') Шоу-бизнес
+            .inputsRadio
+                p Заголовок
+                label(for="turnOn") Вкл
+                input(
+                    type='radio'
+                    id="turnOn"
+                    name="radioInput"
+                )
+                label(for="turnOff") Выкл
+                input(
+                    type='radio'
+                    id="turnOff"
+                    name="radioInput"
+                )
+            .inputFile
+                p Добавить фотографию
+                input(
+                    id="files"
+                    type='file'
+                    name="newsName"
+                )
+                label(for="files")
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 0H12V30H18V0Z" fill="#BDBDBD"/><path d="M0 12L0 18L30 18V12L0 12Z" fill="#BDBDBD"/></svg>
+
