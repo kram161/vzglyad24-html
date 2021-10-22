@@ -437,15 +437,7 @@ body{
   }
 }
 
-.container {
-  width: 1440px;
-  padding: 0 15px;
-  margin:0 auto;
-}
 .notebook{
-  .container {
-    max-width: 1140px;
-  }
   body{
     .writeMoreButton{
       svg{
@@ -455,9 +447,6 @@ body{
   }
 }
 .tablet{
-  .container {
-    max-width: 960px;
-  }
   .menuBurger {
     display: block !important;
   }
@@ -490,9 +479,6 @@ body{
   }
 }
 .mediumPhone{
-  .container {
-    max-width: 430px;
-  }
   .menu {
     .menuHeader {
       .menuDate {
@@ -560,9 +546,6 @@ body{
   }
 }
 .smallPhone{
-  .container {
-    max-width: 310px;
-  }
   .mainNewsHeading{
     p{
       font-size: 2.4rem;
