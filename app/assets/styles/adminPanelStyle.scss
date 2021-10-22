@@ -96,6 +96,15 @@
     background: none;
     transition: 0.5s ease all;
   }
+  .adminButtonBlack{
+    background:#000;
+    border: 2px solid #000;
+  }
+  .adminButtonBlack:hover{
+    color:#000;
+    background: none;
+    transition: 0.5s ease all;
+  }
 }
 .inputs{
   .inputsTextWide,.inputsTextThin,.inputsSelect{
@@ -185,7 +194,88 @@
       margin:10px 0;
     }
     input{
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: #000;
+      padding: 10px;
+      border: 1px solid #BDBDBD;
+    }
+    input::-webkit-calendar-picker-indicator{
       display: none;
+    }
+  }
+}
+
+.authorization{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  .authorizationBlock{
+    position: absolute;
+    top: calc(50% + 178px);
+    left:calc(50% - 132px);
+    height: 100vh;
+    h2{
+      font-weight: 500;
+      font-size: 3.6rem;
+      display: inline-block;
+      margin: 0 auto;
+    }
+    .authorizationArea{
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      margin: 0 auto;
+      input{
+        border-bottom:1px solid #000;
+        padding: 5px 0;
+        width: 100%;
+      }
+      .authorizationAreaLogin{
+        margin:56px 0 0 0;
+        position: relative;
+        .authorizationAreaLoginVisible,.authorizationAreaLoginHide{
+          position: absolute;
+          top:0;
+          right: 0;
+          cursor:pointer;
+          display: none;
+          z-index: 5;
+          width: 15px;
+          height: 15px;
+        }
+        .authorizationAreaLoginHide{
+          display: block;
+        }
+      }
+      .authorizationPassword {
+        margin: 20px 0 30px 0;
+        position: relative;
+        .authorizationPasswordVisible,.authorizationPasswordHide{
+          position: absolute;
+          top:0;
+          right: 0;
+          cursor:pointer;
+          display: none;
+          z-index: 5;
+          width: 15px;
+          height: 15px;
+        }
+        .authorizationPasswordHide{
+          display: block;
+        }
+      }
+      input::placeholder{
+        font-weight: 300;
+        font-size: 1.2rem;
+        color: #909090;
+      }
+      .buttons{
+        .adminButton{
+          width: 100%;
+        }
+      }
     }
   }
 }
