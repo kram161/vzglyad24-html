@@ -443,9 +443,7 @@ body{
   margin-right: auto;
   margin-left: auto;
 }
-
-
-@media (max-width:1440px) {
+.notebook{
   .container {
     padding:0 100px;
   }
@@ -457,7 +455,7 @@ body{
     }
   }
 }
-@media (max-width:990px){
+.tablet{
   .container {
     padding: 0 50px;
   }
@@ -492,25 +490,7 @@ body{
     }
   }
 }
-@media (max-width: 600px) {
-  .menu {
-    .menuHeader {
-      .menuDate {
-        display: none;
-      }
-    }
-    .menuRate{
-      display: none !important;
-    }
-    .menuLogo{
-      position: relative;
-      transform: none;
-      left: 0;
-      top:0;
-    }
-  }
-}
-@media (max-width:466px){
+.mediumPhone{
   .container {
     padding: 0 10px;
   }
@@ -535,9 +515,9 @@ body{
         p{
           margin:auto 3px !important;
         }
-       svg{
-         margin:auto 3px auto 0 !important;
-       }
+        svg{
+          margin:auto 3px auto 0 !important;
+        }
       }
       .menuRateEuro{
         display: flex;
@@ -580,7 +560,7 @@ body{
     }
   }
 }
-@media (max-width:320px) {
+.smallPhone{
   .container {
     padding: 0 10px;
   }
@@ -591,4 +571,3 @@ body{
     }
   }
 }
-
