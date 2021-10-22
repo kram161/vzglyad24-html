@@ -276,6 +276,20 @@
           width: 100%;
         }
       }
+      .authorizationAreaLoginError,.authorizationAreaPasswordError{
+        input::placeholder{
+          color: #FF2C2C;
+        }
+      }
+      .errorIconLogin,.errorIconPassword{
+        position: absolute;
+        left: -10px;
+        top:3px;
+        display: none;
+      }
+      .errorIconLoginActive,.errorIconPasswordActive{
+        display: block;
+      }
     }
   }
 }

@@ -335,3 +335,27 @@
 .authorization .authorizationBlock .authorizationArea .buttons .adminButton {
   width: 100%;
 }
+.authorization .authorizationBlock .authorizationArea .authorizationAreaLoginError input::-webkit-input-placeholder, .authorization .authorizationBlock .authorizationArea .authorizationAreaPasswordError input::-webkit-input-placeholder {
+  color: #FF2C2C;
+}
+.authorization .authorizationBlock .authorizationArea .authorizationAreaLoginError input::-moz-placeholder, .authorization .authorizationBlock .authorizationArea .authorizationAreaPasswordError input::-moz-placeholder {
+  color: #FF2C2C;
+}
+.authorization .authorizationBlock .authorizationArea .authorizationAreaLoginError input:-ms-input-placeholder, .authorization .authorizationBlock .authorizationArea .authorizationAreaPasswordError input:-ms-input-placeholder {
+  color: #FF2C2C;
+}
+.authorization .authorizationBlock .authorizationArea .authorizationAreaLoginError input::-ms-input-placeholder, .authorization .authorizationBlock .authorizationArea .authorizationAreaPasswordError input::-ms-input-placeholder {
+  color: #FF2C2C;
+}
+.authorization .authorizationBlock .authorizationArea .authorizationAreaLoginError input::placeholder, .authorization .authorizationBlock .authorizationArea .authorizationAreaPasswordError input::placeholder {
+  color: #FF2C2C;
+}
+.authorization .authorizationBlock .authorizationArea .errorIconLogin, .authorization .authorizationBlock .authorizationArea .errorIconPassword {
+  position: absolute;
+  left: -10px;
+  top: 3px;
+  display: none;
+}
+.authorization .authorizationBlock .authorizationArea .errorIconLoginActive, .authorization .authorizationBlock .authorizationArea .errorIconPasswordActive {
+  display: block;
+}
