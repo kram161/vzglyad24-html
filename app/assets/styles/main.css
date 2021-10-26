@@ -426,8 +426,8 @@ td, th {
   bottom: 0;
   width: 100%;
   height: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, #fff));
-  background: linear-gradient(180deg, transparent, #fff 50%);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, #fff));
+  background: linear-gradient(180deg, transparent, #fff 90%);
 }
 .newsPageLine .articleNewsCard {
   height: 400px;

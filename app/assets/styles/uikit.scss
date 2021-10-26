@@ -57,6 +57,7 @@
       background: #000;
       .menuDate{
         background: #000;
+        margin:0 0 10px 0;
         p{
           color:#fff;
           background: #000;
@@ -97,12 +98,18 @@
     .hiddenMenuFooterCreator{
       background: #000;
       margin: auto 0 20px 0;
-      p{
+      display: flex;
+      flex-direction: column;
+      p,a{
         color: rgba(255, 255, 255, 0.5);
         background: #000;
         font-weight: 400;
         font-size: 1.2rem;
         margin:0;
+      }
+      a{
+        margin: 5px 0 0 0;
+        background: #000;
       }
     }
   }
@@ -445,6 +452,9 @@ body{
   }
 }
 %tablet{
+  .hiddenMenu {
+    height: 340px;
+  }
   .menuBurger {
     display: block !important;
   }
@@ -477,6 +487,9 @@ body{
   }
 }
 %mediumPhone{
+  .hiddenMenu {
+    height: 340px;
+  }
   .menu{
     .menuHeader {
       .menuDate {
@@ -556,6 +569,12 @@ body{
         font-size: 3.0rem;
         line-height: 3.4rem;
       }
+    }
+  }
+  .hiddenMenu{
+    .hiddenMenuFooter{
+      display: flex;
+      flex-direction: column !important;
     }
   }
 }
