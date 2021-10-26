@@ -476,37 +476,46 @@
 .popUp{
   max-width: 1200px;
   min-width: 960px;
-  height: 600px;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   .popUpArticle{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border-right: 1px solid #E2E2E2;
-    max-width:474px;
-    min-width: 380px;
-    img{
-      width: 98%;
-      max-height: 326px;
-    }
-    .dateBlock{
-      margin: 30px 0 25px 0;
-    }
-    .writeMoreButton{
-      margin:30px 0 0 0;
+    .popUpArticleImage{
+      max-width:474px;
+      min-width: 380px;
+      img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
     }
   }
   .popUpList{
     .popUpListArticle{
       display: flex;
       margin: 0 0 0 20px;
-      img{
+      .popUpListArticleImage{
         width: 140px;
-        max-height: 140px;
+        height: 140px;
+        .popUpListArticleImageImg{
+          width: 140px;
+          height: 140px;
+          img{
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+          }
+        }
       }
       .popUpListArticleDescription{
         margin:0 0 0 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
         .dateBlock{
           p{
             margin:0;

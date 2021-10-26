@@ -637,7 +637,6 @@ td, th {
 .popUp {
   max-width: 1200px;
   min-width: 960px;
-  height: 600px;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -654,19 +653,20 @@ td, th {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-right: 1px solid #E2E2E2;
+}
+.popUp .popUpArticle .popUpArticleImage {
   max-width: 474px;
   min-width: 380px;
 }
-.popUp .popUpArticle img {
-  width: 98%;
-  max-height: 326px;
-}
-.popUp .popUpArticle .dateBlock {
-  margin: 30px 0 25px 0;
-}
-.popUp .popUpArticle .writeMoreButton {
-  margin: 30px 0 0 0;
+.popUp .popUpArticle .popUpArticleImage img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .popUp .popUpList .popUpListArticle {
   display: -webkit-box;
@@ -674,12 +674,32 @@ td, th {
   display: flex;
   margin: 0 0 0 20px;
 }
-.popUp .popUpList .popUpListArticle img {
+.popUp .popUpList .popUpListArticle .popUpListArticleImage {
   width: 140px;
-  max-height: 140px;
+  height: 140px;
+}
+.popUp .popUpList .popUpListArticle .popUpListArticleImage .popUpListArticleImageImg {
+  width: 140px;
+  height: 140px;
+}
+.popUp .popUpList .popUpListArticle .popUpListArticleImage .popUpListArticleImageImg img {
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .popUp .popUpList .popUpListArticle .popUpListArticleDescription {
   margin: 0 0 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .popUp .popUpList .popUpListArticle .popUpListArticleDescription .dateBlock p {
   margin: 0;
@@ -749,12 +769,12 @@ td, th {
 }
 .smallPhone .articleBodySecondaryContentUnitImg, .mediumPhone .articleBodySecondaryContentUnitImg, .tablet .articleBodySecondaryContentUnitImg {
   position: relative;
-  height: 100px;
   width: 100px;
+  height: 100%;
 }
 .smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock, .tablet .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock {
   width: 100px;
-  height: 100px;
+  height: 100%;
 }
 .smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img, .tablet .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img {
   -o-object-fit: cover;
@@ -808,6 +828,7 @@ td, th {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border: none;
 }
 .smallPhone .mainInfo .mainInfArticle .mainInfoMainNews, .mediumPhone .mainInfo .mainInfArticle .mainInfoMainNews, .tablet .mainInfo .mainInfArticle .mainInfoMainNews {
   border-bottom: 1px solid #D2D2D2;
@@ -897,6 +918,11 @@ td, th {
 .smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription {
   margin: 0 0 0 20px;
 }
+.smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .latestNewsHeading, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .latestNewsHeading, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .latestNewsHeading {
+  height: 60px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 .smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock {
   display: none;
 }
@@ -945,7 +971,7 @@ td, th {
   line-height: 2rem;
 }
 .smallPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .writeMoreButton, .mediumPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .writeMoreButton {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 .smallPhone .article .articleBody .articleBodyMain .articleMetricsMobile, .mediumPhone .article .articleBody .articleBodyMain .articleMetricsMobile {
   display: -webkit-box;
@@ -1049,6 +1075,7 @@ td, th {
 }
 .smallPhone .articleBodySecondaryContentUnitImg, .mediumPhone .articleBodySecondaryContentUnitImg {
   width: 80px;
+  margin: auto 0;
 }
 .smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock {
   width: 80px;
@@ -1060,7 +1087,7 @@ td, th {
   -o-object-fit: cover;
      object-fit: cover;
   width: auto;
-  height: 100%;
+  height: 80px;
 }
 .smallPhone .articleBodyMainContentBlockImg, .mediumPhone .articleBodyMainContentBlockImg {
   width: 80px;
@@ -1114,6 +1141,9 @@ td, th {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.smallPhone .articleWay h1 a, .mediumPhone .articleWay h1 a {
+  font-size: 2.6rem;
+}
 
 .smallPhone .container {
   max-width: 310px !important;
@@ -1123,4 +1153,7 @@ td, th {
 }
 .smallPhone .errorMessage p {
   font-size: 1.8rem;
+}
+.smallPhone .articleWay h1 a {
+  font-size: 2.2rem;
 }
