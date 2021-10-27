@@ -185,20 +185,23 @@ td, th {
 }
 
 .articleBodySecondaryContentUnitImg {
-  width: 310px;
   height: 215px;
+  overflow: hidden;
 }
 .articleBodySecondaryContentUnitImg a {
   display: block;
 }
 .articleBodySecondaryContentUnitImg img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
   height: 100%;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .mainInfoMainNewsImage {
+  overflow: hidden;
   width: 440px;
   height: 240px;
 }
@@ -211,6 +214,8 @@ td, th {
      object-fit: contain;
   width: 100%;
   height: 100%;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .articleBodyMainContentImage {
@@ -230,6 +235,7 @@ td, th {
 .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock {
   width: 100px;
   height: 100px;
+  overflow: hidden;
 }
 .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock a {
   display: block;
@@ -239,8 +245,13 @@ td, th {
   width: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
+.newsPageLineSlimCardWithImageArticleImg {
+  overflow: hidden;
+}
 .newsPageLineSlimCardWithImageArticleImg a {
   display: block;
 }
@@ -324,9 +335,14 @@ td, th {
   width: 100%;
   bottom: 0;
 }
+.mainInfo .mainInfoMainNews:hover img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
 .mainInfo .mainInfoLatestNews {
   border-left: 1px solid #D2D2D2;
   padding: 0 0 0 20px;
+  width: 52%;
 }
 .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit {
   max-width: 580px;
@@ -429,6 +445,14 @@ td, th {
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, #fff));
   background: linear-gradient(180deg, transparent, #fff 90%);
 }
+.newsPageLine .newsCard img {
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.newsPageLine .newsCard:hover img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
 .newsPageLine .articleNewsCard {
   height: 400px;
 }
@@ -504,9 +528,10 @@ td, th {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 70%;
 }
 .articleBody .articleBodyMain .articleBodyMainContent {
-  width: 70%;
+  width: 80%;
 }
 .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMainContentBlock {
   margin: 0 0 20px 0;
@@ -555,6 +580,13 @@ td, th {
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, #fff));
   background: linear-gradient(180deg, transparent, #fff 50%);
 }
+.articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews:hover img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+.articleBody .articleBodySecondary {
+  width: 30%;
+}
 .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit {
   border-bottom: 1px solid #D2D2D2;
   border-left: 1px solid #D2D2D2;
@@ -572,6 +604,10 @@ td, th {
 }
 .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:not(:first-child) {
   padding: 30px 0 0 20px;
+}
+.articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:hover img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .articleInf {
@@ -765,10 +801,19 @@ td, th {
 .smallPhone .container, .mediumPhone .container, .tablet .container {
   max-width: 960px !important;
 }
-.smallPhone .mainInfoMainNewsImage, .mediumPhone .mainInfoMainNewsImage, .tablet .mainInfoMainNewsImage, .smallPhone .articleBodyMainContentImage, .mediumPhone .articleBodyMainContentImage, .tablet .articleBodyMainContentImage {
+.smallPhone .articleBodyMainContentImage, .mediumPhone .articleBodyMainContentImage, .tablet .articleBodyMainContentImage {
   width: 80%;
 }
-.smallPhone .mainInfoMainNewsImage img, .mediumPhone .mainInfoMainNewsImage img, .tablet .mainInfoMainNewsImage img, .smallPhone .articleBodyMainContentImage img, .mediumPhone .articleBodyMainContentImage img, .tablet .articleBodyMainContentImage img {
+.smallPhone .articleBodyMainContentImage img, .mediumPhone .articleBodyMainContentImage img, .tablet .articleBodyMainContentImage img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.smallPhone .mainInfoMainNewsImage, .mediumPhone .mainInfoMainNewsImage, .tablet .mainInfoMainNewsImage {
+  width: 100%;
+}
+.smallPhone .mainInfoMainNewsImage img, .mediumPhone .mainInfoMainNewsImage img, .tablet .mainInfoMainNewsImage img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
@@ -853,6 +898,7 @@ td, th {
 .smallPhone .mainInfo .mainInfoLatestNews, .mediumPhone .mainInfo .mainInfoLatestNews, .tablet .mainInfo .mainInfoLatestNews {
   padding: 0;
   border: none;
+  width: 100%;
 }
 .smallPhone .mainInfo .mainInfoLatestNews .newsHeading, .mediumPhone .mainInfo .mainInfoLatestNews .newsHeading, .tablet .mainInfo .mainInfoLatestNews .newsHeading {
   margin: 40px 0 0 0;
@@ -895,6 +941,9 @@ td, th {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
+.smallPhone .articleBody .articleBodyMain, .mediumPhone .articleBody .articleBodyMain, .tablet .articleBody .articleBodyMain {
+  width: 100%;
+}
 .smallPhone .articleBody .articleBodyMain .articleMetricsMobile, .mediumPhone .articleBody .articleBodyMain .articleMetricsMobile, .tablet .articleBody .articleBodyMain .articleMetricsMobile {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -913,6 +962,9 @@ td, th {
   margin: 0 0 10px 0;
 }
 .smallPhone .articleBody .articleBodyMain .articleBodyMainContent, .mediumPhone .articleBody .articleBodyMain .articleBodyMainContent, .tablet .articleBody .articleBodyMain .articleBodyMainContent {
+  width: 100%;
+}
+.smallPhone .articleBody .articleBodySecondary, .mediumPhone .articleBody .articleBodySecondary, .tablet .articleBody .articleBodySecondary {
   width: 100%;
 }
 .smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit {
