@@ -239,6 +239,8 @@ td, th {
 }
 .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock a {
   display: block;
+  height: 100%;
+  width: auto;
 }
 .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock img {
   height: 100%;
@@ -817,6 +819,11 @@ td, th {
 .smallPhone .mainInfoMainNewsImage, .mediumPhone .mainInfoMainNewsImage, .tablet .mainInfoMainNewsImage {
   width: 100%;
 }
+.smallPhone .mainInfoMainNewsImage a, .mediumPhone .mainInfoMainNewsImage a, .tablet .mainInfoMainNewsImage a {
+  display: block;
+  height: 100%;
+  width: auto;
+}
 .smallPhone .mainInfoMainNewsImage img, .mediumPhone .mainInfoMainNewsImage img, .tablet .mainInfoMainNewsImage img {
   -o-object-fit: contain;
      object-fit: contain;
@@ -831,6 +838,11 @@ td, th {
 .smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock, .tablet .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock {
   width: 100px;
   height: 100%;
+}
+.smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a, .tablet .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a {
+  display: block;
+  height: 100%;
+  width: auto;
 }
 .smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img, .tablet .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img {
   -o-object-fit: cover;

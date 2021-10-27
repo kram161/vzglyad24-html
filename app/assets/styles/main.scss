@@ -120,6 +120,8 @@
   .articleBodyMainContentBlockImgBlock{
     a{
       display: block;
+      height: 100%;
+      width: auto;
     }
     width: 100px;
     height: 100px;
@@ -642,6 +644,11 @@
   }
   .mainInfoMainNewsImage {
     width: 100%;
+    a{
+      display: block;
+      height: 100%;
+      width: auto;
+    }
     img {
       object-fit: contain ;
       width: 100%;
@@ -653,8 +660,14 @@
     width: 100px;
     overflow: hidden;
     .articleBodySecondaryContentUnitImgBlock{
+
       width: 100px;
       height: 100%;
+      a{
+        display: block;
+        height: 100%;
+        width: auto;
+      }
       img{
         object-fit: cover;
         width: auto;
