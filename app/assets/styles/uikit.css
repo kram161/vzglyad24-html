@@ -100,7 +100,7 @@ td, th {
 }
 
 .hiddenMenu {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 5;
   -webkit-transition: 0.5s;
@@ -428,7 +428,7 @@ body .dateBlock {
   display: flex;
 }
 body .dateBlock p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 500;
   margin: 9px 0;
 }

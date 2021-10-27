@@ -196,8 +196,8 @@ td, th {
      object-fit: cover;
   width: auto;
   height: 100%;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .mainInfoMainNewsImage {
@@ -214,8 +214,8 @@ td, th {
      object-fit: contain;
   width: 100%;
   height: 100%;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .articleBodyMainContentImage {
@@ -245,8 +245,8 @@ td, th {
   width: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .newsPageLineSlimCardWithImageArticleImg {
@@ -257,7 +257,8 @@ td, th {
 }
 
 .newsPageLineWideCardWithImageImg {
-  width: 310px;
+  overflow: hidden;
+  width: 280px;
   margin: 15px 0;
 }
 .newsPageLineWideCardWithImageImg a {
@@ -271,6 +272,7 @@ td, th {
 }
 
 .newsPageLineSlimCardWithImageImg {
+  overflow: hidden;
   width: 210px;
   margin: 15px 0;
 }
@@ -336,8 +338,8 @@ td, th {
   bottom: 0;
 }
 .mainInfo .mainInfoMainNews:hover img {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .mainInfo .mainInfoLatestNews {
   border-left: 1px solid #D2D2D2;
@@ -446,12 +448,12 @@ td, th {
   background: linear-gradient(180deg, transparent, #fff 90%);
 }
 .newsPageLine .newsCard img {
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 .newsPageLine .newsCard:hover img {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .newsPageLine .articleNewsCard {
   height: 400px;
@@ -467,12 +469,14 @@ td, th {
 }
 .newsPageLine .newsPageLineWideCard {
   max-width: 310px;
+  min-width: 180px;
 }
 .newsPageLine .newsPageLineWideCard .latestNewsHeading {
   margin: 15px 0 39px 0;
 }
 .newsPageLine .newsPageLineSlimeCard {
   max-width: 210px;
+  min-width: 180px;
 }
 .newsPageLine .newsPageLineSlimeCard .latestNewsHeading {
   margin: 15px 0 15px 0;
@@ -581,8 +585,8 @@ td, th {
   background: linear-gradient(180deg, transparent, #fff 50%);
 }
 .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews:hover img {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .articleBody .articleBodySecondary {
   width: 30%;
@@ -606,8 +610,8 @@ td, th {
   padding: 30px 0 0 20px;
 }
 .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:hover img {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .articleInf {
@@ -822,7 +826,7 @@ td, th {
 .smallPhone .articleBodySecondaryContentUnitImg, .mediumPhone .articleBodySecondaryContentUnitImg, .tablet .articleBodySecondaryContentUnitImg {
   position: relative;
   width: 100px;
-  height: 100%;
+  overflow: hidden;
 }
 .smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock, .tablet .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock {
   width: 100px;
