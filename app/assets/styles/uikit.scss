@@ -319,7 +319,7 @@ body{
     p{
       font-size: 1.2rem;
       font-weight: 500;
-      margin:9px 0;
+      margin:auto 0;
     }
     svg{
       margin:auto 10px;
@@ -569,6 +569,9 @@ body{
         margin:0 !important;
       }
     }
+  }
+  .dateBlock{
+    margin:5px 0 0 0;
   }
 }
 %smallPhone{
