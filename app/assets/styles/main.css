@@ -353,8 +353,37 @@ td, th {
   padding: 0 0 27px 0;
   margin: 27px 0 0 0;
   border-bottom: 1px solid #D2D2D2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
-.mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoMainNewsInformation {
+.mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg {
+  height: 100px;
+  width: 150px;
+  margin: auto 10px auto 0;
+}
+.mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg .mainInfoLatestNewsUnitImgBlock {
+  height: 100px;
+  width: 150px;
+  overflow: hidden;
+}
+.mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg .mainInfoLatestNewsUnitImgBlock a {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+.mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg .mainInfoLatestNewsUnitImgBlock a img {
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoMainNewsInformation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,7 +392,7 @@ td, th {
           justify-content: flex-start;
   margin: 0 0 5px 0;
 }
-.mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoMainNewsInformation .categoryButton {
+.mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoMainNewsInformation .categoryButton {
   margin: 0 32px 0 0;
 }
 .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoMainNewsNavigation {
@@ -374,6 +403,10 @@ td, th {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit:last-child {
   padding: 0;
@@ -1058,6 +1091,29 @@ td, th {
 
 .smallPhone .container, .mediumPhone .container {
   max-width: 430px !important;
+}
+.smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg {
+  width: 100%;
+  height: 200px;
+  margin: 10px 0;
+}
+.smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg .mainInfoLatestNewsUnitImgBlock, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg .mainInfoLatestNewsUnitImgBlock {
+  width: 100%;
+  height: 200px;
+}
+.smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg .mainInfoLatestNewsUnitImgBlock a, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg .mainInfoLatestNewsUnitImgBlock a {
+  width: 100%;
+  height: 100%;
+}
+.smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg .mainInfoLatestNewsUnitImgBlock a img, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg .mainInfoLatestNewsUnitImgBlock a img {
+  width: 100%;
+  height: 100%;
 }
 .smallPhone .newsPageLine .newsPageLineCard:first-child, .mediumPhone .newsPageLine .newsPageLineCard:first-child {
   padding: 0;

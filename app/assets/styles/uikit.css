@@ -100,7 +100,7 @@ td, th {
 }
 
 .hiddenMenu {
-  display: none;
+  display: block;
   position: fixed;
   z-index: 5;
   -webkit-transition: 0.5s;
@@ -178,6 +178,16 @@ td, th {
   background: #000;
   font-weight: 500;
 }
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRateGeoposition {
+  background: #000;
+  margin: 10px 0;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRateGeoposition p {
+  color: #fff;
+  background: #000;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
 .hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRate {
   background: #000;
 }
@@ -192,7 +202,6 @@ td, th {
   background: #000;
 }
 .hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRate .menuRateEuro {
-  color: #fff;
   background: #000;
 }
 .hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRate .menuRateEuro p {
@@ -251,7 +260,10 @@ td, th {
   display: -ms-flexbox;
   display: flex;
 }
-.menu .menuHeader .menuRateDollar p, .menu .menuHeader .menuRateEuro p {
+.menu .menuHeader .menuRateDollar, .menu .menuHeader .menuRateEuro, .menu .menuHeader .menuRateGeoposition {
+  margin: auto 0;
+}
+.menu .menuHeader .menuRateDollar p, .menu .menuHeader .menuRateEuro p, .menu .menuHeader .menuRateGeoposition p {
   font-size: 1.4rem;
   font-weight: 500;
   margin: auto 30px auto 5px;
@@ -641,7 +653,6 @@ body .plainText p {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
-  margin: 0 0 20px 0;
 }
 .smallPhone .hiddenMenuFooter .menuRate .menuRateDollar, .mediumPhone .hiddenMenuFooter .menuRate .menuRateDollar {
   display: -webkit-box;

@@ -7,7 +7,7 @@
   font-family: montserrat, sans-serif;
 }
 .hiddenMenu{
-  display: none;
+  display: block;
   position: fixed;
   z-index: 5;
   transition: 0.5s;
@@ -70,6 +70,16 @@
           }
         }
       }
+      .menuRateGeoposition{
+        background: #000;
+        margin:10px 0;
+        p{
+          color:#fff;
+          background: #000;
+          font-size: 1.4rem;
+          font-weight: 500;
+        }
+      }
       .menuRate{
         background: #000;
         .menuRateDollar{
@@ -83,7 +93,6 @@
           }
         }
         .menuRateEuro{
-          color:#fff;
           background: #000;
           p{
             color:#fff;
@@ -130,7 +139,10 @@
     .menuRate,.menuRateDollar,.menuRateEuro{
       display: flex;
     }
-    .menuRateDollar p,.menuRateEuro p{
+    .menuRateDollar,.menuRateEuro,.menuRateGeoposition{
+      margin: auto 0;
+    }
+    .menuRateDollar p,.menuRateEuro p,.menuRateGeoposition p{
       font-size: 1.4rem;
       font-weight: 500;
       margin:auto 30px auto 5px;
@@ -505,7 +517,6 @@ body{
     }
     .menuRate{
       display: flex !important;
-      margin:0 0 20px 0;
       .menuRateDollar{
         display: flex;
         p{
