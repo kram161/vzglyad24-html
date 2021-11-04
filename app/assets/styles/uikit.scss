@@ -133,9 +133,12 @@
   position: relative;
   .menuHeader{
     display: flex;
-    justify-content: space-between;
     padding:40px 0 20px 0;
     border-bottom: 1px solid #D2D2D2;
+    justify-content: space-between;
+    .menuRate{
+      flex: 1;
+    }
     .menuRate,.menuRateDollar,.menuRateEuro{
       display: flex;
     }
@@ -151,6 +154,7 @@
       margin:auto 0;
     }
     .menuLogo{
+      flex-grow: 1;
       a{
         text-decoration: none;
         p{
@@ -428,7 +432,7 @@ body{
       background: #E0E0E0;
       .footerInfAboutUsContact{
         background: #E0E0E0;
-        margin:6px auto;
+        margin:auto;
       }
       p{
         font-size: 1.4rem;
