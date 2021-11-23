@@ -307,7 +307,7 @@ td, th {
   display: none;
 }
 .mainInfo .mainInfoMain {
-  width: 49.9%;
+  width: 50%;
   border-right: 1px solid #D2D2D2;
 }
 .mainInfo .mainInfoMain .mainInfoMainNews {
@@ -737,6 +737,7 @@ td, th {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-right: 1px solid #E2E2E2;
+  width: 100%;
 }
 .popUp .popUpArticle .popUpArticleImage {
   width: 98%;
@@ -1312,11 +1313,17 @@ td, th {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
+.smallPhone .popUp .popUpList .popUpListArticle, .mediumPhone .popUp .popUpList .popUpListArticle {
+  margin: 0 0 0 5px;
+}
 .smallPhone .popUp .popUpList .popUpListArticle .popUpListArticleImage, .mediumPhone .popUp .popUpList .popUpListArticle .popUpListArticleImage {
   display: none;
 }
 .smallPhone .popUp .popUpList .popUpListArticle .popUpListArticleDescription, .mediumPhone .popUp .popUpList .popUpListArticle .popUpListArticleDescription {
   margin: 0;
+}
+.smallPhone .popUp .popUpList .popUpListArticle .mainNewsHeading a, .mediumPhone .popUp .popUpList .popUpListArticle .mainNewsHeading a {
+  font-size: 2.4rem;
 }
 .smallPhone .popUp .popUpList .popUpListArticle:nth-child(1), .mediumPhone .popUp .popUpList .popUpListArticle:nth-child(1) {
   padding: 0 0 25px 0;

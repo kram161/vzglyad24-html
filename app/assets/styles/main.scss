@@ -187,7 +187,7 @@
     }
   }
   .mainInfoMain{
-    width: 49.9%;
+    width: 50%;
     border-right: 1px solid #D2D2D2;
     .mainInfoMainNews{
       max-width: 90%;
@@ -556,6 +556,7 @@
     flex-direction: column;
     justify-content: space-between;
     border-right: 1px solid #E2E2E2;
+    width: 100%;
     .popUpArticleImage{
       width:98%;
       img{
@@ -1156,13 +1157,18 @@
       justify-content: flex-start;
 
       .popUpListArticle{
+        margin:0 0 0 5px;
         .popUpListArticleImage{
           display: none;
         }
         .popUpListArticleDescription {
           margin: 0;
         }
-
+        .mainNewsHeading{
+          a{
+            font-size: 2.4rem;
+          }
+        }
       }
       .popUpListArticle:nth-child(1){
         padding: 0 0 25px 0;
