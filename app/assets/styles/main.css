@@ -836,11 +836,11 @@ td, th {
 .smallPhone .errorMessage p, .mediumPhone .errorMessage p, .tablet .errorMessage p, .notebook .errorMessage p {
   font-size: 1.8rem;
 }
-.smallPhone .newsPageLineCard:nth-child(n+4), .mediumPhone .newsPageLineCard:nth-child(n+4), .tablet .newsPageLineCard:nth-child(n+4), .notebook .newsPageLineCard:nth-child(n+4) {
+.smallPhone .newsPageLineCard:nth-child(n+6), .mediumPhone .newsPageLineCard:nth-child(n+6), .tablet .newsPageLineCard:nth-child(n+6), .notebook .newsPageLineCard:nth-child(n+6) {
   display: none;
 }
-.smallPhone .newsPageLineCard:nth-child(n+3), .mediumPhone .newsPageLineCard:nth-child(n+3), .tablet .newsPageLineCard:nth-child(n+3), .notebook .newsPageLineCard:nth-child(n+3) {
-  border-right: none;
+.smallPhone .newsPageLineFence:nth-child(n+6), .mediumPhone .newsPageLineFence:nth-child(n+6), .tablet .newsPageLineFence:nth-child(n+6), .notebook .newsPageLineFence:nth-child(n+6) {
+  display: none;
 }
 
 .smallPhone .container, .mediumPhone .container, .tablet .container {
@@ -973,8 +973,13 @@ td, th {
   margin: 30px 0 0 0;
   border-bottom: 1px solid #d2d2d2;
 }
+.smallPhone .newsPageLine, .mediumPhone .newsPageLine, .tablet .newsPageLine {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .smallPhone .newsPageLine .newsPageLineCard, .mediumPhone .newsPageLine .newsPageLineCard, .tablet .newsPageLine .newsPageLineCard {
-  max-width: 50%;
+  max-width: 45%;
 }
 .smallPhone .newsPageLine .newsPageLineCard .newsCard .newsCardInfo .plainText, .mediumPhone .newsPageLine .newsPageLineCard .newsCard .newsCardInfo .plainText, .tablet .newsPageLine .newsPageLineCard .newsCard .newsCardInfo .plainText {
   height: 260px;
@@ -984,11 +989,11 @@ td, th {
 .smallPhone .newsPageLine .newsPageLineCard .newsPageLineSlimCardWithImage, .mediumPhone .newsPageLine .newsPageLineCard .newsPageLineSlimCardWithImage, .tablet .newsPageLine .newsPageLineCard .newsPageLineSlimCardWithImage, .smallPhone .newsPageLine .newsPageLineCard .newsPageLineWideCard, .mediumPhone .newsPageLine .newsPageLineCard .newsPageLineWideCard, .tablet .newsPageLine .newsPageLineCard .newsPageLineWideCard, .smallPhone .newsPageLine .newsPageLineCard .newsPageLineSlimeCard, .mediumPhone .newsPageLine .newsPageLineCard .newsPageLineSlimeCard, .tablet .newsPageLine .newsPageLineCard .newsPageLineSlimeCard, .smallPhone .newsPageLine .newsPageLineCard .newsPageLineWideCardWithImage, .mediumPhone .newsPageLine .newsPageLineCard .newsPageLineWideCardWithImage, .tablet .newsPageLine .newsPageLineCard .newsPageLineWideCardWithImage {
   max-width: 100%;
 }
-.smallPhone .newsPageLine .newsPageLineCard:nth-child(n+3), .mediumPhone .newsPageLine .newsPageLineCard:nth-child(n+3), .tablet .newsPageLine .newsPageLineCard:nth-child(n+3) {
+.smallPhone .newsPageLine .newsPageLineCard:nth-child(n+4), .mediumPhone .newsPageLine .newsPageLineCard:nth-child(n+4), .tablet .newsPageLine .newsPageLineCard:nth-child(n+4) {
   display: none;
 }
-.smallPhone .newsPageLine .newsPageLineCard:nth-child(n+2), .mediumPhone .newsPageLine .newsPageLineCard:nth-child(n+2), .tablet .newsPageLine .newsPageLineCard:nth-child(n+2) {
-  border-right: none;
+.smallPhone .newsPageLine .newsPageLineFence:nth-child(n+4), .mediumPhone .newsPageLine .newsPageLineFence:nth-child(n+4), .tablet .newsPageLine .newsPageLineFence:nth-child(n+4) {
+  display: none;
 }
 .smallPhone .articleMetrics, .mediumPhone .articleMetrics, .tablet .articleMetrics {
   display: none;
@@ -1107,6 +1112,11 @@ td, th {
 .smallPhone .container, .mediumPhone .container {
   max-width: 430px !important;
 }
+.smallPhone .mainInfo .mainInfoMainNews .mainInfoMainNewsImage, .mediumPhone .mainInfo .mainInfoMainNews .mainInfoMainNewsImage {
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+}
 .smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1129,15 +1139,6 @@ td, th {
 .smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg .mainInfoLatestNewsUnitImgBlock a img, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg .mainInfoLatestNewsUnitImgBlock a img {
   width: 100%;
   height: 100%;
-}
-.smallPhone .newsPageLine .newsPageLineCard:first-child, .mediumPhone .newsPageLine .newsPageLineCard:first-child {
-  padding: 0;
-}
-.smallPhone .newsPage:not(:first-child) .newsPageLine .newsPageLineCard:first-child, .mediumPhone .newsPage:not(:first-child) .newsPageLine .newsPageLineCard:first-child {
-  padding: 0;
-}
-.smallPhone .newsPage:not(:first-child) .newsPageLine .newsPageLineCard:not(:first-child), .mediumPhone .newsPage:not(:first-child) .newsPageLine .newsPageLineCard:not(:first-child) {
-  padding: 0 0 0 20px;
 }
 .smallPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit, .mediumPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit {
   padding: 20px 0 20px 0 !important;
@@ -1176,45 +1177,10 @@ td, th {
 .smallPhone .categoryWay h1 a, .mediumPhone .categoryWay h1 a {
   font-size: 2rem;
 }
-.smallPhone .newsPageLineCard:nth-child(n+4), .mediumPhone .newsPageLineCard:nth-child(n+4) {
-  display: block;
+.smallPhone .newsPage, .mediumPhone .newsPage {
+  border: none;
 }
-.smallPhone .newsPageLine, .mediumPhone .newsPageLine {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-bottom: none;
-}
-.smallPhone .newsPageLine .newsPageLineCard, .mediumPhone .newsPageLine .newsPageLineCard {
-  max-width: 100%;
-  padding: 0 !important;
-}
-.smallPhone .newsPageLine .newsPageLineCard:nth-child(n+1), .mediumPhone .newsPageLine .newsPageLineCard:nth-child(n+1) {
-  border-right: none;
-}
-.smallPhone .newsPageLine .newsPageLineCard .newsCard .newsCardInfo .plainText, .mediumPhone .newsPageLine .newsPageLineCard .newsCard .newsCardInfo .plainText {
-  height: 100%;
-}
-.smallPhone .newsPageLineSlimCardWithImage, .mediumPhone .newsPageLineSlimCardWithImage {
-  max-width: 100% !important;
-}
-.smallPhone .newsPageLineWideCard, .mediumPhone .newsPageLineWideCard {
-  max-width: 100% !important;
-}
-.smallPhone .newsPageLineWideCard .latestNewsHeading, .mediumPhone .newsPageLineWideCard .latestNewsHeading {
-  margin: 15px 0 39px 0;
-}
-.smallPhone .newsPageLineSlimeCard, .mediumPhone .newsPageLineSlimeCard {
-  max-width: 100% !important;
-}
-.smallPhone .newsPageLineSlimeCard .latestNewsHeading, .mediumPhone .newsPageLineSlimeCard .latestNewsHeading {
-  margin: 15px 0 15px 0;
-}
-.smallPhone .newsPageLineWideCardWithImage, .mediumPhone .newsPageLineWideCardWithImage {
-  max-width: 100% !important;
-}
-.smallPhone .newsCard, .mediumPhone .newsCard {
+.smallPhone .newsPage .newsPageLine, .mediumPhone .newsPage .newsPageLine {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1222,16 +1188,36 @@ td, th {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 !important;
-  height: 100% !important;
-  padding: 30px 0 50px 0 !important;
+  height: 100%;
+  border: none;
+}
+.smallPhone .newsPage .newsPageLine .newsPageLineFence, .mediumPhone .newsPage .newsPageLine .newsPageLineFence {
+  display: none;
+}
+.smallPhone .newsPage .newsPageLine .newsPageLineCard:nth-child(n+4), .mediumPhone .newsPage .newsPageLine .newsPageLineCard:nth-child(n+4) {
+  display: block;
+}
+.smallPhone .newsPage .newsPageLine .newsPageLineCard, .mediumPhone .newsPage .newsPageLine .newsPageLineCard {
+  height: 100%;
+  max-width: 100%;
+}
+.smallPhone .newsPage .newsPageLine .newsPageLineCard .newsCard, .mediumPhone .newsPage .newsPageLine .newsPageLineCard .newsCard {
+  height: 100%;
+  margin: 0 0 30px 0;
+  padding: 0 0 100px 0;
   border-bottom: 1px solid #d2d2d2;
 }
-.smallPhone .newsCard .writeMoreButton, .mediumPhone .newsCard .writeMoreButton {
-  bottom: 30px !important;
+.smallPhone .newsPage .newsPageLine .newsPageLineCard .newsCard .newsCardInfo .descriptionArea .plainText, .mediumPhone .newsPage .newsPageLine .newsPageLineCard .newsCard .newsCardInfo .descriptionArea .plainText {
+  height: 100%;
 }
-.smallPhone .newsCard .coverageInformation, .mediumPhone .newsCard .coverageInformation {
-  bottom: 10px !important;
+.smallPhone .newsPage .newsPageLine .newsPageLineCard .newsCard .coverageInformation, .mediumPhone .newsPage .newsPageLine .newsPageLineCard .newsCard .coverageInformation {
+  bottom: 30px;
+}
+.smallPhone .newsPage .newsPageLine .newsPageLineCard .newsCard .writeMoreButton, .mediumPhone .newsPage .newsPageLine .newsPageLineCard .newsCard .writeMoreButton {
+  bottom: 60px;
+}
+.smallPhone .newsPage:not(:first-child) .newsPageLine .newsPageLineCard, .mediumPhone .newsPage:not(:first-child) .newsPageLine .newsPageLineCard {
+  margin: 0;
 }
 .smallPhone .mainInfo, .mediumPhone .mainInfo {
   margin: 40px 0 0 0 !important;
@@ -1281,7 +1267,7 @@ td, th {
   height: 100%;
 }
 .smallPhone .newsPageLineWideCardWithImageImg, .mediumPhone .newsPageLineWideCardWithImageImg {
-  width: 310px;
+  width: 100%;
   margin: 15px 0;
 }
 .smallPhone .newsPageLineWideCardWithImageImg a, .mediumPhone .newsPageLineWideCardWithImageImg a {
@@ -1294,7 +1280,7 @@ td, th {
   height: 100%;
 }
 .smallPhone .newsPageLineSlimCardWithImageImg, .mediumPhone .newsPageLineSlimCardWithImageImg {
-  width: 310px;
+  width: 100%;
   margin: 15px 0;
 }
 .smallPhone .newsPageLineSlimCardWithImageImg img, .mediumPhone .newsPageLineSlimCardWithImageImg img {

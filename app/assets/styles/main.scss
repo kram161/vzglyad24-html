@@ -657,11 +657,11 @@
       font-size: 1.8rem;
     }
   }
-  .newsPageLineCard:nth-child(n+4){
+  .newsPageLineCard:nth-child(n+6){
     display: none;
   }
-  .newsPageLineCard:nth-child(n+3){
-    border-right: none;
+  .newsPageLineFence:nth-child(n+6){
+    display: none;
   }
 }
 %tablet{
@@ -796,8 +796,9 @@
   }
 
   .newsPageLine {
+    justify-content: center;
     .newsPageLineCard{
-      max-width: 50%;
+      max-width: 45%;
       .newsCard{
         .newsCardInfo{
           .plainText{
@@ -811,11 +812,11 @@
         max-width:100%;
       }
     }
-    .newsPageLineCard:nth-child(n+3){
+    .newsPageLineCard:nth-child(n+4){
       display: none;
     }
-    .newsPageLineCard:nth-child(n+2) {
-      border-right: none;
+    .newsPageLineFence:nth-child(n+4){
+      display: none;
     }
   }
   .articleMetrics{
@@ -938,6 +939,13 @@
     max-width: 430px !important;
   }
   .mainInfo{
+    .mainInfoMainNews{
+      .mainInfoMainNewsImage{
+        width: 100%;
+        height:50%;
+        margin:0 auto;
+      }
+    }
     .mainInfoLatestNews{
       .mainInfoLatestNewsUnit{
         flex-direction: column;
@@ -958,19 +966,6 @@
             }
           }
         }
-      }
-    }
-  }
-  .newsPageLine .newsPageLineCard:first-child {
-    padding: 0;
-  }
-  .newsPage:not(:first-child){
-    .newsPageLine{
-      .newsPageLineCard:first-child{
-        padding: 0;
-      }
-      .newsPageLineCard:not(:first-child){
-        padding:0 0 0 20px;
       }
     }
   }
@@ -1020,10 +1015,7 @@
         }
       }
     }
-
-
   }
-
   .categoryWay{
     h1{
       a{
@@ -1031,61 +1023,49 @@
       }
     }
   }
-  .newsPageLineCard:nth-child(n+4){
-    display: block;
-  }
-  .newsPageLine {
-    flex-direction: column;
-    border-bottom: none;
-    .newsPageLineCard{
-      max-width: 100%;
-      padding: 0 !important;
-    }
-    .newsPageLineCard:nth-child(n+1) {
-      border-right: none;
-    }
-  }
-  .newsPageLine {
-    .newsPageLineCard{
-      .newsCard{
-        .newsCardInfo{
-          .plainText{
-            height: 100%;
+  .newsPage{
+    border: none;
+    .newsPageLine{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      border:none;
+      .newsPageLineFence{
+        display: none;
+      }
+      .newsPageLineCard:nth-child(n+4){
+        display: block;
+      }
+      .newsPageLineCard{
+        height: 100%;
+        max-width: 100%;
+        .newsCard{
+          height: 100%;
+          margin:0 0 30px 0;
+          padding: 0 0 100px 0;
+          border-bottom: 1px solid #d2d2d2;
+          .newsCardInfo{
+            .descriptionArea{
+              .plainText{
+                height: 100%;
+              }
+            }
+          }
+          .coverageInformation{
+            bottom:30px;
+          }
+          .writeMoreButton{
+            bottom: 60px;
           }
         }
       }
     }
   }
-  .newsPageLineSlimCardWithImage{
-    max-width:100% !important;
-  }
-  .newsPageLineWideCard{
-    max-width:100% !important;;
-    .latestNewsHeading{
-      margin:15px 0 39px 0;
-    }
-  }
-  .newsPageLineSlimeCard{
-    max-width:100% !important;;
-    .latestNewsHeading{
-      margin:15px 0 15px 0;
-    }
-  }
-  .newsPageLineWideCardWithImage{
-    max-width:100% !important;;
-  }
-  .newsCard {
-    display: flex;
-    flex-direction: column;
-    margin: 0 !important;
-    height: 100% !important;
-    padding: 30px 0 50px 0 !important;
-    border-bottom: 1px solid #d2d2d2;
-    .writeMoreButton{
-      bottom: 30px !important;
-    }
-    .coverageInformation{
-      bottom: 10px !important;
+  .newsPage:not(:first-child){
+    .newsPageLine{
+      .newsPageLineCard{
+        margin:0;
+      }
     }
   }
   .mainInfo {
@@ -1136,7 +1116,7 @@
     a{
       display: block;
     }
-    width: 310px;
+    width: 100%;
     margin:15px 0;
     img{
       object-fit: contain ;
@@ -1145,7 +1125,7 @@
     }
   }
   .newsPageLineSlimCardWithImageImg{
-    width: 310px;
+    width: 100%;
     margin:15px 0;
     img{
       object-fit: contain ;
