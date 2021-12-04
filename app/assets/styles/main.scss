@@ -677,6 +677,9 @@
   .container {
     max-width: 960px !important;
   }
+  .mainInfo{
+    display: flex;
+  }
   .mainInfoMain{
     width: 100%;
     border-right: none;
@@ -955,24 +958,27 @@
         margin:0 auto;
       }
     }
-    .wrapper{
-      .mainInfoLatestNews{
-        .mainInfoLatestNewsUnit{
-          flex-direction: column;
-          .mainInfoLatestNewsUnitImg{
+
+    .mainInfoLatestNews {
+      .mainInfoLatestNewsUnit {
+        flex-direction: column;
+
+        .mainInfoLatestNewsUnitImg {
+          width: 100%;
+          height: 200px;
+          margin: 10px 0;
+
+          .mainInfoLatestNewsUnitImgBlock {
             width: 100%;
             height: 200px;
-            margin: 10px 0;
-            .mainInfoLatestNewsUnitImgBlock{
+
+            a {
               width: 100%;
-              height: 200px;
-              a{
+              height: 100%;
+
+              img {
                 width: 100%;
                 height: 100%;
-                img{
-                  width: 100%;
-                  height: 100%;
-                }
               }
             }
           }
