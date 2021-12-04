@@ -94,12 +94,10 @@
 .mainInfoMainNewsImage{
   overflow: hidden;
   height: 100%;
-  width: 100%;
   a{
-    display: block;
+    display: inline-block;
     overflow: hidden;
     height: 100%;
-    width: 100%;
     img{
       height: 100%;
       object-fit: cover;
@@ -228,9 +226,10 @@
     }
   }
   .mainInfoLatestNews{
-    width: 47.5%;
+    width: 50%;
     display: table-cell;
     vertical-align: top;
+    padding: 0 0 0 20px;
     .mainInfoLatestNewsUnit{
       max-width: 100%;
       padding:0 0 27px 0;
