@@ -448,15 +448,11 @@ body .dateBlock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto 0 10px 0;
 }
 body .dateBlock p {
   font-size: 1.2rem;
   font-weight: 500;
   margin: auto 0;
-}
-body .dateBlock svg {
-  margin: auto 10px;
 }
 body .mainNewsHeading a, body .mainNewsHeading p {
   font-size: 3.6rem;
@@ -492,6 +488,7 @@ body .coverageInformation {
   display: flex;
 }
 body .coverageInformation .views {
+  margin: 0 10px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,7 +497,7 @@ body .coverageInformation .views svg {
   margin: auto 0;
 }
 body .coverageInformation .views p {
-  margin: auto 10px;
+  margin: auto auto auto 5px;
 }
 body .coverageInformation .appraisals {
   display: -webkit-box;
@@ -511,7 +508,7 @@ body .coverageInformation .appraisals svg {
   margin: auto 0;
 }
 body .coverageInformation .appraisals p {
-  margin: auto 10px;
+  margin: auto auto auto 5px;
 }
 body .plainText p {
   font-size: 1.8rem;

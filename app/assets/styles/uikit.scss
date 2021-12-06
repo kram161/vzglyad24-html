@@ -316,14 +316,10 @@ body{
   }
   .dateBlock{
     display: flex;
-    margin:auto 0 10px 0;
     p{
       font-size: 1.2rem;
       font-weight: 500;
       margin:auto 0;
-    }
-    svg{
-      margin:auto 10px;
     }
   }
   .mainNewsHeading{
@@ -363,12 +359,13 @@ body{
   .coverageInformation{
     display: flex;
     .views{
+      margin:0 10px 0 0;
       display: flex;
       svg{
         margin:auto 0;
       }
       p{
-        margin:auto 10px;
+        margin:auto auto auto 5px;
       }
     }
     .appraisals{
@@ -377,7 +374,7 @@ body{
         margin:auto 0;
       }
       p{
-        margin:auto 10px;
+        margin:auto auto auto 5px;
       }
     }
   }
