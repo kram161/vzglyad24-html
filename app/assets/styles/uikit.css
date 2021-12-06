@@ -100,7 +100,7 @@ td, th {
 }
 
 .hiddenMenu {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 5;
   -webkit-transition: 0.5s;
@@ -249,11 +249,16 @@ td, th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 40px 0 20px 0;
+  border-bottom: 1px solid #D2D2D2;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 40px 0 20px 0;
-  border-bottom: 1px solid #D2D2D2;
+}
+.menu .menuHeader .menuRate {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .menu .menuHeader .menuRate, .menu .menuHeader .menuRateDollar, .menu .menuHeader .menuRateEuro {
   display: -webkit-box;
@@ -270,6 +275,11 @@ td, th {
 }
 .menu .menuHeader .menuRateDollar svg, .menu .menuHeader .menuRateEuro svg {
   margin: auto 0;
+}
+.menu .menuHeader .menuLogo {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .menu .menuHeader .menuLogo a {
   text-decoration: none;
@@ -438,11 +448,12 @@ body .dateBlock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: auto 0 10px 0;
 }
 body .dateBlock p {
   font-size: 1.2rem;
   font-weight: 500;
-  margin: 9px 0;
+  margin: auto 0;
 }
 body .dateBlock svg {
   margin: auto 10px;
@@ -564,7 +575,7 @@ body .plainText p {
 }
 .footer .footerInf .footerInfAboutUs .footerInfAboutUsContact {
   background: #E0E0E0;
-  margin: 6px auto;
+  margin: auto;
 }
 .footer .footerInf .footerInfAboutUs p {
   font-size: 1.4rem;
@@ -712,6 +723,9 @@ body .plainText p {
 }
 .smallPhone .footerInf .footerInfAboutUs .footerInfAboutUsContact, .mediumPhone .footerInf .footerInfAboutUs .footerInfAboutUsContact {
   margin: 0 !important;
+}
+.smallPhone .dateBlock, .mediumPhone .dateBlock {
+  margin: 5px 0 0 0;
 }
 
 .smallPhone .mainNewsHeading p {

@@ -185,7 +185,6 @@ td, th {
 }
 
 .articleBodySecondaryContentUnitImg {
-  height: 215px;
   overflow: hidden;
 }
 .articleBodySecondaryContentUnitImg a {
@@ -194,7 +193,7 @@ td, th {
 .articleBodySecondaryContentUnitImg img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: auto;
+  width: 100%;
   height: 100%;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -202,19 +201,17 @@ td, th {
 
 .mainInfoMainNewsImage {
   overflow: hidden;
-  width: 100%;
   height: 100%;
 }
 .mainInfoMainNewsImage a {
-  display: block;
-  width: 100%;
+  display: inline-block;
+  overflow: hidden;
   height: 100%;
 }
 .mainInfoMainNewsImage a img {
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
-  height: 100%;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
@@ -290,15 +287,11 @@ td, th {
 }
 
 .mainInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: table;
   margin: 40px 0 40px 0;
   padding: 0 0 40px 0;
   border-bottom: 1px solid #D2D2D2;
+  height: 100%;
 }
 .mainInfo .mainInfArticle .mainInfoMainNews .mainInfoMainNewsNavigation {
   bottom: unset;
@@ -309,11 +302,19 @@ td, th {
 .mainInfo .mainInfoMain {
   width: 50%;
   border-right: 1px solid #D2D2D2;
+  display: table-cell;
+  vertical-align: top;
+  height: 100%;
 }
 .mainInfo .mainInfoMain .mainInfoMainNews {
   max-width: 90%;
-  display: inline-block;
+  display: table;
   position: relative;
+  height: inherit;
+}
+.mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsImage {
+  display: table-row;
+  height: 100%;
 }
 .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsInformation {
   margin: 30px 0 0 0;
@@ -340,16 +341,17 @@ td, th {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: absolute;
   width: 100%;
-  bottom: 0;
 }
 .mainInfo .mainInfoMain .mainInfoMainNews:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 .mainInfo .mainInfoLatestNews {
-  width: 47.5%;
+  width: 50%;
+  display: table-cell;
+  vertical-align: top;
+  padding: 0 0 0 20px;
 }
 .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit {
   max-width: 100%;
@@ -385,6 +387,18 @@ td, th {
      object-fit: cover;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+.mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoMainNewsInformation {
   display: -webkit-box;
@@ -465,9 +479,6 @@ td, th {
 .newsPageLine .newsCard .coverageInformation {
   position: absolute;
   bottom: 0;
-}
-.newsPageLine .newsCard .coverageInformation .appraisals {
-  margin: 0 0 0 25px;
 }
 .newsPageLine .newsCard .newsCardInfo {
   max-height: 100%;
@@ -573,10 +584,10 @@ td, th {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 70%;
+  width: 100%;
 }
 .articleBody .articleBodyMain .articleBodyMainContent {
-  width: 80%;
+  width: 90%;
 }
 .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMainContentBlock {
   margin: 0 0 20px 0;
@@ -638,17 +649,14 @@ td, th {
   padding: 0 0 0 20px;
   width: 100%;
 }
-.articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock p {
-  margin: 0 0 10px 0;
-}
 .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .writeMoreButton {
-  margin: 20px 0 30px;
+  margin: 10px 0 15px;
 }
 .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:last-child {
   border-bottom: none;
 }
 .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:not(:first-child) {
-  padding: 30px 0 0 20px;
+  padding: 15px 0 0 15px;
 }
 .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:hover img {
   -webkit-transform: scale(1.1);
@@ -846,6 +854,11 @@ td, th {
 
 .smallPhone .container, .mediumPhone .container, .tablet .container {
   max-width: 960px !important;
+}
+.smallPhone .mainInfo, .mediumPhone .mainInfo, .tablet .mainInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .smallPhone .mainInfoMain, .mediumPhone .mainInfoMain, .tablet .mainInfoMain {
   width: 100%;

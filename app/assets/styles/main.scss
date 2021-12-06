@@ -82,11 +82,10 @@
   a{
     display: block;
   }
-  height: 215px;
   overflow: hidden;
   img{
     object-fit: cover ;
-    width: auto;
+    width: 100%;
     height: 100%;
     transition: all 0.2s linear;
   }
@@ -422,9 +421,9 @@
   .articleBodyMain{
     display: flex;
     flex-direction: column;
-    width:70%;
+    width:100%;
     .articleBodyMainContent{
-      width: 80%;
+      width: 90%;
       .articleBodyMainContentBlock{
         margin:0 0 20px 0;
       }
@@ -478,20 +477,15 @@
         border-left:1px solid #D2D2D2;
         padding: 0 0 0 20px;
         width: 100%;
-        .dateBlock{
-          p{
-            margin:0 0 10px 0;
-          }
-        }
         .writeMoreButton{
-          margin:20px 0 30px;
+          margin:10px 0 15px;
         }
       }
       .articleBodySecondaryContentUnit:last-child{
         border-bottom:none;
       }
       .articleBodySecondaryContentUnit:not(:first-child){
-        padding:30px 0 0 20px;
+        padding:15px 0 0 15px;
       }
       .articleBodySecondaryContentUnit:hover{
         img{
