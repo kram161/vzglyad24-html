@@ -544,30 +544,34 @@
   }
 }
 .modal{
-  position: fixed;
   max-height: 100%;
-  overflow: auto;
-  left: 0;
-  top: 0;
+  position: fixed;
+  top:0;
   bottom: 0;
+  left: 0;
   right: 0;
+  overflow: auto;
   background-color: rgba(0,0,0,.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   z-index: 9;
+  display: flex;
+  justify-content: center;
   .popUp{
     max-width: 1200px;
     padding: 20px;
     display: table;
-    height: auto;
+    height: 522px;
+    position: absolute;
     .popUpArticle{
       display: table-cell;
       vertical-align: top;
       border-right: 1px solid #E2E2E2;
+      height: 100%;
       .popUpArticleWrapper{
         display: table;
-        height: inherit;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
         padding: 0 20px 0 0;
         .popUpArticleImage{
           display: table-row;
@@ -581,6 +585,7 @@
               height: 100%;
               width: 100%;
               object-fit: cover;
+              transition: all 0.2s linear;
             }
           }
         }
@@ -592,6 +597,11 @@
         }
         .writeMoreButton{
           margin: 25px 0 0 0;
+        }
+      }
+      .popUpArticleWrapper:hover{
+        img{
+          transform: scale(1.1,1.1);
         }
       }
     }
@@ -607,10 +617,17 @@
           .popUpListArticleImageImg{
             width: 140px;
             height: 140px;
-            img{
+            a{
               height: 100%;
-              width: auto;
-              object-fit: cover;
+              width: 100%;
+              display: inline-block;
+              overflow: hidden;
+              img{
+                transition:all 0.2s linear;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+              }
             }
           }
         }
@@ -624,6 +641,11 @@
               margin:0;
             }
           }
+        }
+      }
+      .popUpListArticle:hover{
+        img{
+          transform: scale(1.1,1.1);
         }
       }
       .popUpListArticle:nth-child(1){

@@ -712,39 +712,46 @@ td, th {
 }
 
 .modal {
-  position: fixed;
   max-height: 100%;
-  overflow: auto;
-  left: 0;
+  position: fixed;
   top: 0;
   bottom: 0;
+  left: 0;
   right: 0;
+  overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 9;
 }
 .modal .popUp {
   max-width: 1200px;
   padding: 20px;
   display: table;
-  height: auto;
+  height: 522px;
+  position: absolute;
 }
 .modal .popUp .popUpArticle {
   display: table-cell;
   vertical-align: top;
   border-right: 1px solid #E2E2E2;
+  height: 100%;
 }
 .modal .popUp .popUpArticle .popUpArticleWrapper {
   display: table;
-  height: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 100%;
   padding: 0 20px 0 0;
 }
 .modal .popUp .popUpArticle .popUpArticleWrapper .popUpArticleImage {
@@ -762,6 +769,8 @@ td, th {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 .modal .popUp .popUpArticle .popUpArticleWrapper .dateBlock {
   margin: 30px 0 0 0;
@@ -771,6 +780,10 @@ td, th {
 }
 .modal .popUp .popUpArticle .popUpArticleWrapper .writeMoreButton {
   margin: 25px 0 0 0;
+}
+.modal .popUp .popUpArticle .popUpArticleWrapper:hover img {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 .modal .popUp .popUpList {
   display: table-cell;
@@ -790,9 +803,17 @@ td, th {
   width: 140px;
   height: 140px;
 }
-.modal .popUp .popUpList .popUpListArticle .popUpListArticleImage .popUpListArticleImageImg img {
+.modal .popUp .popUpList .popUpListArticle .popUpListArticleImage .popUpListArticleImageImg a {
   height: 100%;
-  width: auto;
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+.modal .popUp .popUpList .popUpListArticle .popUpListArticleImage .popUpListArticleImageImg a img {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -811,6 +832,10 @@ td, th {
 }
 .modal .popUp .popUpList .popUpListArticle .popUpListArticleDescription .dateBlock p {
   margin: 0;
+}
+.modal .popUp .popUpList .popUpListArticle:hover img {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 .modal .popUp .popUpList .popUpListArticle:nth-child(1) {
   border-bottom: 1px solid #E2E2E2;
