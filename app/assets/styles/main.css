@@ -1040,9 +1040,6 @@ td, th {
 .smallPhone .newsPage .newsPageLine .newsPageLineCard, .mediumPhone .newsPage .newsPageLine .newsPageLineCard, .tablet .newsPage .newsPageLine .newsPageLineCard, .smallPhone .articleNewsPage .newsPageLine .newsPageLineCard, .mediumPhone .articleNewsPage .newsPageLine .newsPageLineCard, .tablet .articleNewsPage .newsPageLine .newsPageLineCard {
   width: 100%;
 }
-.smallPhone .categoryWay h1 a, .mediumPhone .categoryWay h1 a, .tablet .categoryWay h1 a {
-  font-size: 3rem;
-}
 .smallPhone .articleMainInf .mainInfArticle, .mediumPhone .articleMainInf .mainInfArticle, .tablet .articleMainInf .mainInfArticle {
   display: -webkit-box;
   display: -ms-flexbox;
