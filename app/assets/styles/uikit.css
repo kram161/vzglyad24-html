@@ -456,6 +456,9 @@ body .dateBlock p {
   font-weight: 500;
   margin: auto 0;
 }
+body .categoryButtonMobile, body .dateBlockMobile {
+  display: none;
+}
 body .mainNewsHeading a, body .mainNewsHeading p {
   font-size: 3.6rem;
   font-weight: 700;

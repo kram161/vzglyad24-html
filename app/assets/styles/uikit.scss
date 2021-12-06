@@ -324,6 +324,9 @@ body{
       margin:auto 0;
     }
   }
+  .categoryButtonMobile,.dateBlockMobile{
+    display: none;
+  }
   .mainNewsHeading{
     a,p{
       font-size: 3.6rem;
