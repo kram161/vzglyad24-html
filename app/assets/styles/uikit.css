@@ -433,6 +433,8 @@ body .categoryButton a {
   text-decoration: none;
   padding: 10px;
   display: inline-block;
+  position: relative;
+  z-index: 5;
 }
 body .categoryButton:hover {
   -webkit-transition: 0.5s ease;
@@ -723,6 +725,16 @@ body .plainText p {
 }
 .smallPhone .dateBlock, .mediumPhone .dateBlock {
   margin: 5px 0 0 0;
+}
+.smallPhone .mainInfo .mainInfoMain .mainInfoMainNews .wrapper .mainInfoMainNewsInformation, .mediumPhone .mainInfo .mainInfoMain .mainInfoMainNews .wrapper .mainInfoMainNewsInformation {
+  margin: 10px 0 0 0;
+}
+.smallPhone .mainInfo .mainInfoMain .mainInfoMainNews .wrapper .mainInfoMainNewsDescription, .mediumPhone .mainInfo .mainInfoMain .mainInfoMainNews .wrapper .mainInfoMainNewsDescription {
+  margin: 10px 0;
+}
+.smallPhone .mainInfo .mainInfoMain .mainInfoMainNews .wrapper .mainInfoMainNewsDescription .mainNewsHeading a, .mediumPhone .mainInfo .mainInfoMain .mainInfoMainNews .wrapper .mainInfoMainNewsDescription .mainNewsHeading a {
+  font-size: 2.6rem;
+  line-height: 2.8rem;
 }
 
 .smallPhone .mainNewsHeading p {

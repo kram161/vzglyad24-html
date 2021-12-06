@@ -410,7 +410,8 @@ td, th {
   margin: 0 0 5px 0;
 }
 .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoMainNewsInformation .categoryButton {
-  margin: 0 32px 0 0;
+  background: none;
+  margin: -50px 0 15px 5px;
 }
 .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoMainNewsNavigation {
   margin: 10px 0 0 0;
@@ -946,9 +947,6 @@ td, th {
   margin: 0 auto;
   border-bottom: 1px solid #D2D2D2;
   padding: 0 0 20px 0;
-}
-.smallPhone .mainInfo .mainInfoMainNews .mainInfoMainNewsNavigation, .mediumPhone .mainInfo .mainInfoMainNews .mainInfoMainNewsNavigation, .tablet .mainInfo .mainInfoMainNews .mainInfoMainNewsNavigation {
-  margin: 0 0 20px 0;
 }
 .smallPhone .mainInfo .mainInfoLatestNews, .mediumPhone .mainInfo .mainInfoLatestNews, .tablet .mainInfo .mainInfoLatestNews {
   padding: 0;

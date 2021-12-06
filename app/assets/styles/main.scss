@@ -266,7 +266,8 @@
           justify-content: flex-start;
           margin:0 0 5px 0;
           .categoryButton{
-            margin:0 32px 0 0;
+            background: none;
+            margin: -50px 0 15px 5px;
           }
         }
       }
@@ -761,9 +762,7 @@
       margin: 0 auto;
       border-bottom: 1px solid #D2D2D2;
       padding: 0 0 20px 0;
-      .mainInfoMainNewsNavigation{
-        margin: 0 0 20px 0;
-      }
+
     }
     .mainInfoLatestNews{
       padding: 0;
