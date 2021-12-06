@@ -283,6 +283,7 @@ td, th {
 }
 .menu .menuHeader .menuLogo a {
   text-decoration: none;
+  display: inline-block;
 }
 .menu .menuHeader .menuLogo a p {
   margin: 0;
@@ -736,8 +737,12 @@ body .plainText p {
   margin: 10px 0;
 }
 .smallPhone .mainInfo .mainInfoMain .mainInfoMainNews .wrapper .mainInfoMainNewsDescription .mainNewsHeading a, .mediumPhone .mainInfo .mainInfoMain .mainInfoMainNews .wrapper .mainInfoMainNewsDescription .mainNewsHeading a {
-  font-size: 2.6rem;
-  line-height: 2.8rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoLatestNewsDescription .latestNewsHeading a, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoLatestNewsDescription .latestNewsHeading a {
+  font-size: 2rem;
+  line-height: 2.4rem;
 }
 
 .smallPhone .mainNewsHeading p {
