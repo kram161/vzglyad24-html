@@ -287,12 +287,18 @@
     }
   }
 }
+
 .newsPage:not(:first-child){
   .newsPageLine{
     height: 590px;
     .newsPageLineCard{
       margin: 40px 0 0 0;
     }
+  }
+}
+.articleNewsPage:not(:first-child){
+  .newsPageLine{
+    height: 450px;
   }
 }
 .newsPageLine{
@@ -377,6 +383,11 @@
   }
   .newsPageLineWideCardWithImage{
     max-width:310px;
+  }
+}
+.articleNewsPage{
+  .newsPageLine{
+    height: 410px;
   }
 }
 .newsPageLine:not(:first-child){

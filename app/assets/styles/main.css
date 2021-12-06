@@ -437,6 +437,10 @@ td, th {
   margin: 40px 0 0 0;
 }
 
+.articleNewsPage:not(:first-child) .newsPageLine {
+  height: 450px;
+}
+
 .newsPageLine {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -525,6 +529,10 @@ td, th {
 }
 .newsPageLine .newsPageLineWideCardWithImage {
   max-width: 310px;
+}
+
+.articleNewsPage .newsPageLine {
+  height: 410px;
 }
 
 .newsPageLine:not(:first-child) .newsCard {
