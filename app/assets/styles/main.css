@@ -711,69 +711,92 @@ td, th {
   height: 20px;
 }
 
-.popUp {
+.modal {
+  position: fixed;
+  max-height: 100%;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 9;
+}
+.modal .popUp {
   max-width: 1200px;
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.popUp .popUpArticle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-right: 1px solid #E2E2E2;
-  width: 100%;
-}
-.popUp .popUpArticle .popUpArticleImage {
-  width: 98%;
-}
-.popUp .popUpArticle .popUpArticleImage img {
-  width: 98%;
+  display: table;
   height: auto;
+}
+.modal .popUp .popUpArticle {
+  display: table-cell;
+  vertical-align: top;
+  border-right: 1px solid #E2E2E2;
+}
+.modal .popUp .popUpArticle .popUpArticleWrapper {
+  display: table;
+  height: inherit;
+  padding: 0 20px 0 0;
+}
+.modal .popUp .popUpArticle .popUpArticleWrapper .popUpArticleImage {
+  display: table-row;
+  height: 100%;
+}
+.modal .popUp .popUpArticle .popUpArticleWrapper .popUpArticleImage a {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+.modal .popUp .popUpArticle .popUpArticleWrapper .popUpArticleImage a img {
+  height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.popUp .popUpArticle .dateBlock {
+.modal .popUp .popUpArticle .popUpArticleWrapper .dateBlock {
   margin: 30px 0 0 0;
 }
-.popUp .popUpArticle .mainNewsHeading {
+.modal .popUp .popUpArticle .popUpArticleWrapper .mainNewsHeading {
   margin: 25px 0 auto 0;
 }
-.popUp .popUpArticle .writeMoreButton {
+.modal .popUp .popUpArticle .popUpArticleWrapper .writeMoreButton {
   margin: 25px 0 0 0;
 }
-.popUp .popUpList .popUpListArticle {
+.modal .popUp .popUpList {
+  display: table-cell;
+  vertical-align: top;
+}
+.modal .popUp .popUpList .popUpListArticle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 0 0 20px;
 }
-.popUp .popUpList .popUpListArticle .popUpListArticleImage {
+.modal .popUp .popUpList .popUpListArticle .popUpListArticleImage {
   width: 140px;
   height: 140px;
 }
-.popUp .popUpList .popUpListArticle .popUpListArticleImage .popUpListArticleImageImg {
+.modal .popUp .popUpList .popUpListArticle .popUpListArticleImage .popUpListArticleImageImg {
   width: 140px;
   height: 140px;
 }
-.popUp .popUpList .popUpListArticle .popUpListArticleImage .popUpListArticleImageImg img {
+.modal .popUp .popUpList .popUpListArticle .popUpListArticleImage .popUpListArticleImageImg img {
   height: 100%;
   width: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.popUp .popUpList .popUpListArticle .popUpListArticleDescription {
+.modal .popUp .popUpList .popUpListArticle .popUpListArticleDescription {
   margin: 0 0 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -786,24 +809,26 @@ td, th {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.popUp .popUpList .popUpListArticle .popUpListArticleDescription .dateBlock p {
+.modal .popUp .popUpList .popUpListArticle .popUpListArticleDescription .dateBlock p {
   margin: 0;
 }
-.popUp .popUpList .popUpListArticle:nth-child(1) {
+.modal .popUp .popUpList .popUpListArticle:nth-child(1) {
   border-bottom: 1px solid #E2E2E2;
   padding: 0 0 25px 0;
 }
-.popUp .popUpList .popUpListArticle:nth-child(2) {
+.modal .popUp .popUpList .popUpListArticle:nth-child(2) {
   padding: 25px 0 25px 0;
   border-bottom: 1px solid #E2E2E2;
 }
-.popUp .popUpList .popUpListArticle:nth-child(3) {
+.modal .popUp .popUpList .popUpListArticle:nth-child(3) {
   padding: 25px 0 0 0;
 }
-.popUp .popUpIcon {
+.modal .popUp .popUpIcon {
   cursor: pointer;
+  display: table-cell;
+  height: inherit;
 }
-.popUp .popUpIcon path {
+.modal .popUp .popUpIcon path {
   width: 20px;
   height: 20px;
 }
