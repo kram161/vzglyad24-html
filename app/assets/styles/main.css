@@ -845,11 +845,8 @@ td, th {
 .smallPhone .errorMessage p, .mediumPhone .errorMessage p, .tablet .errorMessage p, .notebook .errorMessage p {
   font-size: 1.8rem;
 }
-.smallPhone .newsPageLineCard:nth-child(n+6), .mediumPhone .newsPageLineCard:nth-child(n+6), .tablet .newsPageLineCard:nth-child(n+6), .notebook .newsPageLineCard:nth-child(n+6) {
-  display: none;
-}
-.smallPhone .newsPageLineFence:nth-child(n+6), .mediumPhone .newsPageLineFence:nth-child(n+6), .tablet .newsPageLineFence:nth-child(n+6), .notebook .newsPageLineFence:nth-child(n+6) {
-  display: none;
+.smallPhone .newsPageLineCard, .mediumPhone .newsPageLineCard, .tablet .newsPageLineCard, .notebook .newsPageLineCard {
+  padding: 0 10px;
 }
 
 .smallPhone .container, .mediumPhone .container, .tablet .container {
@@ -894,11 +891,11 @@ td, th {
 }
 .smallPhone .articleBodySecondaryContentUnitImg, .mediumPhone .articleBodySecondaryContentUnitImg, .tablet .articleBodySecondaryContentUnitImg {
   position: relative;
-  width: 100px;
+  width: auto;
   overflow: hidden;
 }
 .smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock, .tablet .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock {
-  width: 100px;
+  width: 100%;
   height: 100%;
 }
 .smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a, .tablet .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a {
@@ -1023,6 +1020,7 @@ td, th {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  margin: 0;
 }
 .smallPhone .articleBody .articleBodyMain, .mediumPhone .articleBody .articleBodyMain, .tablet .articleBody .articleBodyMain {
   width: 100%;
@@ -1052,7 +1050,7 @@ td, th {
 }
 .smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit {
   border-left: none;
-  padding: 20px 0 0 0 !important;
+  padding: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1070,9 +1068,6 @@ td, th {
 }
 .smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .writeMoreButton, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .writeMoreButton, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .writeMoreButton {
   margin: 20px 0 20px;
-}
-.smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:first-child, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:first-child, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:first-child {
-  border-top: 1px solid #d2d2d2;
 }
 .smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:last-child, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:last-child, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:last-child {
   border-bottom: 1px solid #d2d2d2;
