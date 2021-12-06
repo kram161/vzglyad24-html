@@ -489,16 +489,6 @@ td, th {
 .newsPageLine .newsCard .newsCardInfo .dateBlock {
   margin: 10px 0 0 0;
 }
-.newsPageLine .newsCard .newsCardInfo:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  width: 100%;
-  height: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, #fff));
-  background: linear-gradient(180deg, transparent, #fff 90%);
-}
 .newsPageLine .newsCard img {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -625,16 +615,6 @@ td, th {
 .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription .latestNewsHeading a {
   text-overflow: ellipsis;
   line-height: 3rem;
-}
-.articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription .latestNewsHeading:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, #fff));
-  background: linear-gradient(180deg, transparent, #fff 50%);
 }
 .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews:hover img {
   -webkit-transform: scale(1.1);
