@@ -785,9 +785,6 @@
       padding: 10px 0 0 0;
     }
   }
-  .articleBodySecondaryFirst{
-    display: none;
-  }
 
 }
 %tablet{
@@ -796,6 +793,9 @@
   }
   .mainInfo{
     display: flex;
+  }
+  .articleBodySecondaryFirst{
+    display: none;
   }
   .mainInfoMain{
     width: 100%;
