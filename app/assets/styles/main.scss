@@ -470,7 +470,7 @@
       .articleBodySecondaryContentUnit{
         border-bottom: 1px solid #D2D2D2;
         border-left:1px solid #D2D2D2;
-        padding: 0 0 0 20px;
+        padding: 0 15px 0 15px;
         width: 100%;
         .writeMoreButton{
           margin:10px 0 15px;
@@ -480,7 +480,7 @@
         border-bottom:none;
       }
       .articleBodySecondaryContentUnit:not(:first-child){
-        padding:15px 0 0 15px;
+        padding:15px 15px 0 15px;
       }
       .articleBodySecondaryContentUnit:hover{
         img{
@@ -785,9 +785,12 @@
       padding: 10px 0 0 0;
     }
   }
+  .articleBodySecondaryFirst{
+    display: none;
+  }
+
 }
 %tablet{
-
   .container {
     max-width: 960px !important;
   }
