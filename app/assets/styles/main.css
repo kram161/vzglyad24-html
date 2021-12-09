@@ -1407,6 +1407,7 @@ td, th {
 .smallPhone .articleBodyMainContentBlockImg, .mediumPhone .articleBodyMainContentBlockImg {
   height: 80px;
   width: 80px;
+  margin: auto 0;
 }
 .smallPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock, .mediumPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock {
   height: 80px;
@@ -1497,4 +1498,23 @@ td, th {
 }
 .smallPhone .errorMessage p {
   font-size: 1.8rem;
+}
+.smallPhone .article .latestNewsHeading {
+  height: 60px !important;
+}
+.smallPhone .article .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMainContentBlock {
+  margin: 0 0 10px 0;
+}
+.smallPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg {
+  width: 100%;
+  height: 80px;
+}
+.smallPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg a {
+  width: 80px;
+  height: 80px;
+  margin: 0;
+}
+.smallPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg a img {
+  width: 80px;
+  height: 80px;
 }

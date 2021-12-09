@@ -760,8 +760,8 @@ body .plainText p {
   font-weight: 700;
 }
 .smallPhone .articleBodyMainContent .mainNewsHeading p {
-  font-size: 3rem;
-  line-height: 3.4rem;
+  font-size: 2rem;
+  line-height: 2.2rem;
 }
 .smallPhone .hiddenMenu .hiddenMenuFooter {
   display: -webkit-box;
