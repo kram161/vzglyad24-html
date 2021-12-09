@@ -96,9 +96,11 @@
   a{
     display: inline-block;
     overflow: hidden;
-    height: 100%;
+    height: auto;
+    width: 100%;
     img{
-      height: 100%;
+      max-height: 270px;
+      width: 100%;
       object-fit: cover;
       transition: all 0.2s linear;
     }
@@ -193,7 +195,7 @@
       max-width: 90%;
       display: table;
       position: relative;
-      height: inherit;
+      height: 100%;
       .mainInfoMainNewsImage{
         display: table-row;
         height: 100%;
@@ -290,28 +292,39 @@
 
 .newsPage:not(:first-child){
   .newsPageLine{
-    height: 590px;
     .newsPageLineCard{
       margin: 40px 0 0 0;
     }
   }
 }
-.articleNewsPage:not(:first-child){
-  .newsPageLine{
-    height: 450px;
-  }
-}
+
 .newsPageLine{
   display: flex;
-  justify-content: space-between;
+  width: 100%;
   border-bottom: 1px solid #D2D2D2;
   position: relative;
-  height: 550px;
+  height: 100%;
+  .newsPageLineCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    width: auto;
+    .newsCard{
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      .newsCardNavigation{
+        margin: 15px 0;
+      }
+    }
+  }
   .newsPageLineFence{
+    display: table-cell;
     content: '';
     position: relative;
     margin:0 auto;
-    height: 100%;
+    height: auto;
     width: 1px;
     background: #D2D2D2;
   }
@@ -321,17 +334,13 @@
   .newsCard{
     display: flex;
     flex-direction: column;
-    height: 490px;
     position: relative;
     text-overflow: ellipsis;
     overflow: hidden;
     .writeMoreButton{
-      position: absolute;
-      bottom: 30px;
+
     }
     .coverageInformation{
-      position: absolute;
-      bottom: 0;
 
     }
     .newsCardInfo{
@@ -354,12 +363,10 @@
     }
   }
   .articleNewsCard{
-    height: 400px;
     .newsCardInfo{
       .latestNewsHeading{
         text-overflow: ellipsis;
         overflow: hidden;
-        height: 185px;
         margin:5px 0;
       }
     }
@@ -385,11 +392,7 @@
     max-width:310px;
   }
 }
-.articleNewsPage{
-  .newsPageLine{
-    height: 410px;
-  }
-}
+
 .newsPageLine:not(:first-child){
   .newsCard{
     margin: 40px 40px 40px 0;
@@ -563,7 +566,7 @@
   justify-content: center;
   .popUp{
     max-width: 1200px;
-    padding: 20px;
+    padding: 30px 20px 20px 20px;
     display: table;
     height: 522px;
     position: absolute;
@@ -668,8 +671,9 @@
     }
     .popUpIcon{
       cursor: pointer;
-      display: table-cell;
-      height: inherit;
+      position: absolute;
+      top:5px;
+      right: 5px;
       path{
         width: 20px;
         height: 20px;
@@ -679,19 +683,6 @@
 }
 .articleMetricsMobile{
   display: none;
-}
-.mainPageLine{
-  .newsPageLineCard{
-    .newsCard{
-      .newsCardInfo{
-        .descriptionArea{
-          height: 350px;
-          overflow:hidden;
-          text-overflow: ellipsis;
-        }
-      }
-    }
-  }
 }
 .container {
   max-width: 1440px;
@@ -703,6 +694,7 @@
   .container {
     max-width: 1140px !important;
   }
+
   .errorMessage{
     h1{
       font-size: 2.4rem;
@@ -785,7 +777,21 @@
       padding: 10px 0 0 0;
     }
   }
-
+  .mainInfo{
+    .mainInfoMain{
+      .mainInfoMainNews{
+        .mainInfoMainNewsImage{
+          a{
+            height: 100%;
+            img{
+              height: 100%;
+              max-height: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 %tablet{
   .container {

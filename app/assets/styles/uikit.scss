@@ -270,6 +270,7 @@ body{
   .writeMoreButton{
     display: flex;
     position: relative;
+    margin: 15px 0;
     a{
       font-size: 1.4rem;
       font-weight: 700;
@@ -506,6 +507,23 @@ body{
   }
 }
 %mediumPhone{
+  .plainText{
+    p{
+      font-size: 1.6rem;
+    }
+  }
+  .mainNewsHeading{
+    a{
+      font-size: 2.0rem;
+      line-height: 2.2rem;
+    }
+  }
+  .mainNewsHeading{
+    p{
+      font-size: 2.0rem;
+      line-height: 2.2rem;
+    }
+  }
   .hiddenMenu {
     height: 340px;
   }
@@ -602,7 +620,7 @@ body{
             .latestNewsHeading{
               a{
                 font-size: 2.0rem;
-                line-height: 2.4rem;
+                line-height: 2.2rem;
               }
             }
           }

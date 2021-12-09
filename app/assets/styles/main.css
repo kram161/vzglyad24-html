@@ -206,10 +206,12 @@ td, th {
 .mainInfoMainNewsImage a {
   display: inline-block;
   overflow: hidden;
-  height: 100%;
+  height: auto;
+  width: 100%;
 }
 .mainInfoMainNewsImage a img {
-  height: 100%;
+  max-height: 270px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transition: all 0.2s linear;
@@ -310,7 +312,7 @@ td, th {
   max-width: 90%;
   display: table;
   position: relative;
-  height: inherit;
+  height: 100%;
 }
 .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsImage {
   display: table-row;
@@ -430,33 +432,51 @@ td, th {
   border-bottom: none;
 }
 
-.newsPage:not(:first-child) .newsPageLine {
-  height: 590px;
-}
 .newsPage:not(:first-child) .newsPageLine .newsPageLineCard {
   margin: 40px 0 0 0;
-}
-
-.articleNewsPage:not(:first-child) .newsPageLine {
-  height: 450px;
 }
 
 .newsPageLine {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  border-bottom: 1px solid #D2D2D2;
+  position: relative;
+  height: 100%;
+}
+.newsPageLine .newsPageLineCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid #D2D2D2;
-  position: relative;
-  height: 550px;
+  height: auto;
+  width: auto;
+}
+.newsPageLine .newsPageLineCard .newsCard {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.newsPageLine .newsPageLineCard .newsCard .newsCardNavigation {
+  margin: 15px 0;
 }
 .newsPageLine .newsPageLineFence {
+  display: table-cell;
   content: "";
   position: relative;
   margin: 0 auto;
-  height: 100%;
+  height: auto;
   width: 1px;
   background: #D2D2D2;
 }
@@ -471,18 +491,9 @@ td, th {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 490px;
   position: relative;
   text-overflow: ellipsis;
   overflow: hidden;
-}
-.newsPageLine .newsCard .writeMoreButton {
-  position: absolute;
-  bottom: 30px;
-}
-.newsPageLine .newsCard .coverageInformation {
-  position: absolute;
-  bottom: 0;
 }
 .newsPageLine .newsCard .newsCardInfo {
   max-height: 100%;
@@ -501,13 +512,9 @@ td, th {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-.newsPageLine .articleNewsCard {
-  height: 400px;
-}
 .newsPageLine .articleNewsCard .newsCardInfo .latestNewsHeading {
   text-overflow: ellipsis;
   overflow: hidden;
-  height: 185px;
   margin: 5px 0;
 }
 .newsPageLine .newsPageLineSlimCardWithImage {
@@ -529,10 +536,6 @@ td, th {
 }
 .newsPageLine .newsPageLineWideCardWithImage {
   max-width: 310px;
-}
-
-.articleNewsPage .newsPageLine {
-  height: 410px;
 }
 
 .newsPageLine:not(:first-child) .newsCard {
@@ -634,7 +637,7 @@ td, th {
 .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit {
   border-bottom: 1px solid #D2D2D2;
   border-left: 1px solid #D2D2D2;
-  padding: 0 0 0 20px;
+  padding: 0 15px 0 15px;
   width: 100%;
 }
 .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .writeMoreButton {
@@ -644,7 +647,7 @@ td, th {
   border-bottom: none;
 }
 .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:not(:first-child) {
-  padding: 15px 0 0 15px;
+  padding: 15px 15px 0 15px;
 }
 .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:hover img {
   -webkit-transform: scale(1.1);
@@ -736,7 +739,7 @@ td, th {
 }
 .modal .popUp {
   max-width: 1200px;
-  padding: 20px;
+  padding: 30px 20px 20px 20px;
   display: table;
   height: 522px;
   position: absolute;
@@ -856,8 +859,9 @@ td, th {
 }
 .modal .popUp .popUpIcon {
   cursor: pointer;
-  display: table-cell;
-  height: inherit;
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 .modal .popUp .popUpIcon path {
   width: 20px;
@@ -866,12 +870,6 @@ td, th {
 
 .articleMetricsMobile {
   display: none;
-}
-
-.mainPageLine .newsPageLineCard .newsCard .newsCardInfo .descriptionArea {
-  height: 350px;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .container {
@@ -947,6 +945,13 @@ td, th {
 .smallPhone .newsPage:not(:first-child) .mainPageLine, .mediumPhone .newsPage:not(:first-child) .mainPageLine, .tablet .newsPage:not(:first-child) .mainPageLine, .notebook .newsPage:not(:first-child) .mainPageLine {
   padding: 10px 0 0 0;
 }
+.smallPhone .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsImage a, .mediumPhone .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsImage a, .tablet .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsImage a, .notebook .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsImage a {
+  height: 100%;
+}
+.smallPhone .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsImage a img, .mediumPhone .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsImage a img, .tablet .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsImage a img, .notebook .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsImage a img {
+  height: 100%;
+  max-height: none;
+}
 
 .smallPhone .container, .mediumPhone .container, .tablet .container {
   max-width: 960px !important;
@@ -955,6 +960,9 @@ td, th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.smallPhone .articleBodySecondaryFirst, .mediumPhone .articleBodySecondaryFirst, .tablet .articleBodySecondaryFirst {
+  display: none;
 }
 .smallPhone .mainInfoMain, .mediumPhone .mainInfoMain, .tablet .mainInfoMain {
   width: 100%;

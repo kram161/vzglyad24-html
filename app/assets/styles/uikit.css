@@ -397,6 +397,7 @@ body .writeMoreButton {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  margin: 15px 0;
 }
 body .writeMoreButton a {
   font-size: 1.4rem;
@@ -473,9 +474,8 @@ body .mainNewsHeading a:hover {
   color: #000;
 }
 body .latestNewsHeading a, body .latestNewsHeading p {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  line-height: 2.9rem;
   color: #000;
   text-decoration: none;
   font-family: Constantia, sans-serif;
@@ -645,6 +645,17 @@ body .plainText p {
   display: none;
 }
 
+.smallPhone .plainText p, .mediumPhone .plainText p {
+  font-size: 1.6rem;
+}
+.smallPhone .mainNewsHeading a, .mediumPhone .mainNewsHeading a {
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+.smallPhone .mainNewsHeading p, .mediumPhone .mainNewsHeading p {
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
 .smallPhone .hiddenMenu, .mediumPhone .hiddenMenu {
   height: 340px;
 }
@@ -742,7 +753,7 @@ body .plainText p {
 }
 .smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoLatestNewsDescription .latestNewsHeading a, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoLatestNewsDescription .latestNewsHeading a {
   font-size: 2rem;
-  line-height: 2.4rem;
+  line-height: 2.2rem;
 }
 
 .smallPhone .mainNewsHeading p {
