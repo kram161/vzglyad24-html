@@ -309,10 +309,11 @@ td, th {
   height: 100%;
 }
 .mainInfo .mainInfoMain .mainInfoMainNews {
-  max-width: 90%;
   display: table;
   position: relative;
   height: 100%;
+  width: 100%;
+  padding: 0 20px 0 0;
 }
 .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsImage {
   display: table-row;
@@ -600,7 +601,7 @@ td, th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 0;
+  padding: 10px 0;
   border-bottom: 1px solid #D2D2D2;
   border-top: 1px solid #D2D2D2;
 }
@@ -621,7 +622,7 @@ td, th {
 .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription .latestNewsHeading {
   text-overflow: ellipsis;
   overflow: hidden;
-  height: 80px;
+  height: auto;
 }
 .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription .latestNewsHeading a {
   text-overflow: ellipsis;
@@ -1160,7 +1161,7 @@ td, th {
   display: flex;
 }
 .smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription {
-  margin: 0 0 0 20px;
+  margin: 0 0 0 10px;
 }
 .smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .latestNewsHeading, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .latestNewsHeading, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .latestNewsHeading {
   height: 60px;
@@ -1261,7 +1262,7 @@ td, th {
   height: 100%;
 }
 .smallPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit, .mediumPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit {
-  padding: 20px 0 20px 0 !important;
+  padding: 10px 0 !important;
 }
 .smallPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit a, .mediumPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit a {
   margin: auto 0;
@@ -1272,6 +1273,9 @@ td, th {
 }
 .smallPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .writeMoreButton, .mediumPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .writeMoreButton {
   margin: 5px 0;
+}
+.smallPhone .article .articleBody .articleBodyMain .articleBodyMiniNewsDescription, .mediumPhone .article .articleBody .articleBodyMain .articleBodyMiniNewsDescription {
+  margin: 0 0 0 10px;
 }
 .smallPhone .article .articleBody .articleBodyMain .articleMetricsMobile, .mediumPhone .article .articleBody .articleBodyMain .articleMetricsMobile {
   display: -webkit-box;
@@ -1401,15 +1405,17 @@ td, th {
   height: 80px;
 }
 .smallPhone .articleBodyMainContentBlockImg, .mediumPhone .articleBodyMainContentBlockImg {
+  height: 80px;
   width: 80px;
 }
 .smallPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock, .mediumPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock {
+  height: 80px;
   width: 80px;
 }
 .smallPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock a, .mediumPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock a {
   display: block;
 }
-.smallPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock img, .mediumPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock img {
+.smallPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock a img, .mediumPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock a img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;

@@ -397,7 +397,6 @@ body .writeMoreButton {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  margin: 15px 0;
 }
 body .writeMoreButton a {
   font-size: 1.4rem;
