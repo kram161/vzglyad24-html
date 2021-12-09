@@ -682,6 +682,67 @@
     }
   }
 }
+.modalMini{
+  max-height: none;
+  display: table;
+  width: 100%;
+  height: 100%;
+  .popUpMini{
+    height: auto;
+    display: table-row;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 100%;
+    .articleBodySecondaryContentUnit{
+      height: auto;
+      display: flex;
+      padding: 15px 5px;
+      position: relative;
+      .articleBodySecondaryContentUnitImg{
+        height: 80px;
+        width: auto;
+        margin:auto 5px;
+        .articleBodySecondaryContentUnitImgBlock{
+          height: 80px;
+          width: auto;
+          a{
+            height: 80px;
+            width: auto;
+            img{
+              height: 80px;
+              width: 100%;
+            }
+          }
+        }
+      }
+      .articleBodySecondaryContentUnitDescription{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        .latestNewsHeading{
+          overflow: hidden;
+          width: 100%;
+          height: 70px;
+          a{
+            width: 100%;
+          }
+        }
+      }
+      .articleBodySecondaryContentUnitButton{
+        position: absolute;
+        top:2px;
+        right: 2px;
+        cursor: pointer;
+        svg{
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
 .articleMetricsMobile{
   display: none;
 }

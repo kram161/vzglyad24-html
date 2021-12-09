@@ -869,6 +869,78 @@ td, th {
   height: 20px;
 }
 
+.modalMini {
+  max-height: none;
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.modalMini .popUpMini {
+  height: auto;
+  display: table-row;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+.modalMini .popUpMini .articleBodySecondaryContentUnit {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 5px;
+  position: relative;
+}
+.modalMini .popUpMini .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg {
+  height: 80px;
+  width: auto;
+  margin: auto 5px;
+}
+.modalMini .popUpMini .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock {
+  height: 80px;
+  width: auto;
+}
+.modalMini .popUpMini .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a {
+  height: 80px;
+  width: auto;
+}
+.modalMini .popUpMini .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a img {
+  height: 80px;
+  width: 100%;
+}
+.modalMini .popUpMini .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.modalMini .popUpMini .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .latestNewsHeading {
+  overflow: hidden;
+  width: 100%;
+  height: 70px;
+}
+.modalMini .popUpMini .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .latestNewsHeading a {
+  width: 100%;
+}
+.modalMini .popUpMini .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitButton {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  cursor: pointer;
+}
+.modalMini .popUpMini .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitButton svg {
+  width: 20px;
+  height: 20px;
+}
+
 .articleMetricsMobile {
   display: none;
 }
