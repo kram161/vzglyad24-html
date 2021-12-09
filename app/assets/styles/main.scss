@@ -853,6 +853,18 @@
         }
       }
     }
+    .mainInfoLatestNews{
+      .mainInfoLatestNewsUnit{
+        .mainInfoLatestNewsUnitImg{
+          width: 80px;
+          height: 80px;
+          .mainInfoLatestNewsUnitImgBlock{
+            width: 80px;
+            height: 80px;
+          }
+        }
+      }
+    }
   }
 }
 %tablet{

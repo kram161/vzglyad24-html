@@ -1025,6 +1025,14 @@ td, th {
   height: 100%;
   max-height: none;
 }
+.smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg, .tablet .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg, .notebook .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg {
+  width: 80px;
+  height: 80px;
+}
+.smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg .mainInfoLatestNewsUnitImgBlock, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg .mainInfoLatestNewsUnitImgBlock, .tablet .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg .mainInfoLatestNewsUnitImgBlock, .notebook .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg .mainInfoLatestNewsUnitImgBlock {
+  width: 80px;
+  height: 80px;
+}
 
 .smallPhone .container, .mediumPhone .container, .tablet .container {
   max-width: 960px !important;
