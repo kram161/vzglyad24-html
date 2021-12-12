@@ -185,6 +185,8 @@ td, th {
 }
 
 .articleBodySecondaryContentUnitImg {
+  width: 230px;
+  height: 120px;
   overflow: hidden;
 }
 .articleBodySecondaryContentUnitImg a {
@@ -1266,6 +1268,7 @@ td, th {
 }
 .smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg {
   width: auto;
+  height: auto;
 }
 .smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock {
   display: none;

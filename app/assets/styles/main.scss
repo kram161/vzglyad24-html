@@ -79,6 +79,8 @@
   }
 }
 .articleBodySecondaryContentUnitImg{
+  width: 230px;
+  height: 120px;
   a{
     display: block;
   }
@@ -1079,6 +1081,7 @@
           }
           .articleBodySecondaryContentUnitImg{
             width: auto;
+            height: auto;
           }
           .dateBlock{
             display: none;
