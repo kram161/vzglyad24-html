@@ -476,8 +476,12 @@
         border-left:1px solid #D2D2D2;
         padding: 0 15px 0 15px;
         width: 100%;
+        .latestNewsHeading{
+          max-height: 88px;
+          overflow: hidden;
+        }
         .writeMoreButton{
-          margin:10px 0 15px;
+          margin:10px 0;
         }
       }
       .articleBodySecondaryContentUnit:last-child{

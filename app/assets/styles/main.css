@@ -641,8 +641,12 @@ td, th {
   padding: 0 15px 0 15px;
   width: 100%;
 }
+.articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .latestNewsHeading {
+  max-height: 88px;
+  overflow: hidden;
+}
 .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .writeMoreButton {
-  margin: 10px 0 15px;
+  margin: 10px 0;
 }
 .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:last-child {
   border-bottom: none;
