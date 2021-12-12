@@ -589,7 +589,7 @@ td, th {
   width: 100%;
 }
 .articleBody .articleBodyMain .articleBodyMainContent {
-  width: 90%;
+  padding: 0 15px 0 0;
 }
 .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMainContentBlock {
   margin: 0 0 20px 0;
@@ -871,15 +871,18 @@ td, th {
 
 .modalMini {
   max-height: none;
-  display: table;
   width: 100%;
   height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .modalMini .popUpMini {
   height: auto;
   display: table-row;
   position: absolute;
-  top: 50%;
+  top: 59px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 100%;
@@ -939,6 +942,11 @@ td, th {
 .modalMini .popUpMini .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitButton svg {
   width: 20px;
   height: 20px;
+}
+
+.modalMini-active {
+  visibility: visible;
+  opacity: 1;
 }
 
 .articleMetricsMobile {
@@ -1239,14 +1247,21 @@ td, th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription {
   margin: 0 0 0 10px;
+  width: 80%;
 }
 .smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .latestNewsHeading, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .latestNewsHeading, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitDescription .latestNewsHeading {
   height: 60px;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg {
+  width: auto;
 }
 .smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock {
   display: none;
@@ -1586,7 +1601,7 @@ td, th {
   margin: 0 0 10px 0;
 }
 .smallPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg {
-  width: 100%;
+  width: 34%;
   height: 80px;
 }
 .smallPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg a {

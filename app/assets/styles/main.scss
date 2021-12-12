@@ -1063,13 +1063,18 @@
           border-left:none;
           padding:10px 0;
           display: flex;
+          justify-content: space-between;
           .articleBodySecondaryContentUnitDescription{
             margin:0 0 0 10px;
+            width: 80%;
             .latestNewsHeading{
               height: 60px;
               text-overflow: ellipsis;
               overflow: hidden;
             }
+          }
+          .articleBodySecondaryContentUnitImg{
+            width: auto;
           }
           .dateBlock{
             display: none;
@@ -1462,7 +1467,7 @@
         .articleBodySecondaryContent{
           .articleBodySecondaryContentUnit{
             .articleBodySecondaryContentUnitImg{
-              width: 100%;
+              width: 34%;
               height: 80px;
               a{
                 width: 80px;
