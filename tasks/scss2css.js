@@ -33,7 +33,6 @@ module.exports = function scss2css() {
 		.pipe(plumber())
 		.pipe(sourcemaps.init())
 		.pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-		.pipe(concat('styles.min.css'))
 		.pipe(postcss(plugins))
 		.pipe(sourcemaps.write('/sourcemaps/'))
 		.pipe(dest('build/assets/css'));
