@@ -629,6 +629,17 @@ td, th {
   border-left: 1px solid #D2D2D2;
   padding: 0 15px 0 15px;
   width: 100%;
+  height: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .latestNewsHeading {
   max-height: 88px;
@@ -1081,21 +1092,24 @@ td, th {
   width: 100%;
   height: 100%;
 }
-.smallPhone .articleBodySecondaryContentUnitImg, .mediumPhone .articleBodySecondaryContentUnitImg, .tablet .articleBodySecondaryContentUnitImg {
+.smallPhone .articleBodySecondaryContentUnit, .mediumPhone .articleBodySecondaryContentUnit, .tablet .articleBodySecondaryContentUnit {
+  height: auto;
+}
+.smallPhone .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg, .mediumPhone .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg, .tablet .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg {
   position: relative;
   width: auto;
   overflow: hidden;
 }
-.smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock, .tablet .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock {
+.smallPhone .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock, .mediumPhone .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock, .tablet .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock {
   width: 100%;
   height: 100%;
 }
-.smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a, .tablet .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a {
+.smallPhone .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a, .mediumPhone .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a, .tablet .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a {
   display: block;
   height: 100%;
   width: auto;
 }
-.smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img, .tablet .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img {
+.smallPhone .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img, .mediumPhone .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img, .tablet .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img {
   -o-object-fit: cover;
      object-fit: cover;
   width: auto;
@@ -1233,6 +1247,10 @@ td, th {
 }
 .smallPhone .articleBody .articleBodyMain .articleBodyMainContent, .mediumPhone .articleBody .articleBodyMain .articleBodyMainContent, .tablet .articleBody .articleBodyMain .articleBodyMainContent {
   width: 100%;
+  padding: 15px 0 0 0;
+}
+.smallPhone .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMainContentImage, .mediumPhone .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMainContentImage, .tablet .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMainContentImage {
+  width: 100%;
 }
 .smallPhone .articleBody .articleBodySecondary, .mediumPhone .articleBody .articleBodySecondary, .tablet .articleBody .articleBodySecondary {
   width: 100%;
@@ -1354,6 +1372,7 @@ td, th {
   height: 100%;
 }
 .smallPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit, .mediumPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit {
+  height: auto;
   padding: 10px 0 !important;
 }
 .smallPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit a, .mediumPhone .article .articleBody .articleBodySecondary .articleBodySecondaryContentUnit a {
