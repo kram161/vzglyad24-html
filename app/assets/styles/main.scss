@@ -425,18 +425,11 @@
     width:100%;
     .articleBodyMainContent{
       padding: 0 15px 0 0;
-      .articleBodyMainContentBlock{
-        margin:0 0 20px 0;
-      }
-      .articleBodyMainContentBlock:last-child{
-        margin:0 0 40px 0;
-      }
       .articleBodyMiniNews{
         display: flex;
         padding: 10px 0;
         border-bottom: 1px solid #D2D2D2;
         border-top: 1px solid #D2D2D2;
-
         .articleBodyMiniNewsDescription{
           display: flex;
           flex-direction: column;

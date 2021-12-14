@@ -467,7 +467,6 @@ td, th {
   font-size: 12px;
   color: #333;
   background-color: #fff;
-  margin: 20px;
   /* Widget Styles */
 }
 .plainText .cke_editable {
@@ -498,9 +497,6 @@ td, th {
   color: #0782C1;
 }
 .plainText ol, .plainText ul, .plainText dl {
-  /* IE7: reset rtl list margin. (#7334) */
-  *margin-right: 0px;
-  /* Preserved spaces for list items with text direction different than the list. (#6249,#8049)*/
   padding: 0 40px;
 }
 .plainText h1, .plainText h2, .plainText h3, .plainText h4, .plainText h5, .plainText h6 {
@@ -612,79 +608,37 @@ td, th {
 .plainText h1 {
   display: block;
   font-size: 2em;
-  -webkit-margin-before: 0.67em;
-          margin-block-start: 0.67em;
-  -webkit-margin-after: 0.67em;
-          margin-block-end: 0.67em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
   font-weight: bold;
+  padding: 5px 0;
 }
 .plainText h2 {
   display: block;
   font-size: 1.5em;
-  -webkit-margin-before: 0.83em;
-          margin-block-start: 0.83em;
-  -webkit-margin-after: 0.83em;
-          margin-block-end: 0.83em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
   font-weight: bold;
+  padding: 5px 0;
 }
 .plainText h3 {
   display: block;
   font-size: 1.17em;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
   font-weight: bold;
+  padding: 5px 0;
 }
 .plainText h4 {
   display: block;
-  -webkit-margin-before: 1.33em;
-          margin-block-start: 1.33em;
-  -webkit-margin-after: 1.33em;
-          margin-block-end: 1.33em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
   font-weight: bold;
+  padding: 5px 0;
 }
 .plainText h5 {
   display: block;
   font-size: 0.83em;
-  -webkit-margin-before: 1.67em;
-          margin-block-start: 1.67em;
-  -webkit-margin-after: 1.67em;
-          margin-block-end: 1.67em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
   font-weight: bold;
+  padding: 5px 0;
 }
 .plainText h6 {
   display: block;
   font-size: 0.67em;
-  -webkit-margin-before: 2.33em;
-          margin-block-start: 2.33em;
-  -webkit-margin-after: 2.33em;
-          margin-block-end: 2.33em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
   font-weight: bold;
+  padding: 5px 0;
 }
 .plainText address {
   display: block;
@@ -700,5 +654,14 @@ td, th {
   text-decoration: underline;
 }
 .plainText p {
-  padding: 10px 0;
+  padding: 5px 0;
+}
+.plainText ul li {
+  list-style-type: disc;
+  color: #E1400B;
+  padding: 0 5px 0 0;
+}
+.plainText ol li {
+  list-style-type: decimal;
+  padding: 0 5px 0 0;
 }

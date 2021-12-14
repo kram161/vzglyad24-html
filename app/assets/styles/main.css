@@ -212,7 +212,7 @@ td, th {
   width: 100%;
 }
 .mainInfoMainNewsImage a img {
-  max-height: 270px;
+  max-height: 300px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -322,7 +322,7 @@ td, th {
   height: 100%;
 }
 .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsInformation {
-  margin: 30px 0 0 0;
+  margin: 10px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,6 +404,7 @@ td, th {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoMainNewsInformation {
   display: -webkit-box;
@@ -579,12 +580,6 @@ td, th {
 }
 .articleBody .articleBodyMain .articleBodyMainContent {
   padding: 0 15px 0 0;
-}
-.articleBody .articleBodyMain .articleBodyMainContent .articleBodyMainContentBlock {
-  margin: 0 0 20px 0;
-}
-.articleBody .articleBodyMain .articleBodyMainContent .articleBodyMainContentBlock:last-child {
-  margin: 0 0 40px 0;
 }
 .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews {
   display: -webkit-box;
