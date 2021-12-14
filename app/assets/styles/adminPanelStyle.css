@@ -1,3 +1,103 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus {
+  outline: 0;
+}
+
+img, audio, video {
+  max-width: 100%;
+  height: auto;
+}
+
+audio, canvas, iframe, video, img, svg {
+  vertical-align: middle;
+}
+
+iframe {
+  border: 0;
+}
+
+textarea {
+  resize: none;
+  /*remove the resize handle on the bottom right*/
+  overflow: auto;
+  vertical-align: top;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+input, textarea, select, button {
+  outline: none;
+  border: none;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+  text-align: left;
+}
+
+* {
+  background: #fff;
+  font-family: montserrat, sans-serif;
+}
+
 .adminMenu {
   background: #000;
   display: -webkit-box;
@@ -244,12 +344,14 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  height: 100vh;
 }
 .authorization .authorizationBlock {
   position: absolute;
-  top: calc(50% + 178px);
-  left: calc(50% - 132px);
-  height: 100vh;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .authorization .authorizationBlock h2 {
   font-weight: 500;
@@ -358,4 +460,245 @@
 }
 .authorization .authorizationBlock .authorizationArea .errorIconLoginActive, .authorization .authorizationBlock .authorizationArea .errorIconPasswordActive {
   display: block;
+}
+
+.plainText {
+  font-family: sans-serif, Arial, Verdana, "Trebuchet MS", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 12px;
+  color: #333;
+  background-color: #fff;
+  margin: 20px;
+  /* Widget Styles */
+}
+.plainText .cke_editable {
+  font-size: 13px;
+  line-height: 1.6;
+  /* Fix for missing scrollbars with RTL texts. (#10488) */
+  word-wrap: break-word;
+}
+.plainText blockquote {
+  font-style: italic;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  padding: 2px 0;
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 0;
+}
+.plainText .cke_contents_ltr blockquote {
+  padding-left: 20px;
+  padding-right: 8px;
+  border-left-width: 5px;
+}
+.plainText .cke_contents_rtl blockquote {
+  padding-left: 8px;
+  padding-right: 20px;
+  border-right-width: 5px;
+}
+.plainText a {
+  color: #0782C1;
+}
+.plainText ol, .plainText ul, .plainText dl {
+  /* IE7: reset rtl list margin. (#7334) */
+  *margin-right: 0px;
+  /* Preserved spaces for list items with text direction different than the list. (#6249,#8049)*/
+  padding: 0 40px;
+}
+.plainText h1, .plainText h2, .plainText h3, .plainText h4, .plainText h5, .plainText h6 {
+  font-weight: normal;
+  line-height: 1.2;
+}
+.plainText hr {
+  border: 0px;
+  border-top: 1px solid #ccc;
+}
+.plainText img.right {
+  border: 1px solid #ccc;
+  float: right;
+  margin-left: 15px;
+  padding: 5px;
+}
+.plainText img.left {
+  border: 1px solid #ccc;
+  float: left;
+  margin-right: 15px;
+  padding: 5px;
+}
+.plainText pre {
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  word-wrap: break-word;
+  /* IE7 */
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+.plainText .marker {
+  background-color: Yellow;
+}
+.plainText span[lang] {
+  font-style: italic;
+}
+.plainText figure {
+  text-align: center;
+  outline: solid 1px #ccc;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  margin: 10px 20px;
+  display: inline-block;
+}
+.plainText figure > figcaption {
+  text-align: center;
+  display: block;
+  /* For IE8 */
+}
+.plainText a > img {
+  padding: 1px;
+  margin: 1px;
+  border: none;
+  outline: 1px solid #0782C1;
+}
+.plainText .code-featured {
+  border: 5px solid red;
+}
+.plainText .math-featured {
+  padding: 20px;
+  -webkit-box-shadow: 0 0 2px #c80000;
+          box-shadow: 0 0 2px #c80000;
+  background-color: rgba(255, 0, 0, 0.05);
+  margin: 10px;
+}
+.plainText .image-clean {
+  border: 0;
+  background: none;
+  padding: 0;
+}
+.plainText .image-clean > figcaption {
+  font-size: 0.9em;
+  text-align: right;
+}
+.plainText .image-grayscale {
+  background-color: white;
+  color: #666;
+}
+.plainText .image-grayscale img, .plainText img.image-grayscale {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+.plainText .embed-240p {
+  max-width: 426px;
+  max-height: 240px;
+  margin: 0 auto;
+}
+.plainText .embed-360p {
+  max-width: 640px;
+  max-height: 360px;
+  margin: 0 auto;
+}
+.plainText .embed-480p {
+  max-width: 854px;
+  max-height: 480px;
+  margin: 0 auto;
+}
+.plainText .embed-720p {
+  max-width: 1280px;
+  max-height: 720px;
+  margin: 0 auto;
+}
+.plainText .embed-1080p {
+  max-width: 1920px;
+  max-height: 1080px;
+  margin: 0 auto;
+}
+.plainText h1 {
+  display: block;
+  font-size: 2em;
+  -webkit-margin-before: 0.67em;
+          margin-block-start: 0.67em;
+  -webkit-margin-after: 0.67em;
+          margin-block-end: 0.67em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+.plainText h2 {
+  display: block;
+  font-size: 1.5em;
+  -webkit-margin-before: 0.83em;
+          margin-block-start: 0.83em;
+  -webkit-margin-after: 0.83em;
+          margin-block-end: 0.83em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+.plainText h3 {
+  display: block;
+  font-size: 1.17em;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+.plainText h4 {
+  display: block;
+  -webkit-margin-before: 1.33em;
+          margin-block-start: 1.33em;
+  -webkit-margin-after: 1.33em;
+          margin-block-end: 1.33em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+.plainText h5 {
+  display: block;
+  font-size: 0.83em;
+  -webkit-margin-before: 1.67em;
+          margin-block-start: 1.67em;
+  -webkit-margin-after: 1.67em;
+          margin-block-end: 1.67em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+.plainText h6 {
+  display: block;
+  font-size: 0.67em;
+  -webkit-margin-before: 2.33em;
+          margin-block-start: 2.33em;
+  -webkit-margin-after: 2.33em;
+          margin-block-end: 2.33em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+.plainText address {
+  display: block;
+  font-style: italic;
+}
+.plainText small {
+  font-size: smaller;
+}
+.plainText big {
+  font-size: larger;
+}
+.plainText ins {
+  text-decoration: underline;
+}
+.plainText p {
+  padding: 10px 0;
 }
