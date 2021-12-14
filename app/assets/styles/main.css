@@ -218,7 +218,7 @@ td, th {
   width: 100%;
 }
 .mainInfoMainNewsImage a img {
-  max-height: 300px;
+  max-height: 330px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -342,6 +342,10 @@ td, th {
 .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsDescription {
   margin: 21px 0 40px 0;
 }
+.mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsDescription .mainNewsHeading a {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
 .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsDescription .plainText {
   margin: 15px 0 0 0;
 }
@@ -353,6 +357,9 @@ td, th {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+}
+.mainInfo .mainInfoMain .mainInfoMainNews:hover .mainInfoMainNewsDescription .mainNewsHeading a {
+  opacity: 0.6;
 }
 .mainInfo .mainInfoMain .mainInfoMainNews:hover img {
   -webkit-transform: scale(1.1);
@@ -424,6 +431,13 @@ td, th {
 .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoMainNewsInformation .categoryButton {
   margin: 0 10px 0 0;
 }
+.mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoLatestNewsDescription {
+  height: 66px;
+}
+.mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoLatestNewsDescription .latestNewsHeading a {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
 .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoMainNewsNavigation {
   margin: 10px 0 0 0;
   display: -webkit-box;
@@ -432,6 +446,9 @@ td, th {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit:hover .mainInfoLatestNewsUnitBlock .latestNewsHeading a {
+  opacity: 0.6;
 }
 .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit:hover img {
   -webkit-transform: scale(1.1);
@@ -518,12 +535,19 @@ td, th {
   text-overflow: ellipsis;
   position: relative;
 }
+.newsPageLine .newsCard .newsCardInfo .latestNewsHeading a {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
 .newsPageLine .newsCard .newsCardInfo .dateBlock {
   margin: 10px 0 0 0;
 }
 .newsPageLine .newsCard img {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+.newsPageLine .newsCard:hover .newsCardInfo .latestNewsHeading a {
+  opacity: 0.6;
 }
 .newsPageLine .newsCard:hover img {
   -webkit-transform: scale(1.1);
@@ -623,6 +647,11 @@ td, th {
 .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription .latestNewsHeading a {
   text-overflow: ellipsis;
   line-height: 3rem;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews:hover .articleBodyMiniNewsDescription .latestNewsHeading a {
+  opacity: 0.6;
 }
 .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews:hover img {
   -webkit-transform: scale(1.1);
@@ -652,6 +681,10 @@ td, th {
   height: 130px;
   overflow: hidden;
 }
+.articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .latestNewsHeading a {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
 .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .writeMoreButton {
   margin: 10px 0;
 }
@@ -663,6 +696,9 @@ td, th {
 }
 .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:not(:first-child) {
   padding: 15px 15px 0 15px;
+}
+.articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:hover .articleBodySecondaryContentUnitDescription .latestNewsHeading a {
+  opacity: 0.6;
 }
 .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit:hover img {
   -webkit-transform: scale(1.1);
@@ -1196,6 +1232,9 @@ td, th {
   padding: 0 0 10px 0;
   margin: 10px 0 0 0;
   border-bottom: 1px solid #d2d2d2;
+}
+.smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoLatestNewsDescription, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoLatestNewsDescription, .tablet .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoLatestNewsDescription {
+  height: auto;
 }
 .smallPhone .newsPageLine, .mediumPhone .newsPageLine, .tablet .newsPageLine {
   -webkit-box-pack: center;

@@ -73,11 +73,22 @@
       .menuRateGeoposition{
         background: #000;
         margin:10px 0;
+        display: flex;
+        svg{
+          width: 18px;
+          height: 18px;
+          background: #000;
+          margin: auto 0;
+          path{
+            fill:#fff;
+          }
+        }
         p{
           color:#fff;
           background: #000;
           font-size: 1.4rem;
           font-weight: 500;
+          margin:auto 0 auto 10px;
         }
       }
       .menuRate{
@@ -138,6 +149,14 @@
     justify-content: space-between;
     .menuRate{
       flex: 1;
+      .menuRateGeoposition{
+        display: flex;
+        svg{
+          width: 18px;
+          height: 18px;
+          margin:auto 0;
+        }
+      }
     }
     .menuRate,.menuRateDollar,.menuRateEuro{
       display: flex;
@@ -293,7 +312,7 @@ body{
     }
   }
   .categoryButton{
-    display: inline-block;
+    display: flex;
     a{
       background: #000;
       border:1px solid #000;
@@ -307,6 +326,9 @@ body{
       display: inline-block;
       position: relative;
       z-index: 3;
+    }
+    .dateBlock{
+      margin: auto 0 auto 10px !important;
     }
   }
   .categoryButton:hover{

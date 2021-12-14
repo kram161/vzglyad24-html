@@ -107,7 +107,7 @@
     height: auto;
     width: 100%;
     img{
-      max-height: 300px;
+      max-height: 330px;
       width: 100%;
       object-fit: cover;
       transition: all 0.2s linear;
@@ -219,6 +219,11 @@
       }
       .mainInfoMainNewsDescription{
         margin:21px 0 40px 0;
+        .mainNewsHeading{
+          a{
+            transition: all 0.2s ease;
+          }
+        }
         .plainText{
           margin:15px 0 0 0;
         }
@@ -230,6 +235,13 @@
       }
     }
     .mainInfoMainNews:hover{
+      .mainInfoMainNewsDescription{
+        .mainNewsHeading{
+          a{
+            opacity: 0.6;
+          }
+        }
+      }
       img{
         transform: scale(1.1);
       }
@@ -281,6 +293,14 @@
             margin:0 10px 0 0;
           }
         }
+        .mainInfoLatestNewsDescription{
+          height: 66px;
+          .latestNewsHeading{
+            a{
+              transition: all 0.2s linear;
+            }
+          }
+        }
       }
       .mainInfoMainNewsNavigation{
         margin:10px 0 0 0;
@@ -289,6 +309,13 @@
       }
     }
     .mainInfoLatestNewsUnit:hover{
+      .mainInfoLatestNewsUnitBlock{
+        .latestNewsHeading{
+          a{
+            opacity: 0.6;
+          }
+        }
+      }
       img{
         transform:scale(1.1)
       }
@@ -350,19 +377,18 @@
     position: relative;
     text-overflow: ellipsis;
     overflow: hidden;
-    .writeMoreButton{
-
-    }
-    .coverageInformation{
-
-    }
-    .newsCardInfo{
+    .newsCardInfo {
       max-height: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
       position: relative;
-      .dateBlock{
-        margin:10px 0 0 0;
+      .latestNewsHeading {
+        a {
+          transition: all 0.2s linear;
+        }
+      }
+      .dateBlock {
+        margin: 10px 0 0 0;
       }
     }
 
@@ -371,6 +397,13 @@
     }
   }
   .newsCard:hover{
+    .newsCardInfo {
+      .latestNewsHeading {
+        a {
+          opacity: 0.6;
+        }
+      }
+    }
     img{
       transform: scale(1.1);
     }
@@ -451,12 +484,20 @@
             a{
               text-overflow: ellipsis;
               line-height: 3.0rem;
+              transition: all 0.2s linear;
             }
           }
 
         }
       }
       .articleBodyMiniNews:hover{
+        .articleBodyMiniNewsDescription{
+          .latestNewsHeading{
+            a{
+              opacity: 0.6;
+            }
+          }
+        }
         img{
           transform: scale(1.1);
         }
@@ -478,6 +519,9 @@
         .latestNewsHeading{
           height: 130px;
           overflow: hidden;
+          a{
+            transition: all 0.2s linear;
+          }
         }
         .writeMoreButton{
           margin:10px 0;
@@ -493,6 +537,13 @@
         padding:15px 15px 0 15px;
       }
       .articleBodySecondaryContentUnit:hover{
+        .articleBodySecondaryContentUnitDescription{
+          .latestNewsHeading{
+            a{
+              opacity: 0.6;
+            }
+          }
+        }
         img{
           transform: scale(1.1);
         }
@@ -1018,6 +1069,11 @@
         padding: 0 0 10px 0;
         margin: 10px 0 0 0;
         border-bottom: 1px solid #d2d2d2;
+        .mainInfoLatestNewsUnitBlock{
+          .mainInfoLatestNewsDescription{
+            height: auto;
+          }
+        }
       }
     }
   }

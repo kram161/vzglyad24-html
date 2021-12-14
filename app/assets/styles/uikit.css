@@ -181,12 +181,25 @@ td, th {
 .hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRateGeoposition {
   background: #000;
   margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRateGeoposition svg {
+  width: 18px;
+  height: 18px;
+  background: #000;
+  margin: auto 0;
+}
+.hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRateGeoposition svg path {
+  fill: #fff;
 }
 .hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRateGeoposition p {
   color: #fff;
   background: #000;
   font-size: 1.4rem;
   font-weight: 500;
+  margin: auto 0 auto 10px;
 }
 .hiddenMenu .hiddenMenuFooter .menuFooterFirst .menuRate {
   background: #000;
@@ -259,6 +272,16 @@ td, th {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+.menu .menuHeader .menuRate .menuRateGeoposition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.menu .menuHeader .menuRate .menuRateGeoposition svg {
+  width: 18px;
+  height: 18px;
+  margin: auto 0;
 }
 .menu .menuHeader .menuRate, .menu .menuHeader .menuRateDollar, .menu .menuHeader .menuRateEuro {
   display: -webkit-box;
@@ -420,7 +443,9 @@ body .writeMoreButton:hover svg {
   transition: 0.5s ease;
 }
 body .categoryButton {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 body .categoryButton a {
   background: #000;
@@ -436,6 +461,9 @@ body .categoryButton a {
   display: inline-block;
   position: relative;
   z-index: 3;
+}
+body .categoryButton .dateBlock {
+  margin: auto 0 auto 10px !important;
 }
 body .categoryButton:hover {
   -webkit-transition: 0.5s ease;
