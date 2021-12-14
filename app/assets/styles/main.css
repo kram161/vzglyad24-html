@@ -1275,7 +1275,7 @@ td, th {
   overflow: hidden;
 }
 .smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg {
-  width: auto;
+  width: 50%;
   height: auto;
 }
 .smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock, .tablet .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .dateBlock {
@@ -1499,17 +1499,17 @@ td, th {
   width: 100%;
   height: 100%;
 }
-.smallPhone .articleBodySecondaryContentUnitImg, .mediumPhone .articleBodySecondaryContentUnitImg {
-  width: 180px;
+.smallPhone .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg, .mediumPhone .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg {
+  width: 80px;
   margin: auto 0;
 }
-.smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock {
+.smallPhone .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock, .mediumPhone .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock {
   width: 80px;
 }
-.smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a {
+.smallPhone .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a, .mediumPhone .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock a {
   display: block;
 }
-.smallPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img, .mediumPhone .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img {
+.smallPhone .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img, .mediumPhone .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock img {
   -o-object-fit: cover;
      object-fit: cover;
   width: auto;

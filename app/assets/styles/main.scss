@@ -1087,7 +1087,7 @@
             }
           }
           .articleBodySecondaryContentUnitImg{
-            width: auto;
+            width: 50%;
             height: auto;
           }
           .dateBlock{
@@ -1353,18 +1353,20 @@
       height: 100%;
     }
   }
-  .articleBodySecondaryContentUnitImg{
-    width: 180px;
-    margin:auto 0;
-    .articleBodySecondaryContentUnitImgBlock{
-      a{
-        display: block;
-      }
+  .articleBodySecondaryContentUnit{
+    .articleBodySecondaryContentUnitImg{
       width: 80px;
-      img{
-        object-fit: cover;
-        width: auto;
-        height: 80px;
+      margin:auto 0;
+      .articleBodySecondaryContentUnitImgBlock{
+        a{
+          display: block;
+        }
+        width: 80px;
+        img{
+          object-fit: cover;
+          width: auto;
+          height: 80px;
+        }
       }
     }
   }
