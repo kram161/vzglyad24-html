@@ -262,7 +262,7 @@ td, th {
 
 .newsPageLineWideCardWithImageImg {
   overflow: hidden;
-  width: 280px;
+  width: 100%;
   margin: 15px 0;
 }
 .newsPageLineWideCardWithImageImg a {
@@ -277,7 +277,7 @@ td, th {
 
 .newsPageLineSlimCardWithImageImg {
   overflow: hidden;
-  width: 210px;
+  width: auto;
   margin: 15px 0;
 }
 .newsPageLineSlimCardWithImageImg a {
@@ -460,7 +460,7 @@ td, th {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: auto;
-  width: auto;
+  width: 23%;
 }
 .newsPageLine .newsPageLineCard .newsCard {
   height: 100%;
@@ -470,6 +470,7 @@ td, th {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 .newsPageLine .newsPageLineCard .newsCard .newsCardNavigation {
   margin: 15px 0;
@@ -520,25 +521,11 @@ td, th {
   overflow: hidden;
   margin: 5px 0;
 }
-.newsPageLine .newsPageLineSlimCardWithImage {
-  max-width: 210px;
-}
-.newsPageLine .newsPageLineWideCard {
-  max-width: 310px;
-  min-width: 180px;
-}
 .newsPageLine .newsPageLineWideCard .latestNewsHeading {
   margin: 15px 0 39px 0;
 }
-.newsPageLine .newsPageLineSlimeCard {
-  max-width: 210px;
-  min-width: 180px;
-}
 .newsPageLine .newsPageLineSlimeCard .latestNewsHeading {
   margin: 15px 0 15px 0;
-}
-.newsPageLine .newsPageLineWideCardWithImage {
-  max-width: 310px;
 }
 
 .newsPageLine:not(:first-child) .newsCard {
@@ -1015,6 +1002,9 @@ td, th {
   position: relative;
   bottom: 0;
 }
+.smallPhone .newsPage .newsPageLine .newsPageLineFence, .mediumPhone .newsPage .newsPageLine .newsPageLineFence, .tablet .newsPage .newsPageLine .newsPageLineFence, .notebook .newsPage .newsPageLine .newsPageLineFence, .smallPhone .articleNewsPage .newsPageLine .newsPageLineFence, .mediumPhone .articleNewsPage .newsPageLine .newsPageLineFence, .tablet .articleNewsPage .newsPageLine .newsPageLineFence, .notebook .articleNewsPage .newsPageLine .newsPageLineFence {
+  width: 1px;
+}
 .smallPhone .newsPage:not(:first-child) .newsPageLine .newsPageLineCard, .mediumPhone .newsPage:not(:first-child) .newsPageLine .newsPageLineCard, .tablet .newsPage:not(:first-child) .newsPageLine .newsPageLineCard, .notebook .newsPage:not(:first-child) .newsPageLine .newsPageLineCard {
   margin: 0;
 }
@@ -1029,8 +1019,8 @@ td, th {
 .smallPhone .newsPage .mainPageLine .newsPageLineCard .newsCard .newsCardNavigation, .mediumPhone .newsPage .mainPageLine .newsPageLineCard .newsCard .newsCardNavigation, .tablet .newsPage .mainPageLine .newsPageLineCard .newsCard .newsCardNavigation, .notebook .newsPage .mainPageLine .newsPageLineCard .newsCard .newsCardNavigation {
   margin: 5px 0;
 }
-.smallPhone .newsPage:not(:first-child) .mainPageLine, .mediumPhone .newsPage:not(:first-child) .mainPageLine, .tablet .newsPage:not(:first-child) .mainPageLine, .notebook .newsPage:not(:first-child) .mainPageLine {
-  padding: 10px 0 0 0;
+.smallPhone .newsPage:not(:first-child) .mainPageLine .newsPageLineCard, .mediumPhone .newsPage:not(:first-child) .mainPageLine .newsPageLineCard, .tablet .newsPage:not(:first-child) .mainPageLine .newsPageLineCard, .notebook .newsPage:not(:first-child) .mainPageLine .newsPageLineCard {
+  padding: 10px;
 }
 .smallPhone .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsImage a, .mediumPhone .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsImage a, .tablet .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsImage a, .notebook .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsImage a {
   height: 100%;
