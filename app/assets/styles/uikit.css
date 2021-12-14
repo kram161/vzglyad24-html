@@ -435,7 +435,7 @@ body .categoryButton a {
   padding: 10px;
   display: inline-block;
   position: relative;
-  z-index: 5;
+  z-index: 3;
 }
 body .categoryButton:hover {
   -webkit-transition: 0.5s ease;
@@ -508,6 +508,7 @@ body .coverageInformation .appraisals {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 body .coverageInformation .appraisals svg {
   margin: auto 0;

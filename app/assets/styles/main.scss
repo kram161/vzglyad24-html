@@ -327,6 +327,8 @@
       width: 100%;
       .newsCardNavigation{
         margin: 15px 0;
+        display: flex;
+        justify-content: space-between;
       }
     }
   }
@@ -1085,8 +1087,11 @@
           .articleBodySecondaryContentUnitDescription{
             margin:0 0 0 10px;
             width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             .latestNewsHeading{
-              height: 60px;
+              height: auto;
               text-overflow: ellipsis;
               overflow: hidden;
             }
@@ -1099,7 +1104,7 @@
             display: none;
           }
           .writeMoreButton{
-            margin:20px 0 20px;
+            margin:auto 0 0 0;
           }
         }
         .articleBodySecondaryContentUnit:last-child{
@@ -1172,6 +1177,7 @@
 %mediumPhone{
   .container {
     max-width: 430px !important;
+    padding: 0 5px;
   }
   .mainInfo{
     .mainInfoMainNews,.mainInfoLatestNewsUnitBlock{
@@ -1224,14 +1230,16 @@
         .articleBodySecondaryContentUnit{
           height: auto;
           padding:10px 0 !important;
+          justify-content: flex-start;
           a{
             margin:auto 0;
           }
           .articleBodySecondaryContentUnitDescription{
+            width: 60%;
             .latestNewsHeading{
               a{
                 font-size: 1.6rem;
-                line-height: 2.0rem;
+                line-height: 1.8rem;
               }
             }
             .writeMoreButton{
@@ -1363,17 +1371,19 @@
       .articleBodySecondaryContent{
         .articleBodySecondaryContentUnit{
           .articleBodySecondaryContentUnitImg{
-            width: 80px;
+            width: 120px;
+            height: 120px;
             margin:auto 0;
             .articleBodySecondaryContentUnitImgBlock{
               a{
                 display: block;
               }
-              width: 80px;
+              width: 100%;
+              height: 100%;
               img{
                 object-fit: cover;
-                width: auto;
-                height: 80px;
+                width: 100%;
+                height: 100%;
               }
             }
           }
@@ -1480,33 +1490,11 @@
     }
   }
   .article{
-    .latestNewsHeading{
-      height: 60px !important;
-    }
     .articleBody{
       .articleBodyMain{
         .articleBodyMainContent{
           .articleBodyMainContentBlock{
             margin: 0 0 10px 0;
-          }
-        }
-      }
-      .articleBodySecondary{
-        .articleBodySecondaryContent{
-          .articleBodySecondaryContentUnit{
-            .articleBodySecondaryContentUnitImg{
-              width: 34%;
-              height: 80px;
-              a{
-                width: 80px;
-                height: 80px;
-                margin:0;
-                img{
-                  width: 80px;
-                  height: 80px;
-                }
-              }
-            }
           }
         }
       }
