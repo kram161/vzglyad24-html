@@ -214,11 +214,11 @@ td, th {
 .mainInfoMainNewsImage a {
   display: inline-block;
   overflow: hidden;
-  height: auto;
+  height: 100%;
   width: 100%;
 }
 .mainInfoMainNewsImage a img {
-  max-height: 330px;
+  height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -328,19 +328,19 @@ td, th {
   height: 100%;
 }
 .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsInformation {
-  margin: 10px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin: 10px 0 0 0;
 }
 .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsInformation .categoryButton {
   margin: 0 31px 0 0;
 }
 .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsDescription {
-  margin: 21px 0 40px 0;
+  margin: 10px 0;
 }
 .mainInfo .mainInfoMain .mainInfoMainNews .mainInfoMainNewsDescription .mainNewsHeading a {
   -webkit-transition: all 0.2s ease;
@@ -370,6 +370,19 @@ td, th {
   display: table-cell;
   vertical-align: top;
   padding: 0 0 0 20px;
+}
+.mainInfo .mainInfoLatestNews .mainInfoLatestNewsWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
 }
 .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit {
   max-width: 100%;
@@ -458,6 +471,13 @@ td, th {
 .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit:last-child {
   padding: 0;
   border-bottom: none;
+}
+.mainInfo .articleMainInfoLatestNews .mainInfoLatestNewsWrapper .mainInfoLatestNewsUnit {
+  margin: 0;
+  padding: 0 0 23px 0;
+}
+.mainInfo .articleMainInfoLatestNews .mainInfoLatestNewsWrapper .mainInfoLatestNewsUnit:last-child {
+  padding: 0;
 }
 
 .newsPage:not(:first-child) .newsPageLine .newsPageLineCard {
@@ -1087,6 +1107,10 @@ td, th {
   height: 100%;
   max-height: none;
 }
+.smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit, .tablet .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit, .notebook .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit {
+  padding: 0 0 18px 0;
+  margin: 23px 0 0 0;
+}
 .smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg, .tablet .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg, .notebook .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg {
   width: 80px;
   height: 80px;
@@ -1094,6 +1118,12 @@ td, th {
 .smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg .mainInfoLatestNewsUnitImgBlock, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg .mainInfoLatestNewsUnitImgBlock, .tablet .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg .mainInfoLatestNewsUnitImgBlock, .notebook .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitImg .mainInfoLatestNewsUnitImgBlock {
   width: 80px;
   height: 80px;
+}
+.smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit:last-child, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit:last-child, .tablet .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit:last-child, .notebook .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit:last-child {
+  padding: 0;
+}
+.smallPhone .mainInfo .articleMainInfoLatestNews .mainInfoLatestNewsUnit, .mediumPhone .mainInfo .articleMainInfoLatestNews .mainInfoLatestNewsUnit, .tablet .mainInfo .articleMainInfoLatestNews .mainInfoLatestNewsUnit, .notebook .mainInfo .articleMainInfoLatestNews .mainInfoLatestNewsUnit {
+  margin: 0;
 }
 
 .smallPhone .container, .mediumPhone .container, .tablet .container {
@@ -1209,10 +1239,15 @@ td, th {
       -ms-flex-direction: column;
           flex-direction: column;
   border: none;
+  margin: 20px 0;
+  padding: 0;
 }
 .smallPhone .mainInfo .mainInfArticle .mainInfoMainNews, .mediumPhone .mainInfo .mainInfArticle .mainInfoMainNews, .tablet .mainInfo .mainInfArticle .mainInfoMainNews {
   border-bottom: 1px solid #D2D2D2;
   padding: 0 0 50px 0;
+}
+.smallPhone .mainInfo .mainInfArticle .mainInfoLatestNewsUnit:last-child, .mediumPhone .mainInfo .mainInfArticle .mainInfoLatestNewsUnit:last-child, .tablet .mainInfo .mainInfArticle .mainInfoLatestNewsUnit:last-child {
+  padding: 0 0 10px 0;
 }
 .smallPhone .mainInfo .mainInfoMainNews, .mediumPhone .mainInfo .mainInfoMainNews, .tablet .mainInfo .mainInfoMainNews {
   max-width: 100%;

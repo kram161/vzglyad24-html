@@ -104,10 +104,10 @@
   a{
     display: inline-block;
     overflow: hidden;
-    height: auto;
+    height: 100%;
     width: 100%;
     img{
-      max-height: 330px;
+      height: 100%;
       width: 100%;
       object-fit: cover;
       transition: all 0.2s linear;
@@ -210,15 +210,15 @@
         height: 100%;
       }
       .mainInfoMainNewsInformation{
-        margin:10px 0 0 0;
         display: flex;
         justify-content:flex-start;
+        margin: 10px 0 0 0;
         .categoryButton{
           margin:0 31px 0 0;
         }
       }
       .mainInfoMainNewsDescription{
-        margin:21px 0 40px 0;
+        margin:10px 0;
         .mainNewsHeading{
           a{
             transition: all 0.2s ease;
@@ -252,6 +252,12 @@
     display: table-cell;
     vertical-align: top;
     padding: 0 0 0 20px;
+    .mainInfoLatestNewsWrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
     .mainInfoLatestNewsUnit{
       max-width: 100%;
       padding:0 0 27px 0;
@@ -324,6 +330,17 @@
     .mainInfoLatestNewsUnit:last-child{
       padding:0;
       border-bottom:none;
+    }
+  }
+  .articleMainInfoLatestNews{
+    .mainInfoLatestNewsWrapper{
+      .mainInfoLatestNewsUnit{
+        margin:0;
+        padding: 0 0 23px 0;
+      }
+      .mainInfoLatestNewsUnit:last-child{
+        padding: 0;
+      }
     }
   }
 }
@@ -925,6 +942,8 @@
     }
     .mainInfoLatestNews{
       .mainInfoLatestNewsUnit{
+        padding: 0 0 18px 0;
+        margin:23px 0 0 0;
         .mainInfoLatestNewsUnitImg{
           width: 80px;
           height: 80px;
@@ -934,6 +953,14 @@
           }
         }
       }
+      .mainInfoLatestNewsUnit:last-child{
+        padding: 0;
+      }
+    }
+    .articleMainInfoLatestNews{
+     .mainInfoLatestNewsUnit{
+       margin: 0;
+     }
     }
   }
 }
@@ -1045,10 +1072,15 @@
   .mainInfo{
     flex-direction: column;
     border: none;
+    margin:20px 0;
+    padding: 0;
     .mainInfArticle {
       .mainInfoMainNews {
         border-bottom: 1px solid #D2D2D2;
         padding: 0 0 50px 0;
+      }
+      .mainInfoLatestNewsUnit:last-child{
+        padding: 0 0 10px 0;
       }
     }
     .mainInfoMainNews{
