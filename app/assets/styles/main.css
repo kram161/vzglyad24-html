@@ -1571,8 +1571,8 @@ td, th {
   height: 100%;
 }
 .smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg {
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   margin: auto 0;
 }
 .smallPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock, .mediumPhone .articleBody .articleBodySecondary .articleBodySecondaryContent .articleBodySecondaryContentUnit .articleBodySecondaryContentUnitImg .articleBodySecondaryContentUnitImgBlock {
@@ -1672,6 +1672,26 @@ td, th {
 }
 .smallPhone .popUp .popUpList .popUpListArticle:nth-child(n+3), .mediumPhone .popUp .popUpList .popUpListArticle:nth-child(n+3) {
   display: none;
+}
+.smallPhone .articleMainInf, .mediumPhone .articleMainInf {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.smallPhone .articleMainInf h2, .mediumPhone .articleMainInf h2 {
+  margin: 0;
+  padding: 10px 0;
+}
+.smallPhone .articleMainInf .mainInfArticle .mainInfoMain .mainInfoMainNews, .mediumPhone .articleMainInf .mainInfArticle .mainInfoMain .mainInfoMainNews {
+  padding: 0 0 10px 0;
+}
+.smallPhone .articleMainInf .mainInfArticle .mainInfoLatestNewsUnit, .mediumPhone .articleMainInf .mainInfArticle .mainInfoLatestNewsUnit {
+  margin: 0;
+}
+.smallPhone .articleNewsPage .newsPageLine, .mediumPhone .articleNewsPage .newsPageLine {
+  padding: 10px 0 0 0;
+}
+.smallPhone .articleNewsPage .newsPageLine .newsPageLineCard .newsCard .newsPageLineSlimCardWithImageArticleImg, .mediumPhone .articleNewsPage .newsPageLine .newsPageLineCard .newsCard .newsPageLineSlimCardWithImageArticleImg {
+  width: 100%;
 }
 
 .smallPhone .container {
