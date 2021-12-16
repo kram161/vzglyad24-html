@@ -255,7 +255,7 @@
     .mainInfoLatestNewsUnit{
       max-width: 100%;
       padding:0 0 27px 0;
-      margin:27px 0 0 0;
+      margin:41px 0 0 0;
       border-bottom: 1px solid #D2D2D2;
       display: flex;
       justify-content: flex-start;
@@ -295,6 +295,7 @@
         }
         .mainInfoLatestNewsDescription{
           height: 66px;
+          overflow: hidden;
           .latestNewsHeading{
             a{
               transition: all 0.2s linear;

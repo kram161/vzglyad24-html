@@ -374,7 +374,7 @@ td, th {
 .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit {
   max-width: 100%;
   padding: 0 0 27px 0;
-  margin: 27px 0 0 0;
+  margin: 41px 0 0 0;
   border-bottom: 1px solid #D2D2D2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -433,6 +433,7 @@ td, th {
 }
 .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoLatestNewsDescription {
   height: 66px;
+  overflow: hidden;
 }
 .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoLatestNewsDescription .latestNewsHeading a {
   -webkit-transition: all 0.2s linear;
