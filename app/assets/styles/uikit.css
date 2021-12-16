@@ -262,7 +262,7 @@ td, th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 40px 0 20px 0;
+  padding: 40px 0;
   border-bottom: 1px solid #D2D2D2;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -638,6 +638,9 @@ body .plainText p {
 .smallPhone .hiddenMenu, .mediumPhone .hiddenMenu, .tablet .hiddenMenu {
   height: 340px;
 }
+.smallPhone .menuHeader, .mediumPhone .menuHeader, .tablet .menuHeader {
+  padding: 20px 0;
+}
 .smallPhone .menuBurger, .mediumPhone .menuBurger, .tablet .menuBurger {
   display: block !important;
 }
@@ -653,9 +656,9 @@ body .plainText p {
 .smallPhone .menuLogo, .mediumPhone .menuLogo, .tablet .menuLogo {
   position: absolute;
   left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  top: 30px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
 }
 .smallPhone .footerInfAboutUs svg, .mediumPhone .footerInfAboutUs svg, .tablet .footerInfAboutUs svg {
   margin: auto 0;

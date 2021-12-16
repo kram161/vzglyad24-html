@@ -144,7 +144,7 @@
   position: relative;
   .menuHeader{
     display: flex;
-    padding:40px 0 20px 0;
+    padding:40px 0;
     border-bottom: 1px solid #D2D2D2;
     justify-content: space-between;
     .menuRate{
@@ -497,6 +497,9 @@ body{
   .hiddenMenu {
     height: 340px;
   }
+  .menuHeader{
+    padding: 20px 0;
+  }
   .menuBurger {
     display: block !important;
   }
@@ -512,8 +515,8 @@ body{
   .menuLogo{
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 0);
-    top:30px;
+    transform: translate(-50%, -50%);
+    top:50%;
   }
   .footerInfAboutUs {
     svg{
