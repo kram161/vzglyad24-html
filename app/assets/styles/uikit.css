@@ -631,6 +631,9 @@ body .plainText p {
   color: #000;
 }
 
+.smallPhone .writeMoreButton a, .mediumPhone .writeMoreButton a, .tablet .writeMoreButton a, .notebook .writeMoreButton a {
+  font-size: 1.1rem;
+}
 .smallPhone .writeMoreButton svg, .mediumPhone .writeMoreButton svg, .tablet .writeMoreButton svg, .notebook .writeMoreButton svg {
   margin: -1px 10px 0 10px;
 }
