@@ -667,7 +667,6 @@ td, th {
 }
 .articleBody .articleBodyMain .articleBodyMainContent .articleBodyMiniNews .articleBodyMiniNewsDescription .latestNewsHeading a {
   text-overflow: ellipsis;
-  line-height: 3rem;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
@@ -1246,7 +1245,7 @@ td, th {
   border-bottom: 1px solid #D2D2D2;
   padding: 0 0 50px 0;
 }
-.smallPhone .mainInfo .mainInfArticle .mainInfoLatestNewsUnit:last-child, .mediumPhone .mainInfo .mainInfArticle .mainInfoLatestNewsUnit:last-child, .tablet .mainInfo .mainInfArticle .mainInfoLatestNewsUnit:last-child {
+.smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsWrapper .mainInfoLatestNewsUnit:last-child, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsWrapper .mainInfoLatestNewsUnit:last-child, .tablet .mainInfo .mainInfoLatestNews .mainInfoLatestNewsWrapper .mainInfoLatestNewsUnit:last-child {
   padding: 0 0 10px 0;
 }
 .smallPhone .mainInfo .mainInfoMainNews, .mediumPhone .mainInfo .mainInfoMainNews, .tablet .mainInfo .mainInfoMainNews {
