@@ -260,6 +260,7 @@ td, th {
      object-fit: cover;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  outline: none !important;
 }
 
 .newsPageLineSlimCardWithImageArticleImg {
