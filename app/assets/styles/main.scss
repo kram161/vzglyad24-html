@@ -1113,6 +1113,9 @@
           }
         }
       }
+      .mainInfoLatestNewsUnit:last-child{
+        padding: 0 0 10px 0;
+      }
     }
   }
 
@@ -1426,7 +1429,6 @@
           }
           .newsCardNavigation{
             display: flex;
-            flex-direction: row-reverse;
             justify-content: space-between;
             .writeMoreButton,.coverageInformation{
               position: relative;
@@ -1442,12 +1444,13 @@
     .newsPageLine{
       .newsPageLineCard{
         margin:0;
+        padding: 0;
       }
     }
   }
   .mainInfo {
     margin: 40px 0 0 0 !important;
-    padding: 0 0 30px 0 !important;
+    padding: 0 !important;
   }
   .mainInfoMainNewsImage,.articleBodyMainContentImage {
     a{

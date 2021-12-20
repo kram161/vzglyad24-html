@@ -1274,6 +1274,9 @@ td, th {
 .smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoLatestNewsDescription, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoLatestNewsDescription, .tablet .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit .mainInfoLatestNewsUnitBlock .mainInfoLatestNewsDescription {
   height: auto;
 }
+.smallPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit:last-child, .mediumPhone .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit:last-child, .tablet .mainInfo .mainInfoLatestNews .mainInfoLatestNewsUnit:last-child {
+  padding: 0 0 10px 0;
+}
 .smallPhone .newsPageLine, .mediumPhone .newsPageLine, .tablet .newsPageLine {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1576,10 +1579,6 @@ td, th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1591,10 +1590,11 @@ td, th {
 }
 .smallPhone .newsPage:not(:first-child) .newsPageLine .newsPageLineCard, .mediumPhone .newsPage:not(:first-child) .newsPageLine .newsPageLineCard {
   margin: 0;
+  padding: 0;
 }
 .smallPhone .mainInfo, .mediumPhone .mainInfo {
   margin: 40px 0 0 0 !important;
-  padding: 0 0 30px 0 !important;
+  padding: 0 !important;
 }
 .smallPhone .mainInfoMainNewsImage, .mediumPhone .mainInfoMainNewsImage, .smallPhone .articleBodyMainContentImage, .mediumPhone .articleBodyMainContentImage {
   width: 100%;
