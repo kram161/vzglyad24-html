@@ -239,6 +239,9 @@ td, th {
 .articleBodyMainContentBlockImg {
   width: 100px;
   height: 100px;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock {
   width: 100px;
@@ -1624,13 +1627,13 @@ td, th {
   height: 100%;
 }
 .smallPhone .articleBodyMainContentBlockImg, .mediumPhone .articleBodyMainContentBlockImg {
-  height: 80px;
-  width: 80px;
+  height: 110px;
+  width: 110px;
   margin: auto 0;
 }
 .smallPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock, .mediumPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock {
-  height: 80px;
-  width: 80px;
+  height: 110px;
+  width: 110px;
 }
 .smallPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock a, .mediumPhone .articleBodyMainContentBlockImg .articleBodyMainContentBlockImgBlock a {
   display: block;
